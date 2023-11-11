@@ -5,6 +5,8 @@ import "./App.css";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 
 const pypiURL = "https://pypi.org/project/";
+const csvURL =
+  "https://raw.githubusercontent.com/emanuelef/awesome-python-repo-stats/main/dep-repo-latest.csv";
 
 const columns: GridColDef[] = [
   {
