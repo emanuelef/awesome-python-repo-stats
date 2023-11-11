@@ -62,7 +62,7 @@ func writeGoDepsMapFile(deps map[string]int) {
 	}
 
 	for k, v := range deps {
-		if v > 20 {
+		if v >= 10 {
 			err = csvWriter.Write([]string{
 				k,
 				fmt.Sprintf("%d", v),
@@ -235,13 +235,16 @@ func main() {
 
 					// wait to avoid hitting 5k rate limit
 					if i%100 == 0 {
-						time.Sleep(1 * time.Minute)
+						time.Sleep(0 * time.Minute)
 					}
 
 				}
 
 			}
 		}
+
+		delete(depsUse, "python")
+		delete(depsUse, "-r")
 
 		writeGoDepsMapFile(depsUse)
 		jsonData, _ := json.MarshalIndent(starsHistory, "", " ")
