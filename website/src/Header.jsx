@@ -23,7 +23,7 @@ function Header({ lastUpdate }) {
 
   return (
     <div className="header" style={headerStyle}>
-      <p>Awesom Python Last Update: {lastUpdate}</p>
+      <p>Awesome Python Last Update: {lastUpdate}</p>
       <Linkweb href={csvURL} download>
         Link to CSV
       </Linkweb>
