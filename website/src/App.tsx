@@ -469,7 +469,10 @@ function App() {
           </MenuItem>
           <MenuItem
             component={
-              <Link to="/starstimeline/:user/:repository" className="link" />
+              <Link
+                to="/starstimeline/tensorflow/tensorflow"
+                className="link"
+              />
             }
             icon={<TimelineRoundedIcon />}
           >
