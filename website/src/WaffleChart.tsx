@@ -64,7 +64,7 @@ function WaffleChart({ dataRows }) {
   }, [minDaysLastCommit, minStars, minMentionableUsers]);
 
   return (
-    <div style={{ height: 780, width: 1040, backgroundColor: "azure" }}>
+    <div style={{ height: "80%", width: "100%", backgroundColor: "azure" }}>
       <TextField
         style={{ marginTop: "20px", marginRight: "20px", marginLeft: "20px" }}
         label="Min days since last commit"

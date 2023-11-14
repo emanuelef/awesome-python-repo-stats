@@ -9,8 +9,8 @@ ReactFC.fcRoot(FusionCharts, TimeSeries, CandyTheme);
 const chart_props = {
   timeseriesDs: {
     type: "timeseries",
-    width: "1200",
-    height: "800",
+    width: "100%",
+    height: "80%",
     dataEmptyMessage: "Fetching data...",
     dataSource: {
       caption: { text: "Daily Stars" },
@@ -111,6 +111,7 @@ function TimeSeriesChart({ repo }) {
       style={{
         marginLeft: "10px",
         marginTop: "10px",
+        marginRight: "10px",
       }}
     >
       <ReactFC {...ds.timeseriesDs} />

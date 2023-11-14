@@ -52,6 +52,7 @@ function DepsChart() {
       style={{
         marginLeft: "10px",
         marginTop: "10px",
+        width: "400px",
       }}
     >
       <DataGrid

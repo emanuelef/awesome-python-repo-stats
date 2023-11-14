@@ -344,7 +344,7 @@ function App() {
             }}
           />
         </div>
-        <div style={{ marginLeft: "10px" }}>
+        <div style={{ marginLeft: "10px", height: "86%"}}>
           <DataGrid
             getRowId={(row) => row.repo}
             rows={filteredDataRows}
@@ -374,7 +374,7 @@ function App() {
     }, []);
 
     return (
-      <>
+      <div>
         <div
           style={{ display: "flex", alignItems: "center", marginTop: "10px" }}
         >
@@ -437,7 +437,7 @@ function App() {
           </Linkweb>
         </div>
         <TimeSeriesChart repo={selectedRepo} />
-      </>
+      </div>
     );
   };
 
@@ -505,7 +505,7 @@ function App() {
             </MenuItem>
           </Menu>
         </Sidebar>
-        <section>
+        <section style={{ width: "100%" }}>
           <Header lastUpdate={lastUpdate} />
           <Routes>
             <Route path="/" element={<Table />} />
