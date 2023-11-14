@@ -64,7 +64,7 @@ function WaffleChart({ dataRows }) {
   }, [minDaysLastCommit, minStars, minMentionableUsers]);
 
   return (
-    <div style={{ height: "80%", width: "100%", backgroundColor: "azure" }}>
+    <div style={{ height: "90%", width: "100%", backgroundColor: "black" }}>
       <TextField
         style={{ marginTop: "20px", marginRight: "20px", marginLeft: "20px" }}
         label="Min days since last commit"
@@ -104,46 +104,48 @@ function WaffleChart({ dataRows }) {
           },
         }}
       />
-      <ResponsiveWaffle
-        data={data}
-        total={dataRows.length}
-        rows={14}
-        columns={26}
-        padding={1}
-        margin={{ top: 10, right: 10, bottom: 10, left: 120 }}
-        colors={{ scheme: "set1" }}
-        borderRadius={3}
-        borderColor={{
-          from: "color",
-          modifiers: [["darker", 0.3]],
-        }}
-        motionStagger={2}
-        legends={[
-          {
-            anchor: "top-left",
-            direction: "column",
-            justify: false,
-            translateX: -100,
-            translateY: 0,
-            itemsSpacing: 4,
-            itemWidth: 100,
-            itemHeight: 20,
-            itemDirection: "left-to-right",
-            itemOpacity: 1,
-            itemTextColor: "#777",
-            symbolSize: 20,
-            effects: [
-              {
-                on: "hover",
-                style: {
-                  itemTextColor: "#000",
-                  itemBackground: "#f7fafb",
+      <div style={{ height: "60%", width: "70%", backgroundColor: "black" }}>
+        <ResponsiveWaffle
+          data={data}
+          total={dataRows.length}
+          rows={14}
+          columns={26}
+          padding={1}
+          margin={{ top: 10, right: 10, bottom: 10, left: 120 }}
+          colors={{ scheme: "set1" }}
+          borderRadius={3}
+          borderColor={{
+            from: "color",
+            modifiers: [["darker", 0.3]],
+          }}
+          motionStagger={2}
+          legends={[
+            {
+              anchor: "top-left",
+              direction: "column",
+              justify: false,
+              translateX: -100,
+              translateY: 0,
+              itemsSpacing: 4,
+              itemWidth: 100,
+              itemHeight: 20,
+              itemDirection: "left-to-right",
+              itemOpacity: 1,
+              itemTextColor: "#777",
+              symbolSize: 20,
+              effects: [
+                {
+                  on: "hover",
+                  style: {
+                    itemTextColor: "#000",
+                    itemBackground: "#f7fafb",
+                  },
                 },
-              },
-            ],
-          },
-        ]}
-      />
+              ],
+            },
+          ]}
+        />
+      </div>
     </div>
   );
 }
