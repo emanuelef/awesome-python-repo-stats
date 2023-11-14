@@ -14,6 +14,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import TimeSeriesChart from "./TimeSeriesChart";
 import WaffleChart from "./WaffleChart";
 import DepsChart from "./DepsChart";
+import BubbleChart from "./BubbleChart";
 
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import ViewListRoundedIcon from "@mui/icons-material/ViewListRounded";
@@ -21,6 +22,7 @@ import BarChartRoundedIcon from "@mui/icons-material/BarChartRounded";
 import TimelineRoundedIcon from "@mui/icons-material/TimelineRounded";
 import LibraryBooksRoundedIcon from "@mui/icons-material/LibraryBooksRounded";
 import ViewModuleRoundedIcon from "@mui/icons-material/ViewModuleRounded";
+import BubbleChartRoundedIcon from "@mui/icons-material/BubbleChartRounded";
 
 import GitHubButton from "react-github-btn";
 
@@ -344,7 +346,7 @@ function App() {
             }}
           />
         </div>
-        <div style={{ marginLeft: "10px", height: "86%"}}>
+        <div style={{ marginLeft: "10px", height: "86%" }}>
           <DataGrid
             getRowId={(row) => row.repo}
             rows={filteredDataRows}
@@ -503,6 +505,12 @@ function App() {
             >
               StarsTimeline
             </MenuItem>
+            <MenuItem
+              component={<Link to="/bubble" className="link" />}
+              icon={<BubbleChartRoundedIcon />}
+            >
+              Bubble
+            </MenuItem>
           </Menu>
         </Sidebar>
         <section style={{ width: "100%" }}>
@@ -518,6 +526,10 @@ function App() {
             <Route
               path="/starstimeline/:user/:repository"
               element={<StarsTimeline />}
+            />
+            <Route
+              path="/bubble"
+              element={<BubbleChart dataRows={dataRows} />}
             />
           </Routes>
         </section>
