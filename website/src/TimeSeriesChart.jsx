@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import FusionCharts from "fusioncharts";
 import TimeSeries from "fusioncharts/fusioncharts.timeseries";
 import ReactFC from "react-fusioncharts";
+import CandyTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 import schema from "./schema";
 
-ReactFC.fcRoot(FusionCharts, TimeSeries);
+ReactFC.fcRoot(FusionCharts, TimeSeries, CandyTheme);
 const chart_props = {
   timeseriesDs: {
     type: "timeseries",

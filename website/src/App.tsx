@@ -16,7 +16,6 @@ import WaffleChart from "./WaffleChart";
 import DepsChart from "./DepsChart";
 
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import TableViewRounded from "@mui/icons-material/TableViewRounded";
 import ViewListRoundedIcon from "@mui/icons-material/ViewListRounded";
 import BarChartRoundedIcon from "@mui/icons-material/BarChartRounded";
 import TimelineRoundedIcon from "@mui/icons-material/TimelineRounded";
@@ -27,6 +26,15 @@ import GitHubButton from "react-github-btn";
 
 // Import the Header component
 import Header from "./Header";
+
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  },
+});
 
 /*
 archived
@@ -413,6 +421,7 @@ function App() {
           />
           <GitHubButton
             href={"https://github.com/" + selectedRepo}
+            data-color-scheme="no-preference: dark; light: dark_dimmed; dark: dark_high_contrast;"
             data-size="large"
             data-show-count="true"
             aria-label="Star buttons/github-buttons on GitHub"
@@ -433,67 +442,87 @@ function App() {
   };
 
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
-      <Sidebar className="app" collapsed={collapsed}>
-        <Menu>
-          <MenuItem
-            component={<Link to="/" className="link" />}
-            className="menu1"
-            icon={
-              <MenuRoundedIcon
-                onClick={() => {
-                  setCollapsed(!collapsed);
-                }}
-              />
-            }
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <div style={{ display: "flex", height: "100vh" }}>
+        <Sidebar
+          className="app"
+          collapsed={collapsed}
+          backgroundColor="rgb(51, 117, 117)"
+        >
+          <Menu
+            menuItemStyles={{
+              button: ({ level, active, disabled }) => {
+                if (level >= 0)
+                  return {
+                    color: disabled ? "#f5d9ff" : "#07100d",
+                    backgroundColor: active ? "#00cef9" : "undefined",
+                  };
+              },
+            }}
           >
-            <h2>Awesome python Stats</h2>
-          </MenuItem>
-          <MenuItem
-            component={<Link to="/table" className="link" />}
-            icon={<ViewListRoundedIcon />}
-          >
-            Table
-          </MenuItem>
-          <MenuItem
-            component={<Link to="/deps" className="link" />}
-            icon={<LibraryBooksRoundedIcon />}
-          >
-            Dependencies
-          </MenuItem>
-          <MenuItem
-            component={<Link to="/waffle" className="link" />}
-            icon={<ViewModuleRoundedIcon />}
-          >
-            Waffle
-          </MenuItem>
-          <MenuItem
-            component={
-              <Link
-                to="/starstimeline/tensorflow/tensorflow"
-                className="link"
-              />
-            }
-            icon={<TimelineRoundedIcon />}
-          >
-            StarsTimeline
-          </MenuItem>
-        </Menu>
-      </Sidebar>
-      <section>
-        <Header lastUpdate={lastUpdate} />
-        <Routes>
-          <Route path="/" element={<Table />} />
-          <Route path="/table" element={<Table />} />
-          <Route path="/deps" element={<DepsChart />} />
-          <Route path="/waffle" element={<WaffleChart dataRows={dataRows} />} />
-          <Route
-            path="/starstimeline/:user/:repository"
-            element={<StarsTimeline />}
-          />
-        </Routes>
-      </section>
-    </div>
+            <MenuItem
+              component={<Link to="/" className="link" />}
+              className="menu1"
+              icon={
+                <MenuRoundedIcon
+                  onClick={() => {
+                    setCollapsed(!collapsed);
+                  }}
+                />
+              }
+            >
+              <h2 style={{ color: "black" }}>Awesome python Stats</h2>
+            </MenuItem>
+            <MenuItem
+              component={<Link to="/table" className="link" />}
+              icon={<ViewListRoundedIcon />}
+            >
+              Table
+            </MenuItem>
+            <MenuItem
+              component={<Link to="/deps" className="link" />}
+              icon={<LibraryBooksRoundedIcon />}
+            >
+              Dependencies
+            </MenuItem>
+            <MenuItem
+              component={<Link to="/waffle" className="link" />}
+              icon={<ViewModuleRoundedIcon />}
+            >
+              Waffle
+            </MenuItem>
+            <MenuItem
+              component={
+                <Link
+                  to="/starstimeline/tensorflow/tensorflow"
+                  className="link"
+                />
+              }
+              icon={<TimelineRoundedIcon />}
+            >
+              StarsTimeline
+            </MenuItem>
+          </Menu>
+        </Sidebar>
+        <section>
+          <Header lastUpdate={lastUpdate} />
+          <Routes>
+            <Route path="/" element={<Table />} />
+            <Route path="/table" element={<Table />} />
+            <Route path="/deps" element={<DepsChart />} />
+            <Route
+              path="/waffle"
+              element={<WaffleChart dataRows={dataRows} />}
+            />
+            <Route
+              path="/starstimeline/:user/:repository"
+              element={<StarsTimeline />}
+            />
+          </Routes>
+        </section>
+      </div>
+    </ThemeProvider>
   );
 }
 
