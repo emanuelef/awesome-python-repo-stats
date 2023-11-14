@@ -103,12 +103,16 @@ function TimeSeriesChart({ repo }) {
   };
 
   useEffect(() => {
-    console.log("render");
     loadData();
   }, [repo]);
 
   return (
-    <div>
+    <div
+      style={{
+        marginLeft: "10px",
+        marginTop: "10px",
+      }}
+    >
       <ReactFC {...ds.timeseriesDs} />
     </div>
   );
