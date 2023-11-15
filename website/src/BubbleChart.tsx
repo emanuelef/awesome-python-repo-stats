@@ -20,6 +20,7 @@ const axisMetrics = [
   { label: "Stars Last 30 Days", metric: "new-stars-last-30d" },
   { label: "Mentionable Users", metric: "mentionable-users" },
   { label: "Total Stars", metric: "stars" },
+  { label: "New Stars 30d‰", metric: "stars-per-mille-30d" },
 ];
 
 const BubbleChart = ({ dataRows }) => {
@@ -87,9 +88,9 @@ const BubbleChart = ({ dataRows }) => {
       text: updatedData.map((row) => row.repo),
       mode: "markers",
       marker: {
-        size: updatedData.map((row) => Math.log(row["stars"])),
+        size: updatedData.map((row) => Math.sqrt(row["stars"]) * 7),
         sizemode: "diameter",
-        sizeref: 0.22,
+        sizeref: 20.03,
         color: "orange",
       },
       type: "scatter",
