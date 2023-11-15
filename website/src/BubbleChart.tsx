@@ -17,7 +17,7 @@ const mapCategoryToColor = (category) => {
 };
 
 const BubbleChart = ({ dataRows }) => {
-  const [minDaysLastCommit, setMinDaysLastCommit] = useState("30");
+  const [maxDaysLastCommit, setMaxDaysLastCommit] = useState("30");
   const [minStars, setMinStars] = useState("10");
   const [minMentionableUsers, setMinMentionableUsers] = useState("10");
   const [data, setData] = useState([]);
@@ -32,12 +32,9 @@ const BubbleChart = ({ dataRows }) => {
   };
 
   const handleBubbleClick = (event) => {
-    // Extract information about the clicked point from the event
-    console.log(event);
     const pointIndex = event.points[0].pointIndex;
     const clickedRepo = event.points[0].data.text[pointIndex];
 
-    // Replace this with the URL or action you want to perform
     const url = `https://github.com/${clickedRepo}`;
     window.open(url, "_blank");
   };
@@ -47,14 +44,13 @@ const BubbleChart = ({ dataRows }) => {
 
     dataRows.forEach((element) => {
       if (
-        parseInt(element["days-last-commit"]) > parseInt(minDaysLastCommit) &&
+        parseInt(element["days-last-commit"]) < parseInt(maxDaysLastCommit) &&
         parseInt(element["stars"]) > parseInt(minStars) &&
         parseInt(element["mentionable-users"]) > parseInt(minMentionableUsers)
       ) {
         updatedData.push(element);
       }
     });
-    console.log(updatedData);
 
     const trace = {
       x: updatedData.map((row) => row["new-stars-last-7d"]),
@@ -76,7 +72,7 @@ const BubbleChart = ({ dataRows }) => {
 
   useEffect(() => {
     loadData();
-  }, [minDaysLastCommit, minStars, minMentionableUsers]);
+  }, [maxDaysLastCommit, minStars, minMentionableUsers]);
 
   const layout = {
     xaxis: {
@@ -110,11 +106,11 @@ const BubbleChart = ({ dataRows }) => {
     >
       <TextField
         style={{ marginTop: "20px", marginRight: "20px", marginLeft: "20px" }}
-        label="Min days since last commit"
+        label="Max days since last commit"
         variant="outlined"
         size="small"
-        value={minDaysLastCommit}
-        onChange={(e) => handleInputChange(e, setMinDaysLastCommit)}
+        value={maxDaysLastCommit}
+        onChange={(e) => handleInputChange(e, setMaxDaysLastCommit)}
         InputProps={{
           inputProps: {
             pattern: "[0-9]*",
