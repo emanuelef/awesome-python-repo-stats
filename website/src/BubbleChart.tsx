@@ -60,16 +60,24 @@ const BubbleChart = ({ dataRows }) => {
   });
 
   const layout = {
-    xaxis: { type: "log", title: "New Stars Last 14 Days" },
-    yaxis: { type: "log", title: "Mentionable Users" },
+    xaxis: {
+      type: "log",
+      title: "New Stars Last 14 Days",
+      gridcolor: "rgba(150, 150, 150, 0.6)",
+    },
+    yaxis: {
+      type: "log",
+      title: "Mentionable Users",
+      gridcolor: "rgba(150, 150, 150, 0.6)",
+    },
     size: "stars",
     color: "main-category",
     hovermode: "closest",
     hover_name: "repo",
     showlegend: true,
     title: "Bubble Chart Work in Progress",
-    paper_bgcolor: "rgba(0, 0, 0, 0)", // Transparent background
-    plot_bgcolor: "rgba(0, 0, 0, 0.8)", // Dark background
+    paper_bgcolor: "rgb(0, 0, 0, 0.7)", // Transparent background
+    plot_bgcolor: "rgba(38, 42, 51, 0.8)", // Dark background
     font: { color: "white" }, // White text
   };
 
