@@ -41,12 +41,12 @@ const BubbleChart = ({ dataRows }) => {
         //.filter((row) => row["last"] <= 10)
         .map((row) => row["mentionable-users"]),
       text: dataRows
-      //.filter((row) => row["last"] <= 10)
-      .map((row) => row.repo),
+        //.filter((row) => row["last"] <= 10)
+        .map((row) => row.repo),
       mode: "markers",
       marker: {
         size: dataRows
-         // .filter((row) => row["last"] <= 10)
+          // .filter((row) => row["last"] <= 10)
           .map((row) => Math.log(row["stars"])),
         sizemode: "diameter",
         sizeref: 0.22,
@@ -68,6 +68,9 @@ const BubbleChart = ({ dataRows }) => {
     hover_name: "repo",
     showlegend: true,
     title: "Bubble Chart Work in Progress",
+    paper_bgcolor: "rgba(0, 0, 0, 0)", // Transparent background
+    plot_bgcolor: "rgba(0, 0, 0, 0.8)", // Dark background
+    font: { color: "white" }, // White text
   };
 
   return (
