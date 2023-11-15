@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Plot from "react-plotly.js";
+import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 
+const fullStarsHistoryURL =
+  "https://emanuelef.github.io/gh-repo-stats-server/#";
+
 const logBase = (n, base) => Math.log(n) / Math.log(base);
+
+const clickActions = [
+  { label: "GH Repo", action: "gh" },
+  { label: "Last 30d stars", action: "30d" },
+  { label: "Full Star history", action: "full" },
+];
 
 const mapCategoryToColor = (category) => {
   const colorMappings = {
@@ -21,6 +31,7 @@ const BubbleChart = ({ dataRows }) => {
   const [minStars, setMinStars] = useState("10");
   const [minMentionableUsers, setMinMentionableUsers] = useState("10");
   const [data, setData] = useState([]);
+  const [selectedAction, setSelectedAction] = useState(clickActions[0].action);
 
   const handleInputChange = (event, setStateFunction) => {
     const inputText = event.target.value;
@@ -35,8 +46,27 @@ const BubbleChart = ({ dataRows }) => {
     const pointIndex = event.points[0].pointIndex;
     const clickedRepo = event.points[0].data.text[pointIndex];
 
-    const url = `https://github.com/${clickedRepo}`;
-    window.open(url, "_blank");
+    let url = `https://github.com/${clickedRepo}`;
+
+    switch (selectedAction) {
+      case "gh":
+        window.open(url, "_blank");
+        break;
+
+      case "30d":
+        url = `./#/starstimeline/${clickedRepo}`;
+        window.location.href = url;
+        break;
+
+      case "full":
+        url = `${fullStarsHistoryURL}/${clickedRepo}`;
+        window.open(url, "_blank");
+        break;
+
+      default:
+        window.open(url, "_blank");
+        break;
+    }
   };
 
   const loadData = () => {
@@ -104,48 +134,79 @@ const BubbleChart = ({ dataRows }) => {
         height: "90%",
       }}
     >
-      <TextField
-        style={{ marginTop: "20px", marginRight: "20px", marginLeft: "20px" }}
-        label="Max days since last commit"
-        variant="outlined"
-        size="small"
-        value={maxDaysLastCommit}
-        onChange={(e) => handleInputChange(e, setMaxDaysLastCommit)}
-        InputProps={{
-          inputProps: {
-            pattern: "[0-9]*",
-            inputMode: "numeric",
-          },
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginTop: "20px",
+          marginBottom: "10px",
         }}
-      />
-      <TextField
-        style={{ marginTop: "20px", marginRight: "20px" }}
-        label="Min stars"
-        variant="outlined"
-        size="small"
-        value={minStars}
-        onChange={(e) => handleInputChange(e, setMinStars)}
-        InputProps={{
-          inputProps: {
-            pattern: "[0-9]*",
-            inputMode: "numeric",
-          },
-        }}
-      />
-      <TextField
-        style={{ marginTop: "20px" }}
-        label="Min men. users"
-        variant="outlined"
-        size="small"
-        value={minMentionableUsers}
-        onChange={(e) => handleInputChange(e, setMinMentionableUsers)}
-        InputProps={{
-          inputProps: {
-            pattern: "[0-9]*",
-            inputMode: "numeric",
-          },
-        }}
-      />
+      >
+        <TextField
+          style={{ marginRight: "20px", marginLeft: "20px" }}
+          label="Max days since last commit"
+          variant="outlined"
+          size="small"
+          value={maxDaysLastCommit}
+          onChange={(e) => handleInputChange(e, setMaxDaysLastCommit)}
+          InputProps={{
+            inputProps: {
+              pattern: "[0-9]*",
+              inputMode: "numeric",
+            },
+          }}
+        />
+        <TextField
+          style={{ marginRight: "20px" }}
+          label="Min stars"
+          variant="outlined"
+          size="small"
+          value={minStars}
+          onChange={(e) => handleInputChange(e, setMinStars)}
+          InputProps={{
+            inputProps: {
+              pattern: "[0-9]*",
+              inputMode: "numeric",
+            },
+          }}
+        />
+        <TextField
+          label="Min men. users"
+          variant="outlined"
+          size="small"
+          value={minMentionableUsers}
+          onChange={(e) => handleInputChange(e, setMinMentionableUsers)}
+          InputProps={{
+            inputProps: {
+              pattern: "[0-9]*",
+              inputMode: "numeric",
+            },
+          }}
+        />
+        <Autocomplete
+          disablePortal
+          style={{ marginLeft: "10px" }}
+          id="actions-combo-box"
+          size="small"
+          options={clickActions}
+          sx={{ width: 300 }}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Select an action on click"
+              variant="outlined"
+              size="small"
+            />
+          )}
+          value={
+            clickActions.find((element) => element.action === selectedAction) ??
+            ""
+          }
+          onChange={(e, v) => {
+            setSelectedAction(v?.action);
+          }}
+        />
+      </div>
       <Plot
         data={data}
         layout={layout}
