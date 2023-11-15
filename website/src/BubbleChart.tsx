@@ -14,24 +14,23 @@ const clickActions = [
   { label: "Full Star history", action: "full" },
 ];
 
-const mapCategoryToColor = (category) => {
-  const colorMappings = {
-    Sandbox: "rgb(93, 164, 214)",
-    Archived: "rgb(255, 144, 14)",
-    Incubating: "rgb(44, 160, 101)",
-    Graduated: "rgb(244, 60, 101)",
-  };
-
-  // Return the color for the given category, or a default color if not found
-  return colorMappings[category] || "rgb(0, 0, 0)"; // Default to black if not found
-};
+const axisMetrics = [
+  { label: "Stars Last 7 Days", metric: "new-stars-last-7d" },
+  { label: "Stars Last 14 Days", metric: "new-stars-last-14d" },
+  { label: "Stars Last 30 Days", metric: "new-stars-last-30d" },
+  { label: "Mentionable Users", metric: "mentionable-users" },
+  { label: "Total Stars", metric: "stars" },
+];
 
 const BubbleChart = ({ dataRows }) => {
   const [maxDaysLastCommit, setMaxDaysLastCommit] = useState("30");
   const [minStars, setMinStars] = useState("10");
-  const [minMentionableUsers, setMinMentionableUsers] = useState("10");
+  const [minMentionableUsers, setMinMentionableUsers] = useState("1");
   const [data, setData] = useState([]);
   const [selectedAction, setSelectedAction] = useState(clickActions[0].action);
+
+  const [selectedXAxis, setSelectedXAxis] = useState(axisMetrics[0]);
+  const [selectedYAxis, setSelectedYAxis] = useState(axisMetrics[3]);
 
   const handleInputChange = (event, setStateFunction) => {
     const inputText = event.target.value;
@@ -83,8 +82,8 @@ const BubbleChart = ({ dataRows }) => {
     });
 
     const trace = {
-      x: updatedData.map((row) => row["new-stars-last-7d"]),
-      y: updatedData.map((row) => row["mentionable-users"]),
+      x: updatedData.map((row) => row[selectedXAxis.metric]),
+      y: updatedData.map((row) => row[selectedYAxis.metric]),
       text: updatedData.map((row) => row.repo),
       mode: "markers",
       marker: {
@@ -102,24 +101,37 @@ const BubbleChart = ({ dataRows }) => {
 
   useEffect(() => {
     loadData();
-  }, [maxDaysLastCommit, minStars, minMentionableUsers]);
+  }, [
+    maxDaysLastCommit,
+    minStars,
+    minMentionableUsers,
+    selectedAction,
+    selectedXAxis,
+    selectedYAxis,
+  ]);
 
   const layout = {
     xaxis: {
       type: "log",
-      title: "New Stars Last 14 Days",
+      title: selectedXAxis.label,
       gridcolor: "rgba(150, 150, 150, 0.6)",
     },
     yaxis: {
       type: "log",
-      title: "Mentionable Users",
+      title: selectedYAxis.label,
       gridcolor: "rgba(150, 150, 150, 0.6)",
     },
     size: "stars",
     color: "main-category",
     hovermode: "closest",
     hover_name: "repo",
-    showlegend: true,
+    showlegend: false,
+    margin: {
+      t: 30, // Adjusted top margin
+      r: 20,
+      b: 50, // Adjusted bottom margin
+      l: 50,
+    },
     paper_bgcolor: "rgb(0, 0, 0, 0.7)", // Transparent background
     plot_bgcolor: "rgba(38, 42, 51, 0.8)", // Dark background
     font: { color: "white" }, // White text
@@ -143,8 +155,8 @@ const BubbleChart = ({ dataRows }) => {
         }}
       >
         <TextField
-          style={{ marginRight: "20px", marginLeft: "20px" }}
-          label="Max days since last commit"
+          style={{ marginRight: "20px", marginLeft: "20px", width: "150px" }}
+          label="Days since last commit"
           variant="outlined"
           size="small"
           value={maxDaysLastCommit}
@@ -157,7 +169,7 @@ const BubbleChart = ({ dataRows }) => {
           }}
         />
         <TextField
-          style={{ marginRight: "20px" }}
+          style={{ marginRight: "20px", width: "100px" }}
           label="Min stars"
           variant="outlined"
           size="small"
@@ -171,6 +183,7 @@ const BubbleChart = ({ dataRows }) => {
           }}
         />
         <TextField
+          style={{ width: "120px" }}
           label="Min men. users"
           variant="outlined"
           size="small"
@@ -189,7 +202,7 @@ const BubbleChart = ({ dataRows }) => {
           id="actions-combo-box"
           size="small"
           options={clickActions}
-          sx={{ width: 300 }}
+          sx={{ width: 220 }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -202,8 +215,68 @@ const BubbleChart = ({ dataRows }) => {
             clickActions.find((element) => element.action === selectedAction) ??
             ""
           }
-          onChange={(e, v) => {
-            setSelectedAction(v?.action);
+          onChange={(e, v, reason) => {
+            if (reason === "clear") {
+              setSelectedAction(clickActions[0].action);
+            } else {
+              setSelectedAction(v?.action);
+            }
+          }}
+        />
+        <Autocomplete
+          disablePortal
+          style={{ marginLeft: "10px" }}
+          id="actions-x-box"
+          size="small"
+          options={axisMetrics}
+          sx={{ width: 220 }}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Select X axis metric"
+              variant="outlined"
+              size="small"
+            />
+          )}
+          value={
+            axisMetrics.find(
+              (element) => element.metric === selectedXAxis.metric
+            ) ?? ""
+          }
+          onChange={(e, v, reason) => {
+            if (reason === "clear") {
+              setSelectedXAxis(axisMetrics[0]);
+            } else {
+              setSelectedXAxis(v);
+            }
+          }}
+        />
+        <Autocomplete
+          disablePortal
+          style={{ marginLeft: "10px" }}
+          id="actions-y-box"
+          size="small"
+          options={axisMetrics}
+          sx={{ width: 220 }}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Select Y axis metric"
+              variant="outlined"
+              size="small"
+            />
+          )}
+          value={
+            axisMetrics.find(
+              (element) => element.metric === selectedYAxis.metric
+            ) ?? ""
+          }
+          onChange={(e, v, reason) => {
+            if (reason === "clear") {
+              setSelectedYAxis(axisMetrics[3]);
+            } else {
+              setSelectedYAxis(v);
+            }
           }}
         />
       </div>

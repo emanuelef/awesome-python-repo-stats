@@ -489,12 +489,6 @@ function App() {
               Dependencies
             </MenuItem>
             <MenuItem
-              component={<Link to="/waffle" className="link" />}
-              icon={<ViewModuleRoundedIcon />}
-            >
-              Waffle
-            </MenuItem>
-            <MenuItem
               component={
                 <Link
                   to="/starstimeline/tensorflow/tensorflow"
@@ -519,10 +513,6 @@ function App() {
             <Route path="/" element={<Table />} />
             <Route path="/table" element={<Table />} />
             <Route path="/deps" element={<DepsChart />} />
-            <Route
-              path="/waffle"
-              element={<WaffleChart dataRows={dataRows} />}
-            />
             <Route
               path="/starstimeline/:user/:repository"
               element={<StarsTimeline />}
