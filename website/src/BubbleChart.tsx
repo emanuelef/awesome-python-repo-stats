@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Plot from "react-plotly.js";
+import TextField from "@mui/material/TextField";
 
 const logBase = (n, base) => Math.log(n) / Math.log(base);
 
@@ -16,6 +17,20 @@ const mapCategoryToColor = (category) => {
 };
 
 const BubbleChart = ({ dataRows }) => {
+  const [minDaysLastCommit, setMinDaysLastCommit] = useState("30");
+  const [minStars, setMinStars] = useState("10");
+  const [minMentionableUsers, setMinMentionableUsers] = useState("10");
+  const [data, setData] = useState([]);
+
+  const handleInputChange = (event, setStateFunction) => {
+    const inputText = event.target.value;
+
+    // Use a regular expression to check if the input contains only digits
+    if (/^\d*$/.test(inputText)) {
+      setStateFunction(inputText);
+    }
+  };
+
   const handleBubbleClick = (event) => {
     // Extract information about the clicked point from the event
     console.log(event);
@@ -27,37 +42,41 @@ const BubbleChart = ({ dataRows }) => {
     window.open(url, "_blank");
   };
 
-  console.log(dataRows);
+  const loadData = () => {
+    let updatedData = [];
 
-  const categories = ["Sandbox", "Archived", "Incubating", "Graduated"];
-  const data = [];
+    dataRows.forEach((element) => {
+      if (
+        parseInt(element["days-last-commit"]) > parseInt(minDaysLastCommit) &&
+        parseInt(element["stars"]) > parseInt(minStars) &&
+        parseInt(element["mentionable-users"]) > parseInt(minMentionableUsers)
+      ) {
+        updatedData.push(element);
+      }
+    });
+    console.log(updatedData);
 
-  categories.forEach((category) => {
     const trace = {
-      x: dataRows
-        //.filter((row) => row["days-last-commit"] <= 10)
-        .map((row) => row["new-stars-last-7d"]),
-      y: dataRows
-        //.filter((row) => row["last"] <= 10)
-        .map((row) => row["mentionable-users"]),
-      text: dataRows
-        //.filter((row) => row["last"] <= 10)
-        .map((row) => row.repo),
+      x: updatedData.map((row) => row["new-stars-last-7d"]),
+      y: updatedData.map((row) => row["mentionable-users"]),
+      text: updatedData.map((row) => row.repo),
       mode: "markers",
       marker: {
-        size: dataRows
-          // .filter((row) => row["last"] <= 10)
-          .map((row) => Math.log(row["stars"])),
+        size: updatedData.map((row) => Math.log(row["stars"])),
         sizemode: "diameter",
         sizeref: 0.22,
         color: "orange",
       },
       type: "scatter",
-      name: category,
+      //name: "ciao",
     };
 
-    data.push(trace);
-  });
+    setData([trace]);
+  };
+
+  useEffect(() => {
+    loadData();
+  }, [minDaysLastCommit, minStars, minMentionableUsers]);
 
   const layout = {
     xaxis: {
@@ -75,7 +94,6 @@ const BubbleChart = ({ dataRows }) => {
     hovermode: "closest",
     hover_name: "repo",
     showlegend: true,
-    title: "Bubble Chart Work in Progress",
     paper_bgcolor: "rgb(0, 0, 0, 0.7)", // Transparent background
     plot_bgcolor: "rgba(38, 42, 51, 0.8)", // Dark background
     font: { color: "white" }, // White text
@@ -90,10 +108,52 @@ const BubbleChart = ({ dataRows }) => {
         height: "90%",
       }}
     >
+      <TextField
+        style={{ marginTop: "20px", marginRight: "20px", marginLeft: "20px" }}
+        label="Min days since last commit"
+        variant="outlined"
+        size="small"
+        value={minDaysLastCommit}
+        onChange={(e) => handleInputChange(e, setMinDaysLastCommit)}
+        InputProps={{
+          inputProps: {
+            pattern: "[0-9]*",
+            inputMode: "numeric",
+          },
+        }}
+      />
+      <TextField
+        style={{ marginTop: "20px", marginRight: "20px" }}
+        label="Min stars"
+        variant="outlined"
+        size="small"
+        value={minStars}
+        onChange={(e) => handleInputChange(e, setMinStars)}
+        InputProps={{
+          inputProps: {
+            pattern: "[0-9]*",
+            inputMode: "numeric",
+          },
+        }}
+      />
+      <TextField
+        style={{ marginTop: "20px" }}
+        label="Min men. users"
+        variant="outlined"
+        size="small"
+        value={minMentionableUsers}
+        onChange={(e) => handleInputChange(e, setMinMentionableUsers)}
+        InputProps={{
+          inputProps: {
+            pattern: "[0-9]*",
+            inputMode: "numeric",
+          },
+        }}
+      />
       <Plot
         data={data}
         layout={layout}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "90%" }}
         onClick={(event) => handleBubbleClick(event)}
       />
     </div>
