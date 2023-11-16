@@ -1,5 +1,7 @@
 # awesome-python-repo-stats
 
+https://github.com/emanuelef/awesome-python-repo-stats/assets/48717/4d634958-b9a0-4ff4-8376-288902de924b
+
 ## Introduction
 
 This project offers a comprehensive analysis of repositories curated in the list found at [awesome-python](https://github.com/vinta/awesome-python). You can access the live deployment at [awesome-python-repo-stats](https://emanuelef.github.io/awesome-python-repo-stats), with daily updates to keep you informed.  
