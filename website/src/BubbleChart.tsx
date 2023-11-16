@@ -21,6 +21,7 @@ const axisMetrics = [
   { label: "Mentionable Users", metric: "mentionable-users" },
   { label: "Total Stars", metric: "stars" },
   { label: "New Stars 30d‰", metric: "stars-per-mille-30d" },
+  { label: "Age", metric: "days-since-creation" },
 ];
 
 const formatStars = (stars) => {
@@ -29,6 +30,16 @@ const formatStars = (stars) => {
   } else {
     return stars.toString();
   }
+};
+
+const calculateAge = (days) => {
+  const years = Math.floor(days / 365);
+  const months = Math.floor((days % 365) / 30);
+  const remainingDays = days % 30;
+
+  return `${years !== 0 ? `${years}y ` : ""}${
+    months !== 0 ? `${months}m ` : ""
+  }${remainingDays}d`;
 };
 
 const BubbleChart = ({ dataRows }) => {
@@ -98,14 +109,18 @@ const BubbleChart = ({ dataRows }) => {
         (row) =>
           `${row.repo}<br>Total Stars: ${formatStars(
             row.stars
-          )}<br>Last commit: ${row["days-last-commit"]} days ago`
+          )}<br>Last commit: ${
+            row["days-last-commit"]
+          } days ago<br>Age: ${calculateAge(row["days-since-creation"])}`
       ),
       mode: "markers",
       marker: {
         size: updatedData.map((row) => Math.sqrt(row["stars"]) * 7),
         sizemode: "diameter",
         sizeref: 20.03,
-        color: "orange",
+        color: updatedData.map((row) =>
+          row["archived"] == "true" ? "red" : "orange"
+        ),
       },
       type: "scatter",
       //name: "ciao",
