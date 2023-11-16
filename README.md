@@ -4,7 +4,8 @@
 
 This project offers a comprehensive analysis of repositories curated in the list found at [awesome-python](https://github.com/vinta/awesome-python). You can access the live deployment at [awesome-python-repo-stats](https://emanuelef.github.io/awesome-python-repo-stats), with daily updates to keep you informed.  
 
-You can get the full stars history of that list [here](https://emanuelef.github.io/gh-repo-stats-server/#/vinta/awesome-python).
+You can get the full stars history of that list [here](https://emanuelef.github.io/gh-repo-stats-server/#/vinta/awesome-python).  
+Please note that only the repos in the list on GitHub are analysed.
 
 
 ## Main page
