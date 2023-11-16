@@ -2,9 +2,13 @@ import React, { useState, useEffect } from "react";
 import Plot from "react-plotly.js";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
+import Papa from "papaparse";
 
 const fullStarsHistoryURL =
   "https://emanuelef.github.io/gh-repo-stats-server/#";
+
+const csvURL =
+  "https://raw.githubusercontent.com/emanuelef/awesome-python-repo-stats/main/analysis-latest.csv";
 
 const logBase = (n, base) => Math.log(n) / Math.log(base);
 
@@ -22,6 +26,11 @@ const axisMetrics = [
   { label: "Total Stars", metric: "stars" },
   { label: "New Stars 30d‰", metric: "stars-per-mille-30d" },
   { label: "Age", metric: "days-since-creation" },
+];
+
+const sizeMetrics = [
+  { label: "Total Stars", metric: "stars" },
+  { label: "Same", metric: "same" },
 ];
 
 const formatStars = (stars) => {
@@ -51,6 +60,8 @@ const BubbleChart = ({ dataRows }) => {
 
   const [selectedXAxis, setSelectedXAxis] = useState(axisMetrics[0]);
   const [selectedYAxis, setSelectedYAxis] = useState(axisMetrics[3]);
+
+  const [selectedSize, setSelectedSize] = useState(sizeMetrics[0]);
 
   const handleInputChange = (event, setStateFunction) => {
     const inputText = event.target.value;
@@ -88,7 +99,7 @@ const BubbleChart = ({ dataRows }) => {
     }
   };
 
-  const loadData = () => {
+  const buildChartData = (dataRows) => {
     let updatedData = [];
 
     dataRows.forEach((element) => {
@@ -115,7 +126,10 @@ const BubbleChart = ({ dataRows }) => {
       ),
       mode: "markers",
       marker: {
-        size: updatedData.map((row) => Math.sqrt(row["stars"]) * 7),
+        size:
+          selectedSize.metric == "stars"
+            ? updatedData.map((row) => Math.sqrt(row["stars"]) * 7)
+            : updatedData.map((row) => 600),
         sizemode: "diameter",
         sizeref: 20.03,
         color: updatedData.map((row) =>
@@ -129,6 +143,24 @@ const BubbleChart = ({ dataRows }) => {
     setData([trace]);
   };
 
+  const loadData = async () => {
+    if (dataRows.length == 0) {
+      fetch(csvURL)
+        .then((response) => response.text())
+        .then((text) =>
+          Papa.parse(text, { header: true, skipEmptyLines: true })
+        )
+        .then(function (result) {
+          buildChartData(result.data);
+        })
+        .catch((e) => {
+          console.error(`An error occurred: ${e}`);
+        });
+    } else {
+      buildChartData(dataRows);
+    }
+  };
+
   useEffect(() => {
     loadData();
   }, [
@@ -138,6 +170,7 @@ const BubbleChart = ({ dataRows }) => {
     selectedAction,
     selectedXAxis,
     selectedYAxis,
+    selectedSize,
   ]);
 
   const layout = {
@@ -185,7 +218,7 @@ const BubbleChart = ({ dataRows }) => {
         }}
       >
         <TextField
-          style={{ marginRight: "20px", marginLeft: "20px", width: "150px" }}
+          style={{ marginRight: "10px", marginLeft: "10px", width: "150px" }}
           label="Days since last commit"
           variant="outlined"
           size="small"
@@ -199,7 +232,7 @@ const BubbleChart = ({ dataRows }) => {
           }}
         />
         <TextField
-          style={{ marginRight: "20px", width: "100px" }}
+          style={{ marginRight: "10px", width: "100px" }}
           label="Min stars"
           variant="outlined"
           size="small"
@@ -306,6 +339,34 @@ const BubbleChart = ({ dataRows }) => {
               setSelectedYAxis(axisMetrics[3]);
             } else {
               setSelectedYAxis(v);
+            }
+          }}
+        />
+        <Autocomplete
+          disablePortal
+          style={{ marginLeft: "10px" }}
+          id="actions-y-box"
+          size="small"
+          options={sizeMetrics}
+          sx={{ width: 200 }}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Select size metric"
+              variant="outlined"
+              size="small"
+            />
+          )}
+          value={
+            sizeMetrics.find(
+              (element) => element.metric === selectedSize.metric
+            ) ?? ""
+          }
+          onChange={(e, v, reason) => {
+            if (reason === "clear") {
+              setSelectedSize(axisMetrics[0]);
+            } else {
+              setSelectedSize(v);
             }
           }}
         />
