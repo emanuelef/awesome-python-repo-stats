@@ -22,7 +22,7 @@ Moreover, I believe the metrics under consideration are overly centered on stars
 | Stars last 7d | Number of new stars in the last 7 days |
 | New Stars 30d ‰ | New stars in the last 30 days / Total Stars |
 | Ment. users | Mentionable users |
-| Direct deps | Number of direct dependencies found in go.mod |
+| Direct deps | Number of direct dependencies found (might not work for all repos) |
 | Created days ago | Number of days since repo creation |
 | Archived | Archived status od the project, if true the project has been archived |
 | Stars Timeline 30d | Link to a page with the daily new stars in the last 30 days |
