@@ -23,6 +23,14 @@ const axisMetrics = [
   { label: "New Stars 30d‰", metric: "stars-per-mille-30d" },
 ];
 
+const formatStars = (stars) => {
+  if (stars >= 1000) {
+    return `${(stars / 1000).toFixed(1)}k`;
+  } else {
+    return stars.toString();
+  }
+};
+
 const BubbleChart = ({ dataRows }) => {
   const [maxDaysLastCommit, setMaxDaysLastCommit] = useState("30");
   const [minStars, setMinStars] = useState("10");
@@ -44,7 +52,7 @@ const BubbleChart = ({ dataRows }) => {
 
   const handleBubbleClick = (event) => {
     const pointIndex = event.points[0].pointIndex;
-    const clickedRepo = event.points[0].data.text[pointIndex];
+    const clickedRepo = event.points[0].data.repo[pointIndex];
 
     let url = `https://github.com/${clickedRepo}`;
 
@@ -85,7 +93,13 @@ const BubbleChart = ({ dataRows }) => {
     const trace = {
       x: updatedData.map((row) => row[selectedXAxis.metric]),
       y: updatedData.map((row) => row[selectedYAxis.metric]),
-      text: updatedData.map((row) => row.repo),
+      repo: updatedData.map((row) => `${row.repo}`),
+      text: updatedData.map(
+        (row) =>
+          `${row.repo}<br>Total Stars: ${formatStars(
+            row.stars
+          )}<br>Last commit: ${row["days-last-commit"]} days ago`
+      ),
       mode: "markers",
       marker: {
         size: updatedData.map((row) => Math.sqrt(row["stars"]) * 7),
