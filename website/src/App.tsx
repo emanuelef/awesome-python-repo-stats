@@ -298,8 +298,10 @@ function App() {
               />
             )}
             value={mainCategory}
-            onChange={(e, v) => {
-              if (v) {
+            onChange={(e, v, reason) => {
+              if (reason === "clear") {
+                setMainCategory("All");
+              } else {
                 setMainCategory(v);
               }
             }}
@@ -331,8 +333,10 @@ function App() {
               />
             )}
             value={subCategory}
-            onChange={(e, v) => {
-              if (v) {
+            onChange={(e, v, reason) => {
+              if (reason === "clear") {
+                setSubCategory("All");
+              } else {
                 setSubCategory(v);
               }
             }}
