@@ -405,22 +405,28 @@ function App() {
               />
             )}
             value={selectedRepo}
-            onChange={(e, v) => {
-              console.log(v?.label);
-              setSelectedRepo(v?.label);
-              navigate(`/starstimeline/${v?.label}`, {
-                replace: false,
-              });
+            onChange={(e, v, reason) => {
+              if (reason === "clear") {
+                setSelectedRepo("tensorflow/tensorflow");
+                navigate(`/starstimeline/tensorflow/tensorflow`, {
+                  replace: false,
+                });
+              } else {
+                setSelectedRepo(v?.label);
+                navigate(`/starstimeline/${v?.label}`, {
+                  replace: false,
+                });
+              }
             }}
             onBlur={() => {
-              navigate(`/starstimeline/denoland/deno}`, {
+              navigate(`/starstimeline/tensorflow/tensorflow`, {
                 replace: false,
               });
             }}
             clearOnBlur={false}
             clearOnEscape
             onClear={() => {
-              navigate(`/starstimeline/denoland/deno}`, {
+              navigate(`/starstimeline/tensorflow/tensorflow`, {
                 replace: false,
               });
             }}
