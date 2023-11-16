@@ -350,7 +350,7 @@ function App() {
             }}
           />
         </div>
-        <div style={{ marginLeft: "10px", height: "86%" }}>
+        <div style={{ marginLeft: "10px", marginRight: "90px", height: "86%" }}>
           <DataGrid
             getRowId={(row) => row.repo}
             rows={filteredDataRows}
