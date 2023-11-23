@@ -79,6 +79,65 @@ const lastUpdateURL =
 const fullStarsHistoryURL =
   "https://emanuelef.github.io/gh-repo-stats-server/#/";
 
+const getColorFromValue = (value) => {
+  // Normalize the value to a scale from 0 to 1
+  const normalizedValue = value / 100;
+
+  // Define the colors for the gradient
+  const colors = [
+    { percent: 0, color: "#D9534F" }, // Adjusted Red
+    { percent: 0.5, color: "#FFA500" }, // Orange
+    { percent: 1, color: "#5CB85C" }, // Adjusted Green
+  ];
+
+  // Find the two colors to interpolate between
+  let startColor, endColor;
+  for (let i = 0; i < colors.length - 1; i++) {
+    if (
+      normalizedValue >= colors[i].percent &&
+      normalizedValue <= colors[i + 1].percent
+    ) {
+      startColor = colors[i];
+      endColor = colors[i + 1];
+      break;
+    }
+  }
+
+  // Interpolate between the two colors
+  const ratio =
+    (normalizedValue - startColor.percent) /
+    (endColor.percent - startColor.percent);
+  const rgbColor = interpolateColor(startColor.color, endColor.color, ratio);
+
+  return rgbColor;
+};
+
+const interpolateColor = (startColor, endColor, ratio) => {
+  const startRGB = hexToRgb(startColor);
+  const endRGB = hexToRgb(endColor);
+
+  const interpolatedRGB = startRGB.map((channel, index) =>
+    Math.round(channel + ratio * (endRGB[index] - channel))
+  );
+
+  return `rgb(${interpolatedRGB.join(", ")})`;
+};
+
+const hexToRgb = (hex) => {
+  const hexDigits = hex.slice(1).match(/.{1,2}/g);
+  return hexDigits.map((value) => parseInt(value, 16));
+};
+
+const calculateAge = (days) => {
+  const years = Math.floor(days / 365);
+  const months = Math.floor((days % 365) / 30);
+  const remainingDays = days % 30;
+
+  return `${years !== 0 ? `${years}y ` : ""}${
+    months !== 0 ? `${months}m ` : ""
+  }${remainingDays}d`;
+};
+
 const columns: GridColDef[] = [
   {
     field: "repo",
@@ -127,6 +186,18 @@ const columns: GridColDef[] = [
     valueGetter: (val) => parseFloat(val.row["stars-per-mille-30d"]),
   },
   {
+    field: "new-commits-last-30d",
+    headerName: "Commits 30d",
+    width: 100,
+    valueGetter: (params) => parseInt(params.value),
+  },
+  {
+    field: "unique-contributors",
+    headerName: "Commits Authors 30d",
+    width: 100,
+    valueGetter: (params) => parseInt(params.value),
+  },
+  {
     field: "mentionable-users",
     headerName: "Ment. users",
     width: 110,
@@ -140,9 +211,10 @@ const columns: GridColDef[] = [
   },
   {
     field: "days-since-creation",
-    headerName: "Created days ago",
+    headerName: "Age",
     width: 130,
     valueGetter: (params) => parseInt(params.value),
+    renderCell: (params) => calculateAge(params.value),
   },
   {
     field: "archived",
@@ -160,6 +232,33 @@ const columns: GridColDef[] = [
     renderCell: (params) => (
       <Linkweb href={`./#/starstimeline/${params.row.repo}`}>link</Linkweb>
     ),
+  },
+  {
+    field: "liveness",
+    headerName: "Liveness",
+    width: 120,
+    valueGetter: (params) => parseFloat(params.value),
+    renderCell: (params) => {
+      const value = params.value;
+      const color = getColorFromValue(value);
+
+      return (
+        <div
+          style={{
+            backgroundColor: color,
+            width: "100%",
+            height: "80%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxSizing: "border-box",
+            border: "1px solid grey",
+          }}
+        >
+          {`${value}%`}
+        </div>
+      );
+    },
   },
 ];
 
