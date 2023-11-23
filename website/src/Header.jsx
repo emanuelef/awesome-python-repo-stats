@@ -2,6 +2,8 @@ import React from "react";
 import Linkweb from "@mui/material/Link";
 import GitHubButton from "react-github-btn";
 
+const awesomePythonUrl = "https://github.com/vinta/awesome-python";
+
 const csvURL =
   "https://raw.githubusercontent.com/emanuelef/awesome-python-repo-stats/main/analysis-latest.csv";
 
@@ -23,10 +25,13 @@ function Header({ lastUpdate }) {
 
   return (
     <div className="header" style={headerStyle}>
-      <p>Awesome Python Last Update: {lastUpdate}</p>
+      <Linkweb href={awesomePythonUrl} target="_blank">
+        Awesome Python
+      </Linkweb>
       <Linkweb href={csvURL} download>
         Link to CSV
       </Linkweb>
+      <p>Last Update: {lastUpdate}</p>
       <div style={githubButtonStyle}>
         <GitHubButton
           href="https://github.com/emanuelef/awesome-python-repo-stats"
