@@ -21,6 +21,8 @@ Moreover, I believe the metrics under consideration are overly centered on stars
 | Stars last 30d | Number of new stars in the last 30 days |
 | Stars last 7d | Number of new stars in the last 7 days |
 | New Stars 30d ‰ | New stars in the last 30 days / Total Stars |
+| Commits 30d | Number of new commits in the last 30 days |
+| Commits Authors 30d | Number of unique authors in the last 30 days commits |
 | Ment. users | Mentionable users |
 | Direct deps | Number of direct dependencies found (might not work for all repos) |
 | Created days ago | Number of days since repo creation |
