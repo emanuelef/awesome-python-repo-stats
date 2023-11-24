@@ -18,6 +18,11 @@ const clickActions = [
   { label: "Full Star history", action: "full" },
 ];
 
+const bubbleColour = [
+  { label: "Same", metric: "same" },
+  { label: "Liveness", metric: "liveness" },
+];
+
 const axisMetrics = [
   { label: "Stars Last 7 Days", metric: "new-stars-last-7d" },
   { label: "Stars Last 14 Days", metric: "new-stars-last-14d" },
@@ -26,6 +31,8 @@ const axisMetrics = [
   { label: "Total Stars", metric: "stars" },
   { label: "New Stars 30d‰", metric: "stars-per-mille-30d" },
   { label: "Age", metric: "days-since-creation" },
+  { label: "Unique contributors 30d", metric: "unique-contributors" },
+  { label: "Commits Last 30 Days", metric: "new-commits-last-30d" },
 ];
 
 const sizeMetrics = [
@@ -51,6 +58,62 @@ const calculateAge = (days) => {
   }${remainingDays}d`;
 };
 
+const getColorFromValue = (value) => {
+  // Normalize the value to a scale from 0 to 1
+  const normalizedValue = value / 100;
+
+  // Define the colors for the gradient
+  const colors = [
+    { percent: 0, color: "#D9534F" }, // Adjusted Red
+    { percent: 0.5, color: "#FFA500" }, // Orange
+    { percent: 1, color: "#5CB85C" }, // Adjusted Green
+  ];
+
+  // Find the two colors to interpolate between
+  let startColor, endColor;
+  for (let i = 0; i < colors.length - 1; i++) {
+    if (
+      normalizedValue >= colors[i].percent &&
+      normalizedValue <= colors[i + 1].percent
+    ) {
+      startColor = colors[i];
+      endColor = colors[i + 1];
+      break;
+    }
+  }
+
+  // Interpolate between the two colors
+  const ratio =
+    (normalizedValue - startColor.percent) /
+    (endColor.percent - startColor.percent);
+  const rgbColor = interpolateColor(startColor.color, endColor.color, ratio);
+
+  console.log(value);
+  console.log(rgbColor);
+
+  return rgbColor;
+};
+
+const interpolateColor = (startColor, endColor, ratio) => {
+  const startRGB = hexToRgb(startColor);
+  const endRGB = hexToRgb(endColor);
+
+  const interpolatedRGB = startRGB.map((channel, index) =>
+    Math.round(channel + ratio * (endRGB[index] - channel))
+  );
+
+  return `rgb(${interpolatedRGB.join(", ")})`;
+};
+
+const hexToRgb = (hex) => {
+  const hexDigits = hex.slice(1).match(/.{1,2}/g);
+  return hexDigits.map((value) => parseInt(value, 16));
+};
+
+const mapLivenessToColor = (liveness) => {
+  return getColorFromValue(liveness) || "rgb(0, 0, 0)"; // Default to black if not found
+};
+
 const BubbleChart = ({ dataRows }) => {
   const [maxDaysLastCommit, setMaxDaysLastCommit] = useState("30");
   const [minStars, setMinStars] = useState("10");
@@ -62,6 +125,10 @@ const BubbleChart = ({ dataRows }) => {
   const [selectedYAxis, setSelectedYAxis] = useState(axisMetrics[3]);
 
   const [selectedSize, setSelectedSize] = useState(sizeMetrics[0]);
+
+  const [selectedBubbleColour, setSelectedBubbleColour] = useState(
+    bubbleColour[1]
+  );
 
   const handleInputChange = (event, setStateFunction) => {
     const inputText = event.target.value;
@@ -132,9 +199,12 @@ const BubbleChart = ({ dataRows }) => {
             : updatedData.map((row) => 600),
         sizemode: "diameter",
         sizeref: 20.03,
-        color: updatedData.map((row) =>
-          row["archived"] == "true" ? "red" : "orange"
-        ),
+        color:
+          selectedBubbleColour.metric === "same"
+            ? updatedData.map((row) =>
+                row["archived"] == "true" ? "red" : "#00ADD8"
+              )
+            : updatedData.map((row) => mapLivenessToColor(row["liveness"])),
       },
       type: "scatter",
       //name: "ciao",
@@ -218,8 +288,8 @@ const BubbleChart = ({ dataRows }) => {
         }}
       >
         <TextField
-          style={{ marginRight: "10px", marginLeft: "10px", width: "150px" }}
-          label="Days since last commit"
+          style={{ marginRight: "10px", marginLeft: "10px", width: "160px" }}
+          label="Max Days since last commit"
           variant="outlined"
           size="small"
           value={maxDaysLastCommit}
@@ -265,7 +335,7 @@ const BubbleChart = ({ dataRows }) => {
           id="actions-combo-box"
           size="small"
           options={clickActions}
-          sx={{ width: 220 }}
+          sx={{ width: 200 }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -292,7 +362,7 @@ const BubbleChart = ({ dataRows }) => {
           id="actions-x-box"
           size="small"
           options={axisMetrics}
-          sx={{ width: 220 }}
+          sx={{ width: 210 }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -320,7 +390,7 @@ const BubbleChart = ({ dataRows }) => {
           id="actions-y-box"
           size="small"
           options={axisMetrics}
-          sx={{ width: 220 }}
+          sx={{ width: 210 }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -348,7 +418,7 @@ const BubbleChart = ({ dataRows }) => {
           id="actions-y-box"
           size="small"
           options={sizeMetrics}
-          sx={{ width: 200 }}
+          sx={{ width: 150 }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -364,9 +434,37 @@ const BubbleChart = ({ dataRows }) => {
           }
           onChange={(e, v, reason) => {
             if (reason === "clear") {
-              setSelectedSize(axisMetrics[0]);
+              setSelectedSize(sizeMetrics[0]);
             } else {
               setSelectedSize(v);
+            }
+          }}
+        />
+        <Autocomplete
+          disablePortal
+          style={{ marginLeft: "10px" }}
+          id="colour-box"
+          size="small"
+          options={bubbleColour}
+          sx={{ width: 140 }}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Select Bubble Colour"
+              variant="outlined"
+              size="small"
+            />
+          )}
+          value={
+            bubbleColour.find(
+              (element) => element.metric === selectedBubbleColour.metric
+            ) ?? ""
+          }
+          onChange={(e, v, reason) => {
+            if (reason === "clear") {
+              setSelectedBubbleColour(bubbleColour[1]);
+            } else {
+              setSelectedBubbleColour(v);
             }
           }}
         />
