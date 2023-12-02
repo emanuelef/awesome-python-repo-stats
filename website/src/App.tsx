@@ -404,14 +404,6 @@ function App() {
                 setMainCategory(v);
               }
             }}
-            onBlur={() => {
-              setMainCategory("All");
-            }}
-            clearOnBlur={false}
-            clearOnEscape
-            onClear={() => {
-              setMainCategory("All");
-            }}
           />
           <Autocomplete
             disablePortal
@@ -438,14 +430,6 @@ function App() {
               } else {
                 setSubCategory(v);
               }
-            }}
-            onBlur={() => {
-              setSubCategory("All");
-            }}
-            clearOnBlur={false}
-            clearOnEscape
-            onClear={() => {
-              setSubCategory("All");
             }}
           />
         </div>
@@ -516,18 +500,6 @@ function App() {
                   replace: false,
                 });
               }
-            }}
-            onBlur={() => {
-              navigate(`/starstimeline/tensorflow/tensorflow`, {
-                replace: false,
-              });
-            }}
-            clearOnBlur={false}
-            clearOnEscape
-            onClear={() => {
-              navigate(`/starstimeline/tensorflow/tensorflow`, {
-                replace: false,
-              });
             }}
           />
           <GitHubButton
