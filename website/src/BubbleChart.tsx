@@ -279,6 +279,7 @@ const BubbleChart = ({ dataRows }) => {
     selectedXAxis,
     selectedYAxis,
     selectedSize,
+    selectedBubbleColour,
   ]);
 
   const layout = {
