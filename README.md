@@ -6,7 +6,7 @@ https://github.com/emanuelef/awesome-python-repo-stats/assets/48717/4d634958-b9a
 
 This project offers a comprehensive analysis of repositories curated in the list found at [awesome-python](https://github.com/vinta/awesome-python). You can access the live deployment at [awesome-python-repo-stats](https://emanuelef.github.io/awesome-python-repo-stats), with daily updates to keep you informed.  
 
-You can get the full stars history of that list [here](https://emanuelef.github.io/gh-repo-stats-server/#/vinta/awesome-python).  
+You can get the full stars history of that list [here](https://emanuelef.github.io/daily-stars-explorer/#/vinta/awesome-python).  
 Please note that only the repos in the list on GitHub are analysed.  
 Moreover, I believe the metrics under consideration are overly centered on stars. Although stars are a widely accepted measure of a repository's popularity, they do not singularly define the overall quality or merit of a project. 
 

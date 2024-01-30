@@ -77,7 +77,7 @@ const lastUpdateURL =
   "https://raw.githubusercontent.com/emanuelef/awesome-python-repo-stats/main/last-update.txt";
 
 const fullStarsHistoryURL =
-  "https://emanuelef.github.io/gh-repo-stats-server/#/";
+  "https://emanuelef.github.io/daily-stars-explorer/#/";
 
 const getColorFromValue = (value) => {
   // Normalize the value to a scale from 0 to 1
