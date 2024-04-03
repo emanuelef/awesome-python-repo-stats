@@ -12,16 +12,13 @@ import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Routes, Route, Link } from "react-router-dom";
 
 import TimeSeriesChart from "./TimeSeriesChart";
-import WaffleChart from "./WaffleChart";
 import DepsChart from "./DepsChart";
 import BubbleChart from "./BubbleChart";
 
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import ViewListRoundedIcon from "@mui/icons-material/ViewListRounded";
-import BarChartRoundedIcon from "@mui/icons-material/BarChartRounded";
 import TimelineRoundedIcon from "@mui/icons-material/TimelineRounded";
 import LibraryBooksRoundedIcon from "@mui/icons-material/LibraryBooksRounded";
-import ViewModuleRoundedIcon from "@mui/icons-material/ViewModuleRounded";
 import BubbleChartRoundedIcon from "@mui/icons-material/BubbleChartRounded";
 
 import GitHubButton from "react-github-btn";
@@ -153,67 +150,67 @@ const columns: GridColDef[] = [
     field: "stars",
     headerName: "Stars",
     width: 90,
-    valueGetter: (val) => parseInt(val.row["stars"]),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "days-last-commit",
     headerName: "Days last commit",
     width: 130,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "days-last-star",
     headerName: "Days last star",
     width: 110,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "new-stars-last-30d",
     headerName: "Stars last 30d",
     width: 110,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "new-stars-last-7d",
     headerName: "Stars last 7d",
     width: 110,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "stars-per-mille-30d",
     headerName: "New Stars 30d ‰",
     width: 130,
-    valueGetter: (val) => parseFloat(val.row["stars-per-mille-30d"]),
+    valueGetter: (val) => parseFloat(val),
   },
   {
     field: "new-commits-last-30d",
     headerName: "Commits 30d",
     width: 100,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "unique-contributors",
     headerName: "Commits Authors 30d",
     width: 100,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "mentionable-users",
     headerName: "Ment. users",
     width: 110,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "dependencies",
     headerName: "Direct deps",
     width: 100,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
   },
   {
     field: "days-since-creation",
     headerName: "Age",
     width: 130,
-    valueGetter: (params) => parseInt(params.value),
+    valueGetter: (val) => parseInt(val),
     renderCell: (params) => calculateAge(params.value),
   },
   {
@@ -237,7 +234,7 @@ const columns: GridColDef[] = [
     field: "liveness",
     headerName: "Liveness",
     width: 120,
-    valueGetter: (params) => parseFloat(params.value),
+    valueGetter: (val) => parseFloat(val),
     renderCell: (params) => {
       const value = params.value;
       const color = getColorFromValue(value);
