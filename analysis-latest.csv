@@ -1,445 +1,447 @@
 repo,stars,new-stars-last-30d,new-stars-last-14d,new-stars-last-7d,new-stars-last-24H,stars-per-mille-30d,days-last-star,days-last-commit,days-since-creation,mentionable-users,language,archived,dependencies,main-category,sub-category,liveness,unique-contributors,new-commits-last-30d
-ajenti/ajenti,7830,23,12,8,1,2.937,0,30,5731,22,Python,false,0,Admin Panels,,41.000,0,0
-sehmaschine/django-grappelli,3910,19,8,3,0,4.859,3,196,5708,74,HTML,false,0,Admin Panels,,21.000,0,0
-flask-admin/flask-admin,6036,35,11,3,0,5.799,2,0,4984,339,Python,false,0,Admin Panels,,85.000,6,36
-mher/flower,7006,60,24,10,0,8.564,2,62,4873,198,Python,false,0,Admin Panels,,30.000,0,0
-jet-admin/jet-bridge,1778,9,5,2,0,5.062,4,12,2511,4,Python,false,1,Admin Panels,,34.000,1,4
-wooey/wooey,2201,7,1,1,0,3.180,6,697,3907,23,Python,false,0,Admin Panels,,12.000,0,0
-streamlit/streamlit,42160,462,237,121,21,10.958,0,2,2270,302,Python,false,0,Admin Panels,,100.000,12,137
-keon/algorithms,24826,69,29,11,3,2.779,0,7,3279,193,Python,false,0,Algorithms and Design Patterns,Algorithms,60.000,1,1
-prabhupant/python-ds,3022,20,9,4,0,6.618,1,583,2296,94,Python,false,0,Algorithms and Design Patterns,Algorithms,21.000,0,0
-grantjenks/python-sortedcontainers,3851,25,15,12,1,6.492,0,618,4277,22,Python,false,1,Algorithms and Design Patterns,Algorithms,35.000,0,0
-TheAlgorithms/Python,212872,2588,912,548,45,12.158,0,4,3404,1324,Python,false,0,Algorithms and Design Patterns,Algorithms,100.000,12,14
-tylerlaberge/PyPattyrn,2329,5,1,0,0,2.147,13,533,3402,3,Python,true,1,Algorithms and Design Patterns,Design Patterns,0.000,0,0
-faif/python-patterns,42387,166,76,39,7,3.916,0,3,4904,121,Python,false,0,Algorithms and Design Patterns,Design Patterns,94.000,7,8
-pytransitions/transitions,6297,51,18,9,0,8.099,1,62,4046,65,Python,false,0,Algorithms and Design Patterns,Design Patterns,25.000,0,0
-django/daphne,2598,15,9,3,0,5.774,1,54,3610,76,Python,false,0,ASGI Servers,,27.000,0,0
-encode/uvicorn,10045,130,46,23,8,12.942,0,6,3085,198,Python,false,0,ASGI Servers,,84.000,2,9
-pgjones/hypercorn,1442,15,8,3,0,10.402,1,2,2718,65,Python,false,0,ASGI Servers,,67.000,10,17
-python-trio/trio,6975,90,59,48,30,12.903,0,6,3220,159,Python,false,0,Asynchronous Programming,,100.000,4,11
-twisted/twisted,5897,22,8,5,0,3.731,1,12,5245,200,Python,false,0,Asynchronous Programming,,55.000,4,29
-MagicStack/uvloop,11409,102,42,28,3,8.940,0,24,3655,75,Cython,false,0,Asynchronous Programming,,62.000,2,7
-eventlet/eventlet,1269,3,1,1,0,2.364,6,0,4717,161,Python,false,0,Asynchronous Programming,,62.000,1,1
-gevent/gevent,6419,9,3,1,0,1.402,3,14,4805,100,Python,false,6,Asynchronous Programming,,24.000,3,8
-beetbox/audioread,519,2,2,2,0,3.854,1,14,5115,42,Python,false,0,Audio,Audio,24.000,2,5
-libAudioFlux/audioFlux,3202,34,14,7,0,10.618,1,535,1029,5,C,false,0,Audio,Audio,25.000,0,0
-worldveil/dejavu,6670,16,5,4,1,2.399,0,1986,4374,22,Python,false,7,Audio,Audio,26.000,0,0
-keunwoochoi/kapre,931,2,1,1,0,2.148,5,14,3253,14,Python,false,0,Audio,Audio,24.000,1,4
-librosa/librosa,7989,66,29,13,2,8.261,0,175,4769,119,Python,false,0,Audio,Audio,40.000,0,0
-sergree/matchering,2294,36,14,7,0,15.693,1,20,2599,3,Python,false,5,Audio,Audio,35.000,1,1
-tyiannak/pyAudioAnalysis,6166,26,12,9,1,4.217,0,98,4093,22,Python,false,11,Audio,Audio,35.000,0,0
-jiaaro/pydub,9635,59,26,14,3,6.124,0,1068,5306,80,Python,false,0,Audio,Audio,40.000,0,0
-Parisson/TimeSide,389,1,0,0,0,2.571,15,392,5102,20,Python,false,215,Audio,Audio,2.000,0,0
-beetbox/beets,14211,213,147,118,100,14.988,0,2,5571,519,Python,false,40,Audio,Metadata,100.000,14,138
-nicfit/eyeD3,611,2,2,1,0,3.273,3,18,3214,29,Python,false,0,Audio,Metadata,24.000,1,2
-quodlibet/mutagen,1798,21,13,6,1,11.680,0,30,3504,45,Python,false,0,Audio,Metadata,41.000,0,0
-devsnd/tinytag,782,4,1,1,1,5.115,0,88,4305,23,Python,false,0,Audio,Metadata,22.000,0,0
-lepture/authlib,5091,54,21,7,2,10.607,0,6,2936,126,Python,false,0,Authentication,OAuth,72.000,2,2
-pennersr/django-allauth,10200,54,25,14,2,5.294,0,10,5509,684,Python,false,0,Authentication,OAuth,70.000,6,36
-jazzband/django-oauth-toolkit,3290,15,8,2,0,4.559,1,1,4557,259,Python,false,0,Authentication,OAuth,63.000,2,9
-oauthlib/oauthlib,2934,8,4,3,1,2.727,0,5,5104,181,Python,false,3,Authentication,OAuth,54.000,2,2
-jpadilla/pyjwt,5516,28,14,9,1,5.076,0,12,5372,160,Python,false,0,Authentication,JWT,57.000,2,8
-openembedded/bitbake,479,2,1,1,0,4.175,3,3,5304,268,Python,false,0,Build Tools,,52.000,14,55
-buildout/buildout,598,4,3,1,0,6.689,4,13,4977,84,Python,false,2,Build Tools,,34.000,1,2
-platformio/platformio-core,8667,71,30,17,3,8.192,0,50,4203,90,Python,false,0,Build Tools,,46.000,0,0
-pybuilder/pybuilder,1897,19,4,1,0,10.016,2,79,4858,34,Python,false,0,Build Tools,,16.000,0,0
-SCons/scons,2312,21,13,5,1,9.083,0,7,2968,120,Python,false,0,Build Tools,,61.000,2,14
-python-attrs/attrs,5653,25,8,3,1,4.422,0,2,3940,186,Python,false,0,Built-in Classes Enhancement,,77.000,2,10
-jab/bidict,1557,7,4,1,0,4.496,4,0,4066,16,Python,false,0,Built-in Classes Enhancement,,64.000,3,7
-cdgriffith/Box,2780,8,6,3,0,2.878,4,298,3166,17,Python,false,3,Built-in Classes Enhancement,,17.000,0,0
-carlosescri/DottedDict,215,0,0,0,0,0.000,69,336,4266,5,Python,false,0,Built-in Classes Enhancement,,0.000,0,0
-feincms/feincms,1038,14,3,1,1,13.487,0,55,6130,100,Python,false,0,CMS,,32.000,0,0
-indico/indico,1976,18,7,5,1,9.109,0,0,5220,117,Python,false,137,CMS,,91.000,12,35
-wagtail/wagtail,19815,143,74,50,7,7.217,0,0,4298,835,Python,false,0,CMS,,100.000,26,123
-bbangert/beaker,538,1,0,0,0,1.859,18,240,5139,75,Python,false,0,Caching,,2.000,0,0
-django-cache-machine/django-cache-machine,880,1,1,0,0,1.136,7,994,5752,18,Python,false,0,Caching,,5.000,0,0
-Suor/django-cacheops,2244,11,4,3,0,4.902,4,26,5273,65,Python,false,1,Caching,,28.000,1,3
-sqlalchemy/dogpile.cache,282,8,1,1,0,28.369,2,4,2542,56,Python,false,0,Caching,,44.000,1,5
-lericson/pylibmc,484,1,0,0,0,2.066,27,212,5945,44,C,false,0,Caching,,2.000,0,0
-grantjenks/python-diskcache,2687,62,33,23,0,23.074,1,617,3567,25,Python,false,0,Caching,,40.000,0,0
-scottrogowski/code2flow,4460,36,23,10,0,8.072,2,1036,4553,10,Python,false,0,Code Analysis,Code Analysis,30.000,0,0
-PyCQA/prospector,2044,5,1,0,0,2.446,11,55,4480,85,Python,false,21,Code Analysis,Code Analysis,13.000,0,0
-jendrikseipp/vulture,4164,85,18,12,2,20.413,0,24,3171,42,Python,false,1,Code Analysis,Code Analysis,45.000,1,1
-PyCQA/flake8,3720,24,12,8,1,6.452,0,25,4076,178,Python,false,0,Code Analysis,Code Linters,47.000,1,2
-pylint-dev/pylint,5592,23,4,2,1,4.113,0,0,3624,543,Python,false,0,Code Analysis,Code Linters,90.000,11,55
-astral-sh/ruff,43675,738,346,155,16,16.898,0,0,1189,746,Rust,false,157,Code Analysis,Code Linters,100.000,49,359
-psf/black,41119,132,58,20,3,3.210,0,0,2797,481,Python,false,0,Code Analysis,Code Formatters,100.000,15,33
-timothycrosley/isort,6858,23,10,6,1,3.354,0,5,4451,312,Python,false,0,Code Analysis,Code Formatters,71.000,3,12
-google/yapf,13961,19,6,4,0,1.361,1,272,3890,152,Python,false,0,Code Analysis,Code Formatters,21.000,0,0
-python/mypy,19972,110,46,15,3,5.508,0,0,4721,771,Python,false,0,Code Analysis,Code Formatters,100.000,18,66
-facebook/pyre-check,7109,20,13,6,0,2.813,1,1,2922,252,OCaml,false,0,Code Analysis,Code Formatters,71.000,2,34
-python/typeshed,4916,41,16,6,1,8.340,0,0,3903,1509,Python,false,0,Code Analysis,Code Formatters,95.000,28,84
-Instagram/MonkeyType,4954,15,9,4,0,3.028,1,149,3044,55,Python,false,13,Code Analysis,Static Type Annotations Generators,21.000,0,0
-google/pytype,5014,12,7,4,0,2.393,2,10,3889,117,Python,false,25,Code Analysis,Static Type Annotations Generators,43.000,2,9
-datafolklabs/cement,1333,5,1,0,0,3.751,11,7,5819,39,Python,false,0,Command-line Interface Development,Command-line Application Development,29.000,2,7
-openstack/cliff,253,3,0,0,0,11.858,19,136,4293,90,Python,false,5,Command-line Interface Development,Command-line Application Development,4.000,0,0
-google/python-fire,27961,56,26,13,3,2.003,0,85,3183,81,Python,false,0,Command-line Interface Development,Command-line Application Development,40.000,0,0
-prompt-toolkit/python-prompt-toolkit,10066,81,34,19,1,8.047,0,0,4306,218,Python,false,0,Command-line Interface Development,Command-line Application Development,100.000,4,5
-rsalmei/alive-progress,6162,31,9,5,0,5.031,1,31,2289,9,Python,false,0,Command-line Interface Development,Terminal Rendering,31.000,0,0
-peterbrittain/asciimatics,4204,20,11,5,0,4.757,3,163,3861,39,Python,false,1,Command-line Interface Development,Terminal Rendering,21.000,0,0
-glamp/bashplotlib,1906,3,1,1,1,1.574,0,1684,4715,15,Python,false,0,Command-line Interface Development,Terminal Rendering,22.000,0,0
-tartley/colorama,3741,16,7,5,1,4.277,0,124,4224,47,Python,false,0,Command-line Interface Development,Terminal Rendering,31.000,0,0
-Textualize/rich,54344,366,165,82,13,6.735,0,32,2192,264,Python,false,4,Command-line Interface Development,Terminal Rendering,68.000,0,0
-tqdm/tqdm,30638,149,59,28,4,4.863,0,363,3813,113,Python,false,0,Command-line Interface Development,Terminal Rendering,60.000,0,0
-copier-org/copier,2911,53,25,10,0,18.207,1,4,5122,109,Python,false,0,Command-line Tools,Productivity Tools,70.000,3,25
-cookiecutter/cookiecutter,24294,147,73,39,4,6.051,0,2,4502,296,Python,false,0,Command-line Tools,Productivity Tools,100.000,4,4
-sloria/doitlive,3519,5,2,0,0,1.421,13,9,4165,15,Python,false,0,Command-line Tools,Productivity Tools,29.000,2,8
-gleitz/howdoi,10776,19,11,9,2,1.763,0,384,4736,74,Python,false,11,Command-line Tools,Productivity Tools,31.000,0,0
-pyinvoke/invoke,4648,20,9,5,2,4.303,0,21,5002,55,Python,false,0,Command-line Tools,Productivity Tools,51.000,2,29
-facebook/PathPicker,5207,7,5,3,1,1.344,0,431,3846,143,Python,false,1,Command-line Tools,Productivity Tools,22.000,0,0
-nvbn/thefuck,94640,427,193,92,18,4.512,0,654,3869,182,Python,false,2,Command-line Tools,Productivity Tools,62.000,0,0
-tmux-python/tmuxp,4330,21,10,6,1,4.850,0,2,4458,68,Python,false,0,Command-line Tools,Productivity Tools,85.000,1,39
-timofurrer/try,744,2,0,0,0,2.688,16,1275,3523,4,Python,false,0,Command-line Tools,Productivity Tools,4.000,0,0
-httpie/cli,36967,265,106,51,6,7.169,0,328,5007,154,Python,false,0,Command-line Tools,CLI Enhancements,62.000,0,0
-laixintao/iredis,2688,7,4,1,0,2.604,6,95,2488,28,Python,false,10,Command-line Tools,CLI Enhancements,12.000,0,0
-dbcli/litecli,3124,16,8,5,0,5.122,1,42,2738,50,Python,false,0,Command-line Tools,CLI Enhancements,27.000,0,0
-dbcli/mycli,11751,29,13,5,2,2.468,0,9,3871,113,Python,false,0,Command-line Tools,CLI Enhancements,65.000,2,43
-dbcli/pgcli,12807,83,28,6,0,6.481,1,101,4047,168,Python,false,0,Command-line Tools,CLI Enhancements,30.000,0,0
-JaidedAI/EasyOCR,28358,289,121,60,11,10.191,0,412,2067,113,Python,false,1,Computer Vision,,62.000,0,0
-madmaze/pytesseract,6257,23,9,5,3,3.676,0,265,5492,44,Python,false,0,Computer Vision,,35.000,0,0
-sirfz/tesserocr,2128,10,6,5,2,4.699,0,31,3615,28,Python,false,0,Computer Vision,,33.000,0,0
-DiffSK/configobj,329,1,1,0,0,3.040,13,157,4318,9,Python,false,0,Configuration Files,,5.000,0,0
-facebookresearch/hydra,9921,120,52,28,3,12.096,0,13,2342,194,Python,false,0,Configuration Files,,90.000,1,21
-HBNetwork/python-decouple,2982,9,3,0,0,3.018,8,679,4276,35,Python,false,5,Configuration Files,,7.000,0,0
-pyca/cryptography,7309,70,35,21,5,9.577,0,0,4478,336,Python,false,0,Cryptography,,100.000,8,176
-paramiko/paramiko,9559,57,38,5,0,5.963,3,21,6125,139,Python,false,0,Cryptography,,52.000,1,6
-pyca/pynacl,1157,8,3,0,0,6.914,7,0,4644,75,C,false,0,Cryptography,,59.000,2,3
-aws/aws-sdk-pandas,4074,12,7,2,0,2.946,2,5,2449,171,Python,false,0,Data Analysis,,57.000,6,18
-simonw/datasette,10510,128,63,41,1,12.179,0,0,2940,80,Python,false,0,Data Analysis,,100.000,3,166
-hi-primus/optimus,1524,5,0,0,0,3.281,14,906,3042,21,Python,false,29,Data Analysis,,4.000,0,0
-pyeve/cerberus,3250,5,4,2,0,1.538,3,4,4779,52,Python,false,0,Data Validation,,44.000,2,6
-Pylons/colander,458,1,0,0,0,2.183,24,465,5381,108,Python,false,0,Data Validation,,2.000,0,0
-python-jsonschema/jsonschema,4867,23,16,8,2,4.726,0,6,5064,103,Python,false,0,Data Validation,,75.000,3,26
-keleshev/schema,2930,3,2,1,1,1.024,0,15,4831,65,Python,false,1,Data Validation,,34.000,3,7
-schematics/schematics,2586,2,1,1,0,0.773,1,1545,5432,89,Python,false,7,Data Validation,,12.000,0,0
-alecthomas/voluptuous,1843,3,1,1,0,1.628,4,71,5597,91,Python,false,0,Data Validation,,12.000,0,0
-pydantic/pydantic,25718,334,161,84,16,12.987,0,0,3112,700,Python,false,0,Data Validation,,100.000,15,92
-altair-viz/altair,10093,48,16,8,1,4.756,0,0,3705,180,Python,false,0,Data Visualization,,91.000,8,17
-bokeh/bokeh,20177,66,38,16,0,3.271,1,1,4977,624,TypeScript,false,0,Data Visualization,,86.000,7,14
-bloomberg/bqplot,3675,5,1,1,0,1.361,6,77,3698,57,TypeScript,false,0,Data Visualization,,12.000,0,0
-SciTools/cartopy,1553,15,7,4,0,9.659,2,5,4847,130,Python,false,0,Data Visualization,,57.000,6,16
-mingrammer/diagrams,41701,135,60,22,3,3.237,0,14,2108,170,Python,false,4,Data Visualization,,72.000,2,2
-matplotlib/matplotlib,21957,176,88,41,2,8.016,0,0,5378,1566,Python,false,0,Data Visualization,,100.000,16,49
-has2k1/plotnine,4404,24,13,9,2,5.450,0,0,3122,93,Python,false,0,Data Visualization,,87.000,1,6
-Kozea/pygal,2738,5,3,0,0,1.826,10,455,5162,94,Python,false,0,Data Visualization,,7.000,0,0
-pyqtgraph/pyqtgraph,4225,40,16,7,1,9.467,0,39,4442,278,Python,false,1,Data Visualization,,41.000,0,0
-mwaskom/seaborn,13550,74,39,17,2,5.461,0,123,4893,201,Python,false,0,Data Visualization,,50.000,0,0
-vispy/vispy,3494,17,8,7,2,4.865,0,0,4617,175,Python,false,13,Data Visualization,,83.000,1,3
-patx/pickledb,1032,4,1,1,0,3.876,3,91,5127,13,Python,false,1,Database,,12.000,0,0
-msiemens/tinydb,7365,47,21,8,1,6.382,0,394,4503,85,Python,false,1,Database,,40.000,0,0
-zopefoundation/ZODB,735,5,3,2,0,6.803,1,40,4700,276,Python,false,5,Database,,18.000,0,0
-PyMySQL/mysqlclient,2519,5,2,1,1,1.985,0,260,4214,79,Python,false,0,Database Drivers,,22.000,0,0
-PyMySQL/PyMySQL,7834,16,8,2,0,2.042,4,78,5220,109,Python,false,0,Database Drivers,,21.000,0,0
-psycopg/psycopg,2183,48,25,10,0,21.988,2,3,2066,75,Python,false,0,Database Drivers,,70.000,8,76
-simonw/sqlite-utils,1917,19,3,2,0,9.911,1,39,2676,42,Python,false,0,Database Drivers,,22.000,0,0
-pymssql/pymssql,866,1,0,0,0,1.155,27,3,4445,42,Python,false,12,Database Drivers,Other Relational Databases,38.000,3,12
-mymarilyn/clickhouse-driver,1281,4,0,0,0,3.123,16,0,3105,57,Python,false,2,Database Drivers,Other Relational Databases,56.000,2,8
-datastax/python-driver,1417,2,0,0,0,1.411,27,20,4508,164,Python,false,3,Database Drivers,NoSQL Databases,14.000,1,1
-python-happybase/happybase,609,0,0,0,0,0.000,184,45,4921,21,Python,false,1,Database Drivers,NoSQL Databases,6.000,0,0
-dpkp/kafka-python,5846,20,7,5,0,3.421,1,114,4795,217,Python,false,0,Database Drivers,NoSQL Databases,21.000,0,0
-mongodb/mongo-python-driver,4297,22,10,7,2,5.120,0,5,6143,625,Python,false,1,Database Drivers,NoSQL Databases,67.000,4,9
-mongodb/motor,2516,6,2,1,0,2.385,1,7,4685,521,Python,false,1,Database Drivers,NoSQL Databases,34.000,2,4
-redis/redis-py,13334,64,30,19,3,4.800,0,0,5848,488,Python,false,0,Database Drivers,NoSQL Databases,100.000,8,30
-arrow-py/arrow,8956,28,12,4,1,3.126,0,16,4739,258,Python,false,0,Date and Time,,47.000,3,6
-dateutil/dateutil,2556,11,4,2,0,4.304,3,55,4009,121,Python,false,0,Date and Time,,22.000,0,0
-sdispater/pendulum,6575,19,9,7,2,2.890,0,13,3422,117,Python,false,0,Date and Time,,53.000,2,2
-gotcha/ipdb,1947,7,3,1,0,3.595,6,105,5413,53,Python,false,0,Debugging Tools,pdb-like Debugger,12.000,0,0
-inducer/pudb,3165,10,3,0,0,3.160,10,11,5294,85,Python,false,0,Debugging Tools,pdb-like Debugger,37.000,2,21
-ionelmc/python-manhole,395,3,1,1,1,7.595,0,494,4519,11,Python,false,0,Debugging Tools,Tracing,22.000,0,0
-ionelmc/python-hunter,849,3,1,0,0,3.534,12,79,3892,10,Python,false,0,Debugging Tools,Tracing,7.000,0,0
-benfred/py-spy,14538,140,62,29,2,9.630,0,84,2658,49,Rust,false,27,Debugging Tools,Profiler,60.000,0,0
-nvdv/vprof,3971,1,0,0,0,0.252,24,1214,3787,15,Python,false,1,Debugging Tools,Profiler,2.000,0,0
-jazzband/django-debug-toolbar,8304,22,10,5,0,2.649,2,0,6283,337,Python,false,0,Debugging Tools,Others,81.000,8,18
-pallets-eco/flask-debugtoolbar,970,3,1,1,0,3.093,1,148,5077,57,JavaScript,false,0,Debugging Tools,Others,12.000,0,0
-gruns/icecream,9925,33,15,9,2,3.325,0,57,2827,31,Python,false,0,Debugging Tools,Others,41.000,0,0
-eliben/pyelftools,2170,13,9,1,0,5.991,6,12,4537,96,Python,false,0,Debugging Tools,Others,43.000,2,2
-keras-team/keras,63550,151,72,36,4,2.376,0,2,3880,1359,Python,false,7,Deep Learning,,100.000,22,54
-pytorch/pytorch,94930,1201,699,403,50,12.651,0,0,3376,4133,Python,false,9,Deep Learning,,100.000,264,1406
-Lightning-AI/pytorch-lightning,30415,199,97,49,5,6.543,0,0,2416,1012,Python,false,2,Deep Learning,,100.000,16,57
-DLR-RM/stable-baselines3,12008,276,140,71,12,22.985,0,10,2015,177,Python,false,0,Deep Learning,,84.000,3,3
-tensorflow/tensorflow,192388,592,259,139,24,3.077,0,0,3656,3999,C++,false,0,Deep Learning,,100.000,146,1131
-Theano/Theano,9961,14,5,2,0,1.405,3,665,5206,349,Python,false,2,Deep Learning,,16.000,0,0
-ansible/ansible,66969,333,167,80,14,4.972,0,0,4997,5570,Python,false,3,DevOps Tools,Configuration Management,100.000,17,58
-canonical/cloud-init,3493,45,23,15,5,12.883,0,4,4051,466,Python,false,1,DevOps Tools,Configuration Management,80.000,8,31
-pyinfra-dev/pyinfra,4476,32,12,6,2,7.149,0,13,4039,157,Python,false,0,DevOps Tools,Configuration Management,57.000,8,10
-saltstack/salt,14900,96,56,20,7,6.443,0,13,5376,2450,Python,false,0,DevOps Tools,Configuration Management,92.000,6,78
-sebastien/cuisine,1265,1,1,1,1,0.791,0,538,5368,43,Python,false,0,DevOps Tools,SSH-style Deployment,20.000,0,0
-fabric/fabric,15297,44,19,7,3,2.876,0,113,6037,15,Python,false,0,DevOps Tools,SSH-style Deployment,35.000,0,0
-Supervisor/supervisor,8915,28,13,5,0,3.141,1,14,5451,150,Python,false,0,DevOps Tools,Process Management,37.000,2,8
-giampaolo/psutil,10911,67,40,13,1,6.141,0,0,4189,207,Python,false,9,DevOps Tools,Monitoring,100.000,6,95
-borgbackup/borg,12566,114,53,26,4,9.072,0,0,3834,314,Python,false,0,DevOps Tools,Backup,100.000,4,88
-dask/dask,13584,64,31,18,2,4.711,0,0,3963,601,Python,false,0,Distributed Computing,Batch Processing,100.000,11,30
-spotify/luigi,18550,37,17,8,2,1.995,0,177,4799,518,Python,false,0,Distributed Computing,Batch Processing,35.000,0,0
-apache/spark,42270,235,113,69,10,5.559,0,0,4276,2220,Scala,false,0,Distributed Computing,Batch Processing,100.000,72,345
-robinhood/faust,6823,4,2,0,0,0.586,8,991,3169,79,Python,false,25,Distributed Computing,Stream Processing,7.000,0,0
-Parsely/streamparse,1501,1,1,0,0,0.666,13,458,4209,41,Python,false,2,Distributed Computing,Stream Processing,5.000,0,0
-ronaldoussoren/py2app,408,0,0,0,0,0.000,33,486,2127,9,Python,false,0,Distribution,,0.000,0,0
-py2exe/py2exe,976,11,7,4,0,11.270,3,117,2436,17,Python,false,0,Distribution,,21.000,0,0
-dashingsoft/pyarmor,4723,73,41,26,3,15.456,0,1,2998,31,Python,false,1,Distribution,,100.000,2,35
-pyinstaller/pyinstaller,12700,58,22,14,2,4.567,0,1,5101,429,Python,false,0,Distribution,,86.000,5,11
-linkedin/shiv,1889,10,5,2,0,5.294,1,370,2799,40,Python,false,0,Distribution,,12.000,0,0
-mitmproxy/pdoc,2416,75,12,5,2,31.043,0,4,4480,74,Python,false,0,Documentation,,71.000,7,12
-jindaxiang/akshare,14292,484,250,131,26,33.865,0,4,2232,99,Python,false,15,Downloader,,100.000,4,83
-s3tools/s3cmd,4811,21,12,4,1,4.365,0,18,5270,178,Python,false,0,Downloader,,47.000,2,6
-jorgenschaefer/elpy,1928,3,1,0,0,1.556,7,219,4759,84,Emacs Lisp,false,0,Editor Plugins and IDEs,Emacs,7.000,0,0
-davidhalter/jedi-vim,5317,6,1,0,0,1.128,7,52,4801,90,Python,false,0,Editor Plugins and IDEs,Vim,13.000,0,0
-python-mode/python-mode,5465,2,1,0,0,0.366,7,121,5167,111,Vim Script,false,0,Editor Plugins and IDEs,Vim,7.000,0,0
-Valloric/YouCompleteMe,26223,90,32,17,4,3.432,0,24,4956,170,Python,false,0,Editor Plugins and IDEs,Vim,62.000,1,4
-Microsoft/PTVS,2555,1,1,1,0,0.391,1,2,3889,80,C#,false,0,Editor Plugins and IDEs,Visual Studio,52.000,2,4
-spyder-ide/spyder,9012,70,28,10,2,7.767,0,2,3919,212,Python,false,21,Editor Plugins and IDEs,IDE,90.000,9,62
-modoboa/modoboa,3374,23,15,5,1,6.817,0,3,4591,92,Python,false,0,Email,Mail Servers,75.000,2,30
-moggers87/salmon,658,5,1,0,0,7.599,12,228,4570,12,Python,true,3,Email,Mail Servers,0.000,0,0
-martinrusev/imbox,1206,2,0,0,0,1.658,29,573,4494,40,Python,false,2,Email,Clients,4.000,0,0
-kootenpv/yagmail,2713,11,6,3,0,4.055,1,1138,3859,31,Python,false,0,Email,Clients,21.000,0,0
-mailgun/flanker,1645,4,2,1,0,2.432,6,983,4379,47,Python,false,7,Email,Others,12.000,0,0
-marrow/mailer,286,2,1,0,0,6.993,12,173,5356,19,Python,false,0,Email,Others,7.000,0,0
-pyenv/pyenv,43614,330,151,78,16,7.566,0,2,4819,434,Roff,false,0,Environment Management,,100.000,5,11
-pypa/virtualenv,4987,12,5,4,2,2.406,0,6,5363,190,Python,false,0,Environment Management,,62.000,3,13
-jaraco/path.py,1120,4,2,0,0,3.571,10,105,4951,48,Python,false,0,File Manipulation,,7.000,0,0
-ahupp/python-magic,2839,19,10,5,0,6.692,2,27,5702,56,Python,false,0,File Manipulation,,33.000,1,2
-gorakhargosh/watchdog,7147,39,19,8,0,5.457,2,33,5497,148,Python,false,0,File Manipulation,,31.000,0,0
-evhub/coconut,4274,11,4,2,1,2.574,0,435,4054,29,Python,false,0,Functional Programming,,26.000,0,0
-Suor/funcy,3466,6,1,0,0,1.731,7,52,4776,30,Python,false,0,Functional Programming,,13.000,0,0
-erikrose/more-itertools,4001,15,5,4,0,3.749,2,2,4946,128,Python,false,0,Functional Programming,,66.000,2,24
-dry-python/returns,4138,45,25,16,2,10.875,0,0,2480,60,Python,false,5,Functional Programming,,96.000,2,13
-pytoolz/toolz,5064,21,7,3,1,4.147,0,24,4441,76,Python,false,0,Functional Programming,,47.000,3,7
-ChrisKnott/Eel,6754,11,3,1,0,1.629,5,141,2874,43,Python,true,7,GUI Development,,0.000,0,0
-nucleic/enaml,1561,4,1,0,0,2.562,12,13,4631,33,Python,false,0,GUI Development,,29.000,1,3
-zoofIO/flexx,3341,3,1,1,0,0.898,2,673,4086,33,Python,false,0,GUI Development,,12.000,0,0
-chriskiehl/Gooey,21686,86,39,24,7,3.966,0,1282,4330,85,Python,false,8,GUI Development,,52.000,0,0
-pyglet/pyglet,2112,25,12,6,1,11.837,0,2,2346,139,Python,false,0,GUI Development,,85.000,4,21
-PySimpleGUI/PySimpleGUI,13683,26,4,4,0,1.900,2,162,2679,7,Python,false,0,GUI Development,,20.000,0,0
-pybee/toga,5234,36,16,7,0,6.878,1,0,4118,281,Python,false,0,GUI Development,,85.000,10,63
-SmileyChris/django-countries,1501,7,6,4,2,4.664,0,5,4524,54,Python,false,0,Geolocation,,67.000,2,39
-jazzband/geojson,974,2,0,0,0,2.053,22,323,5245,696,Python,false,0,Geolocation,,4.000,0,0
-geopy/geopy,4721,22,10,4,0,4.660,4,717,5729,111,Python,false,0,Geolocation,,25.000,0,0
-mozilla/bleach,2730,11,4,2,1,4.029,0,14,5743,66,Python,false,0,HTML Manipulation,,38.000,1,4
-html5lib/html5lib-python,1208,1,1,0,0,0.828,7,628,4598,58,Python,false,1,HTML Manipulation,,5.000,0,0
-pallets/markupsafe,671,6,4,2,0,8.942,5,44,5620,48,Python,false,0,HTML Manipulation,,18.000,0,0
-gawel/pyquery,2364,4,4,2,0,1.692,5,437,4729,42,Python,false,1,HTML Manipulation,,12.000,0,0
-stchris/untangle,628,2,2,2,0,3.185,3,661,5272,12,Python,false,2,HTML Manipulation,,12.000,0,0
-martinblech/xmltodict,5691,18,8,4,1,3.163,0,13,4955,47,Python,false,0,HTML Manipulation,,53.000,1,4
-encode/httpx,14725,122,56,31,2,8.285,0,25,2412,235,Python,false,15,HTTP Clients,,70.000,1,1
-psf/requests,53455,135,63,40,6,2.525,0,26,5384,645,Python,false,0,HTTP Clients,,74.000,2,2
-twisted/treq,598,3,0,0,0,5.017,15,1,4924,63,Python,false,0,HTTP Clients,,46.000,2,3
-urllib3/urllib3,3961,10,3,1,0,2.525,5,11,5167,338,Python,false,0,HTTP Clients,,34.000,5,10
-boppreh/keyboard,3939,14,5,3,0,3.554,1,1013,4569,31,Python,false,0,Hardware,,16.000,0,0
-boppreh/mouse,953,3,1,0,0,3.148,8,867,3020,9,Python,false,0,Hardware,,7.000,0,0
-moses-palmer/pynput,2020,21,12,7,1,10.396,0,238,3679,23,Python,false,2,Hardware,,35.000,0,0
-secdev/scapy,11844,103,47,25,2,8.696,0,2,3693,451,Python,false,0,Hardware,,96.000,6,14
-python-pillow/Pillow,13176,74,35,13,1,5.616,0,0,4856,418,Python,false,0,Image Processing,,100.000,5,66
-WhyNotHugo/python-barcode,629,5,2,0,0,7.949,10,72,2950,36,Python,false,0,Image Processing,,7.000,0,0
-lincolnloop/python-qrcode,4773,23,10,2,0,4.819,1,107,5114,61,Python,false,0,Image Processing,,25.000,0,0
-dylanaraps/pywal,8926,47,13,7,2,5.266,0,1523,3069,53,Python,true,0,Image Processing,,5.000,0,0
-libvips/pyvips,742,8,5,2,0,10.782,4,10,3027,19,Python,false,0,Image Processing,,32.000,1,1
-fogleman/Quads,1209,3,1,1,0,2.481,6,4192,4196,1,Python,false,0,Image Processing,,12.000,0,0
-thumbor/thumbor,10392,32,13,5,1,3.079,0,7,5353,171,Python,false,0,Image Processing,,57.000,2,7
-emcconville/wand,1464,2,1,1,0,1.366,5,35,5154,95,Python,false,0,Image Processing,,18.000,0,0
-python/cpython,69783,587,277,155,27,8.412,0,0,3194,3266,Python,false,0,Implementations,,100.000,124,372
-cython/cython,10430,96,31,10,2,9.204,0,0,5468,494,Python,false,3,Implementations,,100.000,11,162
-metawilm/cl-python,384,1,0,0,0,2.604,20,1341,6024,6,Common Lisp,false,0,Implementations,,2.000,0,0
-IronLanguages/ironpython3,2704,14,5,3,0,5.178,1,116,4273,39,C#,false,0,Implementations,,16.000,0,0
-micropython/micropython,21069,157,78,45,3,7.452,0,4,4343,619,C,false,0,Implementations,,100.000,20,77
-numba/numba,10720,74,31,12,3,6.903,0,4,4995,339,Python,false,6,Implementations,,90.000,9,80
-Maratyszcza/PeachPy,2031,5,4,4,0,2.462,1,1093,3941,23,Python,false,1,Implementations,,12.000,0,0
-bpython/bpython,2746,9,5,3,1,3.277,0,12,4146,104,Python,false,2,Interactive Interpreter,,48.000,1,12
-jonathanslenders/ptpython,5373,15,9,5,1,2.792,0,75,4060,56,Python,false,0,Interactive Interpreter,,31.000,0,0
-ovalhub/pyicu,132,0,0,0,0,0.000,609,1676,3861,17,C++,true,0,Internationalization,,0.000,0,0
-thauber/django-schedule,845,2,1,0,0,2.367,12,3494,6066,10,Python,false,1,Job Scheduler,,7.000,0,0
-gunnery/gunnery,765,1,0,0,0,1.307,29,3665,4340,7,Python,false,0,Job Scheduler,,2.000,0,0
-fengsp/plan,1178,1,1,0,0,0.849,12,2006,4185,7,Python,false,0,Job Scheduler,,5.000,0,0
-PrefectHQ/prefect,20793,267,145,71,11,12.841,0,0,2690,369,Python,false,0,Job Scheduler,,100.000,20,136
-dbader/schedule,12176,24,13,4,0,1.971,1,534,4558,58,Python,false,0,Job Scheduler,,25.000,0,0
-knipknap/SpiffWorkflow,1830,12,8,4,0,6.557,1,19,5799,47,Python,false,0,Job Scheduler,,33.000,2,8
-Delgan/loguru,23047,204,88,48,3,8.851,0,2,3009,68,Python,false,0,Logging,,100.000,2,5
-getsentry/sentry-python,2096,19,8,4,0,9.065,3,0,2701,513,Python,false,0,Logging,,81.000,14,64
-openai/gym,36756,128,59,30,7,3.482,0,1015,3484,2882,Python,false,15,Machine Learning,,62.000,0,0
-h2oai/h2o-3,7360,69,32,14,1,9.375,0,4,4270,345,Jupyter Notebook,false,0,Machine Learning,,82.000,2,4
-benhamner/Metrics,1644,1,1,1,0,0.608,4,3715,4899,5,Python,false,0,Machine Learning,,10.000,0,0
-numenta/nupic,6351,8,5,1,0,1.260,4,342,4601,105,Python,false,18,Machine Learning,,12.000,0,0
-josephreisinger/vowpal_porpoise,168,0,0,0,0,0.000,240,2134,4956,7,Python,false,2,Machine Learning,,0.000,0,0
-dmlc/xgboost,27596,148,76,39,3,5.363,0,3,4295,640,C++,false,0,Machine Learning,,100.000,4,29
-mindsdb/mindsdb,37213,871,700,379,39,23.406,0,3,2657,800,Python,false,0,Machine Learning,,100.000,5,16
-pythonnet/pythonnet,5297,35,20,11,2,6.608,0,13,4366,92,C#,false,0,Microsoft Windows,,61.000,2,19
-mhammond/pywin32,5474,36,16,8,1,6.577,0,19,2938,103,C++,false,0,Microsoft Windows,,47.000,1,3
-jek/blinker,1986,18,5,2,1,9.063,0,148,4513,28,Python,false,0,Miscellaneous,,26.000,0,0
-mahmoud/boltons,6772,26,10,5,0,3.839,1,37,4646,84,Python,false,0,Miscellaneous,,31.000,0,0
-pallets/itsdangerous,3070,10,4,2,0,3.257,4,148,5253,43,Python,false,0,Miscellaneous,,12.000,0,0
-magenta/magenta,19716,53,27,10,0,2.688,1,124,3475,147,Python,false,0,Miscellaneous,,30.000,0,0
-mitsuhiko/pluginbase,1136,0,0,0,0,0.000,31,1639,4150,7,Python,false,1,Miscellaneous,,0.000,0,0
-RaRe-Technologies/gensim,16262,55,24,9,2,3.382,0,25,5387,431,Python,false,12,Natural Language Processing,,52.000,2,10
-saffsd/langid.py,2438,7,4,3,0,2.871,5,3040,5309,6,Python,false,1,Natural Language Processing,,12.000,0,0
-clips/pattern,8841,7,4,2,0,0.792,3,2025,5305,43,Python,false,0,Natural Language Processing,,12.000,0,0
-aboSamoor/polyglot,2353,7,6,4,0,2.975,1,1874,4151,24,Python,false,7,Natural Language Processing,,17.000,0,0
-facebookresearch/pytext,6316,0,0,0,0,0.000,64,1119,2658,185,Python,true,4,Natural Language Processing,,0.000,0,0
-PetrochukM/PyTorch-NLP,2220,0,0,0,0,0.000,52,859,2815,16,Python,true,0,Natural Language Processing,,0.000,0,0
-stanfordnlp/stanza,7646,27,10,6,1,3.531,0,36,2967,72,Python,false,18,Natural Language Processing,,41.000,0,0
-fighting41love/funNLP,77109,687,305,157,24,8.909,0,809,2638,12,Python,false,0,Natural Language Processing,,65.000,0,0
-fxsjy/jieba,34533,116,54,26,3,3.359,0,2095,4790,40,Python,false,0,Natural Language Processing,,60.000,0,0
-lancopku/pkuseg-python,6663,12,6,1,0,1.801,4,1251,2654,6,Python,false,1,Natural Language Processing,,21.000,0,0
-isnowfy/snownlp,6585,12,6,4,1,1.822,0,2122,4367,8,Python,false,0,Natural Language Processing,,31.000,0,0
-mininet/mininet,5686,31,14,8,1,5.452,0,785,5317,70,Python,false,1,Network Virtualization,,35.000,0,0
-napalm-automation/napalm,2393,15,7,3,0,6.268,3,80,3885,184,Python,false,10,Network Virtualization,,21.000,0,0
-noxrepo/pox,642,1,1,1,0,1.558,5,2000,5024,21,Python,false,0,Network Virtualization,,10.000,0,0
-justquick/django-activity-stream,2432,9,3,2,0,3.701,2,28,5737,94,Python,false,0,News Feed,,22.000,1,1
-tschellenbach/Stream-Framework,4736,2,1,0,0,0.422,9,1944,4842,25,Python,false,5,News Feed,,7.000,0,0
-pudo/dataset,4827,7,2,0,0,1.450,8,278,4606,69,Python,false,0,ORM,Relational Databases,7.000,0,0
-sdispater/orator,1418,3,2,2,0,2.116,4,1338,3823,27,Python,true,17,ORM,Relational Databases,0.000,0,0
-encode/orm,1789,1,0,0,0,0.559,29,1168,2463,20,Python,true,2,ORM,Relational Databases,0.000,0,0
-coleifer/peewee,11762,43,22,10,1,3.656,0,1,5508,140,Python,false,0,ORM,Relational Databases,82.000,1,3
-stephenmcd/hot-redis,292,0,0,0,0,0.000,66,2582,4402,5,Python,false,0,ORM,NoSQL Databases,0.000,0,0
-MongoEngine/mongoengine,4346,8,3,1,0,1.841,6,68,4998,330,Python,false,0,ORM,NoSQL Databases,12.000,0,0
-pynamodb/PynamoDB,2546,9,4,2,0,3.535,1,161,4312,104,Python,false,0,ORM,NoSQL Databases,12.000,0,0
-kiddouk/redisco,436,2,0,0,0,4.587,22,3444,5057,1,Python,false,4,ORM,NoSQL Databases,4.000,0,0
-jazzband/pip-tools,7950,20,9,4,1,2.516,0,0,4809,831,Python,false,0,Package Management,,91.000,5,48
-sdispater/poetry,34028,125,58,32,9,3.673,0,8,2812,603,Python,false,0,Package Management,,84.000,6,9
-astral-sh/uv,72414,2870,1393,630,89,39.633,0,0,769,482,Rust,false,199,Package Management,,100.000,38,155
-devpi/devpi,1083,14,9,5,2,12.927,0,28,3146,92,Python,false,0,Package Repositories,,43.000,1,2
-jazzband/localshop,400,1,0,0,0,2.500,28,1211,5027,34,Less,false,0,Package Repositories,,2.000,0,0
-pypa/warehouse,3877,38,20,10,2,9.801,0,0,4608,762,Python,false,7,Package Repositories,,95.000,11,50
-Manisso/fsociety,11642,104,46,22,5,8.933,0,1161,3357,18,Python,false,0,Penetration Testing,,50.000,0,0
-trustedsec/social-engineer-toolkit,12586,131,64,32,5,10.408,0,385,4696,77,Python,false,1,Penetration Testing,,60.000,0,0
-sqlmapproject/sqlmap,35738,274,146,71,13,7.667,0,0,4885,135,Python,false,0,Penetration Testing,,100.000,2,10
-django-guardian/django-guardian,3828,12,6,2,0,3.135,2,0,5637,145,Python,false,0,Permissions,,77.000,4,12
-dfunckt/django-rules,1943,4,0,0,0,2.059,18,30,4266,32,Python,false,0,Permissions,,10.000,0,0
-amitt001/delegator.py,1735,7,6,5,1,4.035,0,2380,3221,22,Python,false,1,Processes,,27.000,0,0
-amoffat/sh,7197,29,11,7,3,4.029,0,9,5048,86,Python,false,1,Processes,,57.000,2,3
-spotify/annoy,14017,44,23,11,4,3.139,0,12,4605,117,C++,false,0,Recommender Systems,,62.000,3,4
-ibayer/fastFM,1087,2,1,1,1,1.840,0,1692,4032,15,Python,false,4,Recommender Systems,,22.000,0,0
-benfred/implicit,3727,16,4,1,0,4.293,6,719,3494,28,Python,false,4,Recommender Systems,,16.000,0,0
-guestwalk/libffm,1603,0,0,0,0,0.000,120,451,3809,5,C++,true,0,Recommender Systems,,0.000,0,0
-lyst/lightfm,5027,18,8,3,0,3.581,6,925,3756,32,Python,false,0,Recommender Systems,,21.000,0,0
-maciejkula/spotlight,3031,3,0,0,0,0.990,22,2100,3060,10,Python,false,0,Recommender Systems,,4.000,0,0
-NicolasHug/Surprise,6709,25,7,4,0,3.726,1,513,3305,41,Python,false,0,Recommender Systems,,25.000,0,0
-jfkirk/tensorrec,1294,1,0,0,0,0.773,26,2105,3177,7,Python,false,0,Recommender Systems,,2.000,0,0
-python-rope/rope,2133,8,4,4,1,3.751,0,121,4363,74,Python,false,0,Refactoring,,22.000,0,0
-encode/django-rest-framework,29653,126,50,27,3,4.249,0,4,5367,1214,Python,false,4,RESTful API,Django,86.000,14,20
-django-tastypie/django-tastypie,3950,3,3,1,0,0.759,6,221,5705,186,Python,false,3,RESTful API,Django,12.000,0,0
-pyeve/eve,6736,3,1,1,1,0.445,0,76,4767,179,Python,false,0,RESTful API,Flask,22.000,0,0
-flask-api/flask-api,1463,4,1,1,0,2.734,4,629,4286,32,Python,false,0,RESTful API,Flask,12.000,0,0
-flask-restful/flask-restful,6931,6,3,2,0,0.866,4,904,4777,147,Python,false,2,RESTful API,Flask,12.000,0,0
-Cornices/cornice,386,1,0,0,0,2.591,18,231,5143,92,Python,false,11,RESTful API,Pyramid,2.000,0,0
-falconry/falcon,9753,27,12,5,0,2.768,1,0,4722,216,Python,false,0,RESTful API,Framework agnostic,77.000,4,10
-tiangolo/fastapi,91748,1258,583,303,46,13.711,0,0,2529,866,Python,false,3,RESTful API,Framework agnostic,100.000,8,70
-hugapi/hug,6905,9,1,1,0,1.303,2,864,3769,105,Python,false,0,RESTful API,Framework agnostic,12.000,0,0
-jeffknupp/sandman2,2039,3,0,0,0,1.471,24,1785,4035,19,Python,false,17,RESTful API,Framework agnostic,4.000,0,0
-sanic-org/sanic,18552,50,20,7,1,2.695,0,223,3455,313,Python,false,0,RESTful API,Framework agnostic,35.000,0,0
-AtsushiSakai/PythonRobotics,26281,297,164,112,35,11.301,0,2,3521,133,Python,false,0,Robotics,,100.000,5,15
-0rpc/zerorpc-python,3228,2,0,0,0,0.620,18,275,5007,29,Python,false,1,RPC Servers,,4.000,0,0
-chapmanb/bcbio-nextgen,1018,2,2,0,0,1.965,7,443,4660,80,Python,false,1,Science,,7.000,0,0
-chapmanb/bcbb,635,4,3,1,0,6.299,5,278,6179,26,Python,false,0,Science,,12.000,0,0
-benedekrozemberczki/karateclub,2255,4,1,1,0,1.774,3,481,2167,16,Python,false,0,Science,,12.000,0,0
-pymc-devs/pymc3,9347,62,25,11,0,6.633,1,0,6033,462,Python,false,9,Science,,90.000,15,33
-statsmodels/statsmodels,11077,85,49,26,2,7.674,0,4,5265,400,Python,false,6,Science,,86.000,4,14
-sympy/sympy,14083,112,55,28,10,7.953,0,0,5672,1306,Python,false,0,Science,,100.000,18,98
-quantopian/zipline,19143,130,57,33,3,6.791,0,1853,4770,128,Python,false,0,Science,,60.000,0,0
-django-haystack/django-haystack,3717,38,21,13,2,10.223,0,6,6128,199,Python,false,0,Search,,72.000,2,3
-elastic/elasticsearch-dsl-py,3876,2,1,0,0,0.516,12,206,4268,2351,Python,false,0,Search,,7.000,0,0
-marshmallow-code/marshmallow,7206,16,6,3,0,2.220,2,6,4382,185,Python,false,0,Serialization,,53.000,5,10
-TkTech/pysimdjson,740,8,4,2,0,10.811,4,134,2453,15,Python,false,0,Serialization,,12.000,0,0
-python-rapidjson/python-rapidjson,520,0,0,0,0,0.000,38,20,3715,23,C++,false,0,Serialization,,12.000,1,5
-esnme/ultrajson,4459,14,6,3,0,3.140,1,8,5369,73,C++,false,0,Serialization,,43.000,2,2
-nficano/python-lambda,1515,1,1,1,0,0.660,5,1256,3545,42,Python,false,17,Serverless Frameworks,,10.000,0,0
-zappa/Zappa,3615,17,4,4,1,4.703,0,0,1944,251,Python,false,32,Serverless Frameworks,,78.000,2,2
-jazzband/tablib,4728,10,5,4,0,2.115,2,25,5341,766,Python,false,0,Specific Formats Processing,General,24.000,1,2
-elapouya/python-docx-template,2387,40,16,7,1,16.757,0,47,3896,55,Python,false,2,Specific Formats Processing,Office,41.000,0,0
-pyexcel/pyexcel,1270,7,4,0,0,5.512,10,8,4098,22,Python,false,10,Specific Formats Processing,Office,37.000,1,31
-python-openxml/python-docx,5281,42,25,11,2,7.953,0,146,4409,11,Python,false,1,Specific Formats Processing,Office,40.000,0,0
-scanny/python-pptx,3045,49,29,14,2,16.092,0,460,4737,8,Python,false,8,Specific Formats Processing,Office,40.000,0,0
-unoconv/unoconv,2734,7,3,2,0,2.560,6,1459,5327,48,Python,true,0,Specific Formats Processing,Office,0.000,0,0
-jmcnamara/XlsxWriter,3858,15,7,6,1,3.888,0,20,4693,52,Python,false,0,Specific Formats Processing,Office,43.000,2,3
-ZoomerAnalytics/xlwings,0,0,0,0,0,0.000,106751,75,75,1,Python,false,0,Specific Formats Processing,Office,0.000,0,0
-pdfminer/pdfminer.six,6779,32,18,6,1,4.720,0,2,4091,108,Python,false,0,Specific Formats Processing,PDF,77.000,5,5
-mstamy2/PyPDF2,9583,128,53,29,9,13.357,0,1,5057,269,Python,false,0,Specific Formats Processing,PDF,100.000,9,17
-lepture/mistune,2893,19,8,4,0,6.568,2,61,4283,45,Python,false,0,Specific Formats Processing,Markdown,21.000,0,0
-waylan/Python-Markdown,4112,17,10,2,0,4.134,2,6,5644,161,Python,false,0,Specific Formats Processing,Markdown,43.000,1,4
-wireservice/csvkit,6274,17,10,4,2,2.710,0,4,5337,99,Python,false,20,Specific Formats Processing,CSV,63.000,1,2
-mitsuhiko/unp,447,2,0,0,0,4.474,19,4093,4096,2,Python,false,0,Specific Formats Processing,Archive,4.000,0,0
-lektor/lektor,3904,8,3,1,0,2.049,1,186,3614,84,Python,false,0,Static Site Generator,,12.000,0,0
-sunainapai/makesite,1861,7,3,3,1,3.761,0,1124,2795,9,Python,false,0,Static Site Generator,,22.000,0,0
-getnikola/nikola,2695,6,2,1,0,2.226,1,100,4958,213,Python,false,0,Static Site Generator,,12.000,0,0
-getpelican/pelican,13095,62,13,5,0,4.735,3,9,5504,421,Python,false,0,Static Site Generator,,51.000,5,16
-jazzband/django-taggit,3410,4,3,2,0,1.173,3,108,5815,782,Python,false,0,Tagging,,12.000,0,0
-Bogdanp/dramatiq,4960,59,32,16,2,11.895,0,6,3086,117,Python,false,0,Task Queues,,90.000,1,22
-coleifer/huey,5717,74,33,19,7,12.944,0,18,5121,57,Python,false,0,Task Queues,,64.000,1,3
-pricingassistant/mrq,893,0,0,0,0,0.000,39,1793,4288,32,Python,false,3,Task Queues,,0.000,0,0
-rq/rq,10432,53,29,13,1,5.081,0,2,5110,316,Python,false,0,Task Queues,,82.000,3,4
-pallets/jinja,11256,67,39,23,2,5.952,0,148,5503,299,Python,false,0,Template Engine,,50.000,0,0
-HypothesisWorks/hypothesis,8219,118,68,47,3,14.357,0,0,4628,320,Python,false,0,Testing,Testing Frameworks,100.000,5,168
-nose-devs/nose2,812,1,0,0,0,1.232,19,179,5080,69,Python,false,0,Testing,Testing Frameworks,2.000,0,0
-robotframework/robotframework,11194,74,36,21,5,6.611,0,0,4154,205,Python,false,0,Testing,Testing Frameworks,100.000,7,54
-CleanCut/green,798,2,0,0,0,2.506,17,362,4240,39,Python,false,0,Testing,Test Runners,4.000,0,0
-locustio/locust,27049,158,63,29,5,5.841,0,3,5380,306,Python,false,0,Testing,GUI / Web Testing,100.000,7,61
-asweigart/pyautogui,12051,116,60,31,7,9.626,0,887,4133,49,Python,false,2,Testing,GUI / Web Testing,62.000,0,0
-kiwicom/schemathesis,2837,72,40,21,2,25.379,0,0,2275,64,Python,false,0,Testing,GUI / Web Testing,100.000,7,187
-seatgeek/sixpack,1758,0,0,0,0,0.000,131,1902,4743,51,Python,false,22,Testing,GUI / Web Testing,0.000,0,0
-cobrateam/splinter,2758,4,4,1,1,1.450,0,86,5531,164,Python,false,0,Testing,GUI / Web Testing,22.000,0,0
-spulec/freezegun,4447,14,6,2,0,3.148,1,82,4717,114,Python,false,2,Testing,Mock,21.000,0,0
-patrys/httmock,464,0,0,0,0,0.000,381,1839,4618,25,Python,false,0,Testing,Mock,0.000,0,0
-gabrielfalcao/HTTPretty,2171,44,16,11,1,20.267,0,1120,5400,81,Python,false,0,Testing,Mock,35.000,0,0
-mindflayer/python-mocket,300,0,0,0,0,0.000,56,12,4577,24,Python,false,0,Testing,Mock,22.000,1,2
-getsentry/responses,4302,14,5,2,1,3.254,0,94,4377,356,Python,false,0,Testing,Mock,26.000,0,0
-kevin1024/vcrpy,2874,9,7,4,0,3.132,1,59,4913,129,Python,false,0,Testing,Mock,23.000,0,0
-FactoryBoy/factory_boy,3719,18,7,4,1,4.840,0,71,5297,116,Python,false,0,Testing,Object Factories,31.000,0,0
-klen/mixer,947,0,0,0,0,0.000,79,1328,4558,39,Python,false,1,Testing,Object Factories,0.000,0,0
-vandersonmota/model_mommy,900,0,0,0,0,0.000,580,2211,5419,85,Python,true,3,Testing,Object Factories,0.000,0,0
-emirozer/fake2db,2343,4,2,0,0,1.707,9,2177,4282,17,Python,false,1,Testing,Fake Data,7.000,0,0
-joke2k/faker,18875,135,53,17,1,7.152,0,4,4745,578,Python,false,0,Testing,Fake Data,92.000,3,6
-lk-geimfari/mimesis,4633,12,10,5,0,2.590,1,18,3348,111,Python,false,0,Testing,Fake Data,31.000,1,1
-chardet/chardet,2294,7,4,3,1,3.051,0,4,4854,45,Python,false,0,Text Processing,General,54.000,2,8
-LuminosoInsight/python-ftfy,3983,16,2,0,0,4.017,7,375,4826,14,Python,false,0,Text Processing,General,11.000,0,0
-seatgeek/fuzzywuzzy,9263,11,4,1,0,1.188,5,1522,5238,136,Python,true,0,Text Processing,General,0.000,0,0
-vinta/pangu.py,268,0,0,0,0,0.000,65,956,4290,7,Python,false,0,Text Processing,General,0.000,0,0
-pwaller/pyfiglet,1508,20,11,7,1,13.263,0,87,5450,31,Python,false,0,Text Processing,General,31.000,0,0
-mozillazg/python-pinyin,5193,25,7,2,0,4.814,2,113,4440,24,Python,false,1,Text Processing,General,25.000,0,0
-orsinium/textdistance,3501,9,3,0,0,2.571,9,206,3111,15,Python,false,37,Text Processing,General,7.000,0,0
-dimka665/awesome-slugify,491,2,1,1,0,4.073,1,3215,4405,11,Python,false,2,Text Processing,Slugify,12.000,0,0
-un33k/python-slugify,1558,7,2,1,0,4.493,6,45,4774,39,Python,false,0,Text Processing,Slugify,18.000,0,0
-mozilla/unicode-slugify,321,0,0,0,0,0.000,116,1479,5344,12,Python,false,0,Text Processing,Slugify,0.000,0,0
-davidaurelio/hashids-python,1415,0,0,0,0,0.000,59,1890,4552,7,Python,false,0,Text Processing,Unique identifiers,0.000,0,0
-skorokithakis/shortuuid,2159,3,0,0,0,1.390,17,335,5420,33,Python,false,1,Text Processing,Unique identifiers,4.000,0,0
-dabeaz/ply,2910,7,7,2,0,2.405,2,936,5426,35,Python,false,0,Text Processing,Parser,17.000,0,0
-pyparsing/pyparsing,2412,16,7,4,0,6.633,2,9,3102,73,Python,false,0,Text Processing,Parser,43.000,1,2
-derek73/python-nameparser,691,3,0,0,0,4.342,17,781,4240,23,Python,false,0,Text Processing,Parser,4.000,0,0
-daviddrysdale/python-phonenumbers,3672,12,5,2,1,3.268,0,3,5317,26,Python,false,0,Text Processing,Parser,58.000,1,7
-selwin/python-user-agents,1498,5,1,1,0,3.338,3,998,4692,24,Python,false,3,Text Processing,Parser,12.000,0,0
-andialbrecht/sqlparse,3952,16,11,5,0,4.049,1,48,4953,93,Python,false,0,Text Processing,Parser,27.000,0,0
-boto/boto3,9587,43,21,7,1,4.485,0,3,4055,155,Python,false,0,Third-party APIs,,80.000,6,64
-istrategylabs/django-wordpress,359,0,0,0,0,0.000,208,2846,6072,9,Python,false,0,Third-party APIs,,0.000,0,0
-mobolic/facebook-sdk,2774,4,3,1,0,1.442,3,1779,5297,82,Python,false,0,Third-party APIs,,12.000,0,0
-burnash/gspread,7419,17,3,1,0,2.291,1,17,5092,169,Python,false,0,Third-party APIs,,28.000,2,3
-ryanmcgrath/twython,1864,0,0,0,0,0.000,62,1577,6066,85,Python,false,7,Third-party APIs,,0.000,0,0
-gruns/furl,2778,8,6,3,0,2.880,1,7,5107,13,Python,false,1,URL Manipulation,,37.000,1,1
-codeinthehole/purl,295,0,0,0,0,0.000,40,1639,4975,14,Python,false,4,URL Manipulation,,0.000,0,0
-ellisonleao/pyshorteners,404,3,1,0,0,7.426,12,1252,4424,20,Python,true,0,URL Manipulation,,0.000,0,0
-marshmallow-code/webargs,1405,1,0,0,0,0.712,26,6,4284,55,Python,false,0,URL Manipulation,,42.000,6,21
-aizvorski/scikit-video,145,0,0,0,0,0.000,40,3452,4183,2,Python,false,0,Video,,0.000,0,0
-abhiTronix/vidgear,3635,29,15,6,1,7.978,0,506,2430,12,Python,false,0,Video,,35.000,0,0
-django-compressor/django-compressor,2862,8,3,1,1,2.795,0,0,5757,205,Python,false,0,Web Asset Management,,78.000,4,11
-jazzband/django-pipeline,1540,2,2,1,0,1.299,3,58,5274,791,Python,false,0,Web Asset Management,,18.000,0,0
-jschneier/django-storages,2900,9,3,0,0,3.103,7,145,3989,264,Python,false,0,Web Asset Management,,7.000,0,0
-miracle2k/flask-assets,455,0,0,0,0,0.000,59,696,5575,39,Python,false,18,Web Asset Management,,0.000,0,0
-miracle2k/webassets,932,1,0,0,0,1.073,23,85,5816,147,Python,false,0,Web Asset Management,,2.000,0,0
-Alir3z4/html2text,2078,14,7,4,1,6.737,0,13,4281,72,Python,false,0,Web Content Extracting,,51.000,1,1
-michaelhelmick/lassie,625,2,2,2,2,3.200,0,1543,4485,12,HTML,false,0,Web Content Extracting,,22.000,0,0
-coleifer/micawber,660,5,2,0,0,7.576,8,339,4975,23,Python,false,0,Web Content Extracting,,7.000,0,0
-codelucas/newspaper,14853,53,26,13,2,3.568,0,7,4368,93,HTML,false,0,Web Content Extracting,,62.000,1,3
-buriy/python-readability,2853,6,3,1,0,2.103,2,190,5306,2,Python,false,5,Web Content Extracting,,12.000,0,0
-psf/requests-html,13866,17,9,6,2,1.226,0,952,2815,64,Python,false,14,Web Content Extracting,,31.000,0,0
-miso-belica/sumy,3635,6,1,1,0,1.651,1,543,4646,29,Python,false,0,Web Content Extracting,,12.000,0,0
-deanmalmgren/textract,4357,34,12,7,1,7.804,0,610,4147,34,HTML,false,0,Web Content Extracting,,35.000,0,0
-gaojiuli/toapi,3540,6,5,2,0,1.695,2,1596,2905,8,Python,false,9,Web Content Extracting,,12.000,0,0
-kurtmckee/feedparser,2230,22,8,5,0,9.865,1,6,5463,46,Python,false,0,Web Crawling,,57.000,3,6
-lorien/grab,2428,6,3,1,0,2.471,4,52,4576,50,Python,false,0,Web Crawling,,18.000,0,0
-MechanicalSoup/MechanicalSoup,4808,12,7,3,0,2.496,3,33,4186,48,Python,false,5,Web Crawling,,27.000,0,0
-scrapy/scrapy,58913,386,163,79,12,6.552,0,14,5740,584,Python,false,0,Web Crawling,,78.000,7,13
-django/django,85746,470,228,135,18,5.481,0,0,4944,2703,Python,false,0,Web Frameworks,Synchronous,100.000,33,90
-pallets/flask,70748,277,115,65,11,3.915,0,26,5697,731,Python,false,0,Web Frameworks,Synchronous,72.000,1,1
-MasoniteFramework/masonite,2320,8,4,4,0,3.448,3,234,2896,74,Python,false,20,Web Frameworks,Synchronous,12.000,0,0
-tornadoweb/tornado,22340,59,15,11,2,2.641,0,54,5906,392,Python,false,49,Web Frameworks,Asynchronous,41.000,0,0
-crossbario/autobahn-python,2531,9,4,3,0,3.556,2,2,5220,125,Python,false,0,WebSocket,,62.000,1,89
-django/channels,6302,12,5,3,0,1.904,3,54,3813,264,Python,false,0,WebSocket,,22.000,0,0
-aaugustin/websockets,5562,23,5,3,2,4.135,0,1,4608,76,Python,false,0,WebSocket,,80.000,2,26
-benoitc/gunicorn,10329,47,21,10,0,4.550,1,35,5824,369,Python,false,0,WSGI Servers,,36.000,0,0
-Pylons/waitress,1547,10,7,3,0,6.464,0,126,5077,65,Python,false,0,WSGI Servers,,17.000,0,0
-pallets/werkzeug,6808,15,8,4,0,2.203,1,150,5502,446,Python,false,0,WSGI Servers,,21.000,0,0
+ajenti/ajenti,7836,24,14,6,1,3.063,0,37,5738,22,Python,false,0,Admin Panels,,41.000,0,0
+sehmaschine/django-grappelli,3910,17,3,0,0,4.348,10,203,5715,74,HTML,false,0,Admin Panels,,11.000,0,0
+flask-admin/flask-admin,6040,37,6,3,1,6.126,0,5,4991,339,Python,false,0,Admin Panels,,75.000,6,31
+mher/flower,7011,53,17,7,3,7.560,0,69,4880,198,Python,false,0,Admin Panels,,35.000,0,0
+jet-admin/jet-bridge,1778,9,2,0,0,5.062,11,19,2518,4,Python,false,1,Admin Panels,,19.000,1,4
+wooey/wooey,2201,4,1,0,0,1.817,13,704,3914,23,Python,false,0,Admin Panels,,7.000,0,0
+streamlit/streamlit,42244,456,217,96,15,10.794,0,0,2277,304,Python,false,0,Admin Panels,,100.000,15,134
+keon/algorithms,24845,74,32,21,4,2.978,0,14,3286,193,Python,false,0,Algorithms and Design Patterns,Algorithms,60.000,1,1
+prabhupant/python-ds,3026,19,8,4,1,6.279,0,590,2303,94,Python,false,0,Algorithms and Design Patterns,Algorithms,31.000,0,0
+grantjenks/python-sortedcontainers,3857,26,18,6,0,6.741,1,625,4284,22,Python,false,1,Algorithms and Design Patterns,Algorithms,25.000,0,0
+TheAlgorithms/Python,213246,2333,981,435,67,10.940,0,11,3411,1324,Python,false,0,Algorithms and Design Patterns,Algorithms,92.000,6,6
+tylerlaberge/PyPattyrn,2330,5,1,1,0,2.146,3,540,3409,3,Python,true,1,Algorithms and Design Patterns,Design Patterns,0.000,0,0
+faif/python-patterns,42420,168,78,40,11,3.960,0,10,4911,121,Python,false,0,Algorithms and Design Patterns,Design Patterns,82.000,1,1
+pytransitions/transitions,6303,46,17,8,1,7.298,0,69,4053,65,Python,false,0,Algorithms and Design Patterns,Design Patterns,35.000,0,0
+django/daphne,2600,14,6,3,1,5.385,0,61,3617,76,Python,false,0,ASGI Servers,,31.000,0,0
+encode/uvicorn,10069,121,49,26,4,12.017,0,13,3092,198,Python,false,0,ASGI Servers,,72.000,2,4
+pgjones/hypercorn,1449,19,10,7,2,13.112,0,9,2725,65,Python,false,0,ASGI Servers,,57.000,10,17
+python-trio/trio,7000,103,76,28,2,14.714,0,6,3227,159,Python,false,0,Asynchronous Programming,,96.000,4,11
+twisted/twisted,5902,26,12,7,0,4.405,1,19,5252,200,Python,false,0,Asynchronous Programming,,45.000,3,24
+MagicStack/uvloop,11425,91,46,20,2,7.965,0,31,3662,75,Cython,false,0,Asynchronous Programming,,56.000,0,0
+eventlet/eventlet,1269,3,1,0,0,2.364,13,7,4724,161,Python,false,0,Asynchronous Programming,,27.000,1,1
+gevent/gevent,6420,7,3,2,0,1.090,1,5,4812,101,Python,false,6,Asynchronous Programming,,48.000,5,12
+beetbox/audioread,519,2,2,0,0,3.854,8,21,5122,42,Python,false,0,Audio,Audio,19.000,2,4
+libAudioFlux/audioFlux,3204,22,9,2,1,6.866,0,542,1036,5,C,false,0,Audio,Audio,35.000,0,0
+worldveil/dejavu,6673,16,9,5,1,2.398,0,1993,4381,22,Python,false,7,Audio,Audio,31.000,0,0
+keunwoochoi/kapre,931,2,1,0,0,2.148,12,21,3260,14,Python,false,0,Audio,Audio,19.000,1,2
+librosa/librosa,8007,66,31,18,3,8.243,0,182,4776,119,Python,false,0,Audio,Audio,50.000,0,0
+sergree/matchering,2300,34,13,6,2,14.783,0,27,2606,3,Python,false,5,Audio,Audio,45.000,1,1
+tyiannak/pyAudioAnalysis,6169,24,13,4,1,3.890,0,105,4100,22,Python,false,11,Audio,Audio,35.000,0,0
+jiaaro/pydub,9638,43,18,4,0,4.462,2,1075,5313,80,Python,false,0,Audio,Audio,25.000,0,0
+Parisson/TimeSide,389,1,0,0,0,2.571,22,399,5109,20,Python,false,215,Audio,Audio,2.000,0,0
+beetbox/beets,14295,275,210,92,10,19.237,0,0,5578,520,Python,false,40,Audio,Metadata,100.000,15,106
+nicfit/eyeD3,614,5,4,3,3,8.143,0,1,3221,29,Python,false,0,Audio,Metadata,68.000,1,11
+quodlibet/mutagen,1801,21,10,4,1,11.660,0,1,3511,45,Python,false,0,Audio,Metadata,77.000,1,6
+devsnd/tinytag,783,3,2,1,1,3.831,0,0,4312,23,Python,false,0,Audio,Metadata,78.000,1,15
+lepture/authlib,5105,54,21,14,0,10.578,1,6,2943,127,Python,false,0,Authentication,OAuth,62.000,2,3
+pennersr/django-allauth,10204,49,22,8,2,4.802,0,17,5516,684,Python,false,0,Authentication,OAuth,60.000,6,25
+jazzband/django-oauth-toolkit,3295,16,7,5,0,4.856,2,3,4564,261,Python,false,0,Authentication,OAuth,57.000,4,11
+oauthlib/oauthlib,2939,12,8,5,0,4.083,1,12,5111,181,Python,false,3,Authentication,OAuth,41.000,1,1
+jpadilla/pyjwt,5522,26,15,6,0,4.708,1,19,5379,160,Python,false,0,Authentication,JWT,37.000,2,8
+openembedded/bitbake,480,2,2,1,0,4.167,6,3,5311,268,Python,false,0,Build Tools,,52.000,15,40
+buildout/buildout,601,7,4,3,0,11.647,3,5,4984,84,Python,false,2,Build Tools,,44.000,1,8
+platformio/platformio-core,8677,65,28,11,0,7.491,1,57,4210,90,Python,false,0,Build Tools,,36.000,0,0
+pybuilder/pybuilder,1901,13,5,4,1,6.839,0,2,4865,34,Python,false,0,Build Tools,,68.000,1,3
+SCons/scons,2311,21,7,2,1,9.087,0,0,2975,120,Python,false,0,Build Tools,,95.000,3,22
+python-attrs/attrs,5657,21,8,5,0,3.712,1,5,3947,186,Python,false,0,Built-in Classes Enhancement,,61.000,2,11
+jab/bidict,1558,7,3,2,0,4.493,3,7,4073,16,Python,false,0,Built-in Classes Enhancement,,34.000,1,2
+cdgriffith/Box,2785,12,8,5,1,4.309,0,305,3173,17,Python,false,3,Built-in Classes Enhancement,,31.000,0,0
+carlosescri/DottedDict,215,0,0,0,0,0.000,76,343,4273,5,Python,false,0,Built-in Classes Enhancement,,0.000,0,0
+feincms/feincms,1043,16,7,6,1,15.340,0,62,6137,100,Python,false,0,CMS,,31.000,0,0
+indico/indico,1976,15,6,1,0,7.591,5,0,5227,119,Python,false,137,CMS,,81.000,13,42
+wagtail/wagtail,19834,130,73,23,3,6.554,0,0,4305,835,Python,false,0,CMS,,100.000,26,133
+bbangert/beaker,538,1,0,0,0,1.859,25,247,5146,75,Python,false,0,Caching,,2.000,0,0
+django-cache-machine/django-cache-machine,880,1,0,0,0,1.136,14,1001,5759,18,Python,false,0,Caching,,2.000,0,0
+Suor/django-cacheops,2247,12,6,3,1,5.340,0,33,5280,65,Python,false,1,Caching,,37.000,0,0
+sqlalchemy/dogpile.cache,282,2,1,0,0,7.092,9,2,2549,56,Python,false,0,Caching,,49.000,1,4
+lericson/pylibmc,483,0,0,0,0,0.000,34,219,5952,44,C,false,0,Caching,,0.000,0,0
+grantjenks/python-diskcache,2698,68,34,11,0,25.204,2,624,3574,25,Python,false,0,Caching,,40.000,0,0
+scottrogowski/code2flow,4466,38,16,6,0,8.509,2,1043,4560,10,Python,false,0,Code Analysis,Code Analysis,25.000,0,0
+PyCQA/prospector,2044,4,1,1,0,1.957,6,6,4487,85,Python,false,21,Code Analysis,Code Analysis,42.000,1,1
+jendrikseipp/vulture,4168,74,16,4,1,17.754,0,31,3178,42,Python,false,1,Code Analysis,Code Analysis,41.000,0,0
+PyCQA/flake8,3720,24,12,4,1,6.452,0,6,4083,178,Python,false,0,Code Analysis,Code Linters,67.000,2,2
+pylint-dev/pylint,5598,24,10,8,3,4.287,0,1,3631,545,Python,false,0,Code Analysis,Code Linters,85.000,11,43
+astral-sh/ruff,43827,754,333,178,25,17.204,0,0,1196,751,Rust,false,157,Code Analysis,Code Linters,100.000,52,356
+psf/black,41142,128,51,31,1,3.111,0,0,2804,482,Python,false,0,Code Analysis,Code Formatters,100.000,16,31
+timothycrosley/isort,6865,24,14,8,1,3.496,0,6,4458,313,Python,false,0,Code Analysis,Code Formatters,75.000,4,23
+google/yapf,13966,22,11,7,2,1.575,0,279,3897,152,Python,false,0,Code Analysis,Code Formatters,35.000,0,0
+python/mypy,19990,103,39,24,2,5.153,0,0,4728,772,Python,false,0,Code Analysis,Code Formatters,100.000,17,59
+facebook/pyre-check,7115,25,14,8,0,3.514,2,0,2929,252,OCaml,false,0,Code Analysis,Code Formatters,85.000,4,38
+python/typeshed,4923,35,14,8,3,7.109,0,0,3910,1511,Python,false,0,Code Analysis,Code Formatters,95.000,29,106
+Instagram/MonkeyType,4959,18,9,5,0,3.630,1,156,3051,55,Python,false,13,Code Analysis,Static Type Annotations Generators,21.000,0,0
+google/pytype,5014,12,5,1,0,2.393,5,4,3896,117,Python,false,25,Code Analysis,Static Type Annotations Generators,48.000,2,10
+datafolklabs/cement,1334,4,1,1,0,2.999,6,14,5826,39,Python,false,0,Command-line Interface Development,Command-line Application Development,24.000,2,7
+openstack/cliff,253,3,1,1,0,11.858,6,143,4300,90,Python,false,5,Command-line Interface Development,Command-line Application Development,12.000,0,0
+google/python-fire,27977,63,32,20,2,2.252,0,92,3190,81,Python,false,0,Command-line Interface Development,Command-line Application Development,50.000,0,0
+prompt-toolkit/python-prompt-toolkit,10080,71,32,14,4,7.044,0,0,4313,219,Python,false,0,Command-line Interface Development,Command-line Application Development,100.000,4,7
+rsalmei/alive-progress,6169,26,12,7,0,4.215,1,38,2296,9,Python,false,0,Command-line Interface Development,Terminal Rendering,31.000,0,0
+peterbrittain/asciimatics,4209,23,11,6,2,5.464,0,170,3868,39,Python,false,1,Command-line Interface Development,Terminal Rendering,35.000,0,0
+glamp/bashplotlib,1907,3,2,1,0,1.573,4,1691,4722,15,Python,false,0,Command-line Interface Development,Terminal Rendering,12.000,0,0
+tartley/colorama,3745,19,10,5,1,5.073,0,131,4231,47,Python,false,0,Command-line Interface Development,Terminal Rendering,31.000,0,0
+Textualize/rich,54444,390,193,111,16,7.163,0,39,2199,264,Python,false,4,Command-line Interface Development,Terminal Rendering,68.000,0,0
+tqdm/tqdm,30669,153,64,37,4,4.989,0,370,3820,113,Python,false,0,Command-line Interface Development,Terminal Rendering,60.000,0,0
+copier-org/copier,2925,54,24,14,3,18.462,0,3,5129,110,Python,false,0,Command-line Tools,Productivity Tools,80.000,4,21
+cookiecutter/cookiecutter,24315,142,63,24,3,5.840,0,9,4509,296,Python,false,0,Command-line Tools,Productivity Tools,82.000,4,4
+sloria/doitlive,3521,5,2,2,1,1.420,0,16,4172,15,Python,false,0,Command-line Tools,Productivity Tools,34.000,2,8
+gleitz/howdoi,10778,21,13,4,1,1.948,0,391,4743,74,Python,false,11,Command-line Tools,Productivity Tools,35.000,0,0
+pyinvoke/invoke,4649,16,7,3,0,3.442,3,28,5009,55,Python,false,0,Command-line Tools,Productivity Tools,33.000,1,3
+facebook/PathPicker,5208,8,5,2,0,1.536,2,438,3853,143,Python,false,1,Command-line Tools,Productivity Tools,12.000,0,0
+nvbn/thefuck,94687,386,164,72,12,4.077,0,661,3876,182,Python,false,2,Command-line Tools,Productivity Tools,62.000,0,0
+tmux-python/tmuxp,4339,29,16,10,0,6.684,2,2,4465,68,Python,false,0,Command-line Tools,Productivity Tools,75.000,1,38
+timofurrer/try,744,1,0,0,0,1.344,23,1282,3530,4,Python,false,0,Command-line Tools,Productivity Tools,2.000,0,0
+httpie/cli,37029,264,119,69,9,7.130,0,335,5014,154,Python,false,0,Command-line Tools,CLI Enhancements,62.000,0,0
+laixintao/iredis,2692,9,5,4,1,3.343,0,102,2495,28,Python,false,10,Command-line Tools,CLI Enhancements,22.000,0,0
+dbcli/litecli,3126,14,7,2,1,4.479,0,49,2745,50,Python,false,0,Command-line Tools,CLI Enhancements,37.000,0,0
+dbcli/mycli,11759,31,13,8,0,2.636,3,1,3878,113,Python,false,0,Command-line Tools,CLI Enhancements,75.000,2,38
+dbcli/pgcli,12812,65,13,7,0,5.073,1,3,4054,169,Python,false,0,Command-line Tools,CLI Enhancements,55.000,1,1
+JaidedAI/EasyOCR,28398,251,106,46,8,8.839,0,419,2074,113,Python,false,1,Computer Vision,,62.000,0,0
+madmaze/pytesseract,6260,21,9,4,0,3.355,1,272,5499,44,Python,false,0,Computer Vision,,25.000,0,0
+sirfz/tesserocr,2129,10,6,1,0,4.697,5,38,3622,28,Python,false,0,Computer Vision,,23.000,0,0
+DiffSK/configobj,329,1,0,0,0,3.040,20,164,4325,9,Python,false,0,Configuration Files,,2.000,0,0
+facebookresearch/hydra,9945,108,56,29,6,10.860,0,20,2349,194,Python,false,0,Configuration Files,,82.000,1,21
+HBNetwork/python-decouple,2985,11,3,3,0,3.685,2,686,4283,35,Python,false,5,Configuration Files,,16.000,0,0
+pyca/cryptography,7324,71,40,19,3,9.694,0,0,4485,336,Python,false,0,Cryptography,,100.000,7,166
+paramiko/paramiko,9570,62,18,13,1,6.479,0,28,6132,139,Python,false,0,Cryptography,,47.000,1,6
+pyca/pynacl,1158,8,1,1,0,6.908,4,7,4651,75,C,false,0,Cryptography,,34.000,2,3
+aws/aws-sdk-pandas,4078,14,6,4,1,3.433,0,6,2456,170,Python,false,0,Data Analysis,,67.000,5,16
+simonw/datasette,10526,114,59,18,5,10.830,0,4,2947,80,Python,false,0,Data Analysis,,100.000,3,173
+hi-primus/optimus,1527,5,3,3,0,3.274,2,913,3049,21,Python,false,29,Data Analysis,,12.000,0,0
+pyeve/cerberus,3250,5,3,1,0,1.538,2,11,4786,52,Python,false,0,Data Validation,,34.000,2,6
+Pylons/colander,458,0,0,0,0,0.000,31,472,5388,108,Python,false,0,Data Validation,,0.000,0,0
+python-jsonschema/jsonschema,4875,28,16,8,1,5.744,0,13,5071,103,Python,false,0,Data Validation,,61.000,3,17
+keleshev/schema,2931,3,2,1,0,1.024,3,22,4838,65,Python,false,1,Data Validation,,24.000,2,3
+schematics/schematics,2586,2,1,0,0,0.773,8,1552,5439,89,Python,false,7,Data Validation,,7.000,0,0
+alecthomas/voluptuous,1842,3,1,0,0,1.629,11,78,5604,91,Python,false,0,Data Validation,,7.000,0,0
+pydantic/pydantic,25811,360,181,98,14,13.948,0,0,3119,703,Python,false,0,Data Validation,,100.000,16,84
+altair-viz/altair,10111,60,28,20,3,5.934,0,3,3712,181,Python,false,0,Data Visualization,,76.000,9,18
+bokeh/bokeh,20187,74,32,16,3,3.666,0,2,4984,624,TypeScript,false,0,Data Visualization,,96.000,7,16
+bloomberg/bqplot,3676,4,2,1,0,1.088,5,84,3705,57,TypeScript,false,0,Data Visualization,,12.000,0,0
+SciTools/cartopy,1554,12,5,1,0,7.722,6,3,4854,130,Python,false,0,Data Visualization,,52.000,6,17
+mingrammer/diagrams,41728,127,55,33,5,3.044,0,21,2115,170,Python,false,4,Data Visualization,,72.000,2,2
+matplotlib/matplotlib,22003,187,95,55,9,8.499,0,2,5385,1567,Python,false,0,Data Visualization,,100.000,18,45
+has2k1/plotnine,4412,29,17,8,1,6.573,0,3,3129,93,Python,false,0,Data Visualization,,67.000,1,5
+Kozea/pygal,2738,5,1,1,1,1.826,0,462,5169,94,Python,false,0,Data Visualization,,22.000,0,0
+pyqtgraph/pyqtgraph,4231,37,13,6,1,8.745,0,0,4449,283,Python,false,1,Data Visualization,,95.000,11,36
+mwaskom/seaborn,13564,73,33,17,6,5.382,0,130,4900,201,Python,false,0,Data Visualization,,52.000,0,0
+vispy/vispy,3498,20,12,5,2,5.718,0,7,4624,175,Python,false,13,Data Visualization,,53.000,1,2
+patx/pickledb,1032,4,1,0,0,3.876,10,98,5134,13,Python,false,1,Database,,7.000,0,0
+msiemens/tinydb,7375,50,20,12,3,6.780,0,401,4510,85,Python,false,1,Database,,35.000,0,0
+zopefoundation/ZODB,737,6,4,2,0,8.141,3,47,4707,276,Python,false,5,Database,,18.000,0,0
+PyMySQL/mysqlclient,2517,5,1,0,0,1.986,7,267,4221,79,Python,false,0,Database Drivers,,7.000,0,0
+PyMySQL/PyMySQL,7837,14,5,3,0,1.786,1,85,5227,109,Python,false,0,Database Drivers,,16.000,0,0
+psycopg/psycopg,2191,47,18,8,1,21.451,0,1,2073,76,Python,false,0,Database Drivers,,85.000,9,53
+simonw/sqlite-utils,1919,17,4,2,0,8.859,2,46,2683,42,Python,false,0,Database Drivers,,22.000,0,0
+pymssql/pymssql,867,1,1,1,0,1.153,5,10,4452,42,Python,false,12,Database Drivers,Other Relational Databases,32.000,3,6
+mymarilyn/clickhouse-driver,1281,3,0,0,0,2.342,23,6,3112,57,Python,false,2,Database Drivers,Other Relational Databases,40.000,2,13
+datastax/python-driver,1419,2,2,2,1,1.409,0,6,4515,165,Python,false,3,Database Drivers,NoSQL Databases,54.000,2,2
+python-happybase/happybase,609,0,0,0,0,0.000,191,52,4928,21,Python,false,1,Database Drivers,NoSQL Databases,6.000,0,0
+dpkp/kafka-python,5854,23,13,8,0,3.929,2,121,4802,217,Python,false,0,Database Drivers,NoSQL Databases,25.000,0,0
+mongodb/mongo-python-driver,4299,19,9,2,1,4.420,0,4,6150,625,Python,false,1,Database Drivers,NoSQL Databases,67.000,4,11
+mongodb/motor,2518,9,4,3,3,3.574,0,6,4692,521,Python,false,1,Database Drivers,NoSQL Databases,54.000,2,5
+redis/redis-py,13351,70,38,19,7,5.243,0,0,5855,487,Python,false,0,Database Drivers,NoSQL Databases,100.000,8,31
+arrow-py/arrow,8960,24,8,4,0,2.679,3,23,4746,258,Python,false,0,Date and Time,,35.000,1,1
+dateutil/dateutil,2562,15,8,6,0,5.855,2,62,4016,121,Python,false,0,Date and Time,,21.000,0,0
+sdispater/pendulum,6580,24,14,7,0,3.647,1,20,3429,117,Python,false,0,Date and Time,,37.000,2,2
+gotcha/ipdb,1948,6,2,1,0,3.080,3,112,5420,53,Python,false,0,Debugging Tools,pdb-like Debugger,12.000,0,0
+inducer/pudb,3166,11,2,2,0,3.474,1,6,5301,85,Python,false,0,Debugging Tools,pdb-like Debugger,48.000,2,10
+ionelmc/python-manhole,395,2,1,0,0,5.063,7,501,4526,11,Python,false,0,Debugging Tools,Tracing,7.000,0,0
+ionelmc/python-hunter,851,3,2,2,0,3.525,4,86,3899,10,Python,false,0,Debugging Tools,Tracing,12.000,0,0
+benfred/py-spy,14565,143,57,28,6,9.818,0,91,2665,49,Rust,false,27,Debugging Tools,Profiler,62.000,0,0
+nvdv/vprof,3971,0,0,0,0,0.000,31,1221,3794,15,Python,false,1,Debugging Tools,Profiler,0.000,0,0
+jazzband/django-debug-toolbar,8309,21,11,6,0,2.527,1,3,6290,338,Python,false,0,Debugging Tools,Others,65.000,8,24
+pallets-eco/flask-debugtoolbar,972,4,3,2,0,4.115,2,155,5084,57,JavaScript,false,0,Debugging Tools,Others,12.000,0,0
+gruns/icecream,9942,48,29,20,4,4.828,0,64,2834,31,Python,false,0,Debugging Tools,Others,40.000,0,0
+eliben/pyelftools,2172,14,3,2,0,6.446,2,2,4544,96,Python,false,0,Debugging Tools,Others,58.000,1,2
+keras-team/keras,63563,144,61,30,6,2.265,0,2,3887,1362,Python,false,7,Deep Learning,,100.000,24,48
+pytorch/pytorch,95146,1239,658,264,56,13.022,0,0,3383,4142,Python,false,9,Deep Learning,,100.000,265,1356
+Lightning-AI/pytorch-lightning,30456,204,96,49,9,6.698,0,2,2423,1012,Python,false,2,Deep Learning,,100.000,14,46
+DLR-RM/stable-baselines3,12063,290,137,66,7,24.040,0,3,2022,176,Python,false,0,Deep Learning,,94.000,3,4
+tensorflow/tensorflow,192464,563,260,128,27,2.925,0,0,3663,4000,C++,false,0,Deep Learning,,100.000,147,1131
+Theano/Theano,9962,13,3,1,0,1.305,6,672,5213,349,Python,false,2,Deep Learning,,16.000,0,0
+ansible/ansible,67034,336,161,84,11,5.012,0,3,5004,5570,Python,false,3,DevOps Tools,Configuration Management,100.000,17,55
+canonical/cloud-init,3498,43,20,5,1,12.293,0,0,4058,471,Python,false,1,DevOps Tools,Configuration Management,95.000,12,31
+pyinfra-dev/pyinfra,4482,29,13,8,1,6.470,0,20,4046,156,Python,false,0,DevOps Tools,Configuration Management,47.000,7,7
+saltstack/salt,14914,94,37,17,0,6.303,1,20,5383,2449,Python,false,0,DevOps Tools,Configuration Management,60.000,1,49
+sebastien/cuisine,1265,1,1,0,0,0.791,7,545,5375,43,Python,false,0,DevOps Tools,SSH-style Deployment,5.000,0,0
+fabric/fabric,15302,41,12,6,1,2.679,0,120,6044,15,Python,false,0,DevOps Tools,SSH-style Deployment,35.000,0,0
+Supervisor/supervisor,8919,29,10,5,1,3.251,0,21,5458,150,Python,false,0,DevOps Tools,Process Management,47.000,2,8
+giampaolo/psutil,10916,64,21,8,2,5.863,0,4,4196,207,Python,false,9,DevOps Tools,Monitoring,80.000,4,88
+borgbackup/borg,12590,101,51,25,2,8.022,0,0,3841,314,Python,false,0,DevOps Tools,Backup,100.000,4,66
+dask/dask,13599,66,34,17,4,4.853,0,0,3970,601,Python,false,0,Distributed Computing,Batch Processing,100.000,11,34
+spotify/luigi,18559,37,17,9,1,1.994,0,184,4806,518,Python,false,0,Distributed Computing,Batch Processing,35.000,0,0
+apache/spark,42315,243,125,59,6,5.743,0,0,4283,2221,Scala,false,0,Distributed Computing,Batch Processing,100.000,72,370
+robinhood/faust,6823,4,1,1,0,0.586,3,998,3176,79,Python,false,25,Distributed Computing,Stream Processing,12.000,0,0
+Parsely/streamparse,1501,1,0,0,0,0.666,20,465,4216,41,Python,false,2,Distributed Computing,Stream Processing,2.000,0,0
+ronaldoussoren/py2app,408,0,0,0,0,0.000,40,492,2134,9,Python,false,0,Distribution,,0.000,0,0
+py2exe/py2exe,977,11,5,1,0,11.259,2,124,2443,17,Python,false,0,Distribution,,16.000,0,0
+dashingsoft/pyarmor,4740,79,46,20,4,16.667,0,6,3005,31,Python,false,1,Distribution,,90.000,2,33
+pyinstaller/pyinstaller,12711,45,25,11,2,3.540,0,4,5108,429,Python,false,0,Distribution,,76.000,6,11
+linkedin/shiv,1892,8,5,3,0,4.228,3,377,2806,40,Python,false,0,Distribution,,12.000,0,0
+mitmproxy/pdoc,2419,22,9,5,0,9.095,2,11,4487,74,Python,false,0,Documentation,,51.000,7,11
+jindaxiang/akshare,14403,499,245,114,23,34.646,0,3,2239,102,Python,false,15,Downloader,,100.000,6,74
+s3tools/s3cmd,4812,18,5,2,0,3.741,5,25,5277,178,Python,false,0,Downloader,,28.000,2,2
+jorgenschaefer/elpy,1929,3,1,1,0,1.555,4,226,4766,84,Emacs Lisp,false,0,Editor Plugins and IDEs,Emacs,12.000,0,0
+davidhalter/jedi-vim,5317,3,0,0,0,0.564,14,59,4808,90,Python,false,0,Editor Plugins and IDEs,Vim,10.000,0,0
+python-mode/python-mode,5465,3,1,1,0,0.549,3,2,5174,111,Vim Script,false,0,Editor Plugins and IDEs,Vim,62.000,1,30
+Valloric/YouCompleteMe,26249,93,45,28,2,3.543,0,1,4963,170,Python,false,0,Editor Plugins and IDEs,Vim,92.000,1,4
+Microsoft/PTVS,2556,2,2,1,0,0.782,2,5,3896,80,C#,false,0,Editor Plugins and IDEs,Visual Studio,44.000,2,5
+spyder-ide/spyder,9022,62,21,11,1,6.872,0,3,3926,212,Python,false,21,Editor Plugins and IDEs,IDE,80.000,9,63
+modoboa/modoboa,3380,25,11,6,1,7.396,0,3,4598,92,Python,false,0,Email,Mail Servers,75.000,3,35
+moggers87/salmon,659,4,1,1,0,6.070,4,235,4577,12,Python,true,3,Email,Mail Servers,0.000,0,0
+martinrusev/imbox,1205,0,0,0,0,0.000,36,580,4501,40,Python,false,2,Email,Clients,0.000,0,0
+kootenpv/yagmail,2715,11,5,2,0,4.052,2,1145,3866,31,Python,false,0,Email,Clients,16.000,0,0
+mailgun/flanker,1645,2,1,0,0,1.216,13,990,4386,47,Python,false,7,Email,Others,7.000,0,0
+marrow/mailer,287,2,1,1,0,6.969,5,180,5363,19,Python,false,0,Email,Others,12.000,0,0
+pyenv/pyenv,43657,309,136,64,12,7.078,0,9,4826,434,Roff,false,0,Environment Management,,84.000,5,5
+pypa/virtualenv,4986,10,4,0,0,2.006,7,6,5370,191,Python,false,0,Environment Management,,39.000,2,6
+jaraco/path.py,1120,3,0,0,0,2.679,17,112,4958,48,Python,false,0,File Manipulation,,4.000,0,0
+ahupp/python-magic,2843,19,9,4,0,6.683,1,34,5709,56,Python,false,0,File Manipulation,,27.000,0,0
+gorakhargosh/watchdog,7156,42,19,11,3,5.869,0,40,5504,148,Python,false,0,File Manipulation,,41.000,0,0
+evhub/coconut,4275,8,4,2,0,1.871,3,442,4061,29,Python,false,0,Functional Programming,,12.000,0,0
+Suor/funcy,3468,7,2,2,0,2.018,3,59,4783,30,Python,false,0,Functional Programming,,18.000,0,0
+erikrose/more-itertools,4005,15,8,4,0,3.745,1,3,4953,128,Python,false,0,Functional Programming,,61.000,2,26
+dry-python/returns,4150,49,29,13,2,11.807,0,3,2487,60,Python,false,5,Functional Programming,,76.000,2,14
+pytoolz/toolz,5068,18,7,4,2,3.552,0,31,4448,76,Python,false,0,Functional Programming,,37.000,0,0
+ChrisKnott/Eel,6754,8,2,1,1,1.184,0,148,2881,43,Python,true,7,GUI Development,,0.000,0,0
+nucleic/enaml,1562,5,1,1,0,3.201,4,20,4638,33,Python,false,0,GUI Development,,24.000,1,3
+zoofIO/flexx,3341,3,1,0,0,0.898,9,680,4093,33,Python,false,0,GUI Development,,7.000,0,0
+chriskiehl/Gooey,21702,88,45,21,2,4.055,0,1289,4337,85,Python,false,8,GUI Development,,50.000,0,0
+pyglet/pyglet,2114,24,9,3,1,11.353,0,5,2353,139,Python,false,0,GUI Development,,71.000,2,20
+PySimpleGUI/PySimpleGUI,13689,22,13,9,0,1.607,2,169,2686,7,Python,false,0,GUI Development,,25.000,0,0
+pybee/toga,5243,37,16,9,1,7.057,0,0,4125,281,Python,false,0,GUI Development,,95.000,11,59
+SmileyChris/django-countries,1503,9,6,2,0,5.988,2,4,4531,55,Python,false,0,Geolocation,,57.000,3,57
+jazzband/geojson,974,1,0,0,0,1.027,29,330,5252,701,Python,false,0,Geolocation,,2.000,0,0
+geopy/geopy,4728,24,11,7,0,5.076,2,724,5736,111,Python,false,0,Geolocation,,25.000,0,0
+mozilla/bleach,2730,10,2,0,0,3.663,7,21,5750,66,Python,false,0,HTML Manipulation,,17.000,1,1
+html5lib/html5lib-python,1208,1,0,0,0,0.828,14,635,4605,58,Python,false,1,HTML Manipulation,,2.000,0,0
+pallets/markupsafe,672,5,3,1,0,7.440,5,51,5627,48,Python,false,0,HTML Manipulation,,18.000,0,0
+gawel/pyquery,2366,6,4,2,0,2.536,2,444,4736,42,Python,false,1,HTML Manipulation,,12.000,0,0
+stchris/untangle,628,2,2,0,0,3.185,10,668,5279,12,Python,false,2,HTML Manipulation,,7.000,0,0
+martinblech/xmltodict,5694,17,7,3,0,2.986,4,20,4962,47,Python,false,0,HTML Manipulation,,33.000,1,4
+encode/httpx,14750,123,58,27,4,8.339,0,32,2419,235,Python,false,15,HTTP Clients,,66.000,0,0
+psf/requests,53480,135,73,37,1,2.524,0,33,5391,645,Python,false,0,HTTP Clients,,66.000,0,0
+twisted/treq,598,1,0,0,0,1.672,22,8,4931,63,Python,false,0,HTTP Clients,,24.000,2,3
+urllib3/urllib3,3963,9,4,3,0,2.271,3,18,5174,338,Python,false,0,HTTP Clients,,24.000,3,6
+boppreh/keyboard,3944,15,8,5,2,3.803,0,1020,4576,31,Python,false,0,Hardware,,31.000,0,0
+boppreh/mouse,954,2,1,1,0,2.096,6,874,3027,9,Python,false,0,Hardware,,12.000,0,0
+moses-palmer/pynput,2024,20,11,4,1,9.881,0,245,3686,23,Python,false,2,Hardware,,31.000,0,0
+secdev/scapy,11862,95,43,18,0,8.009,1,9,3700,451,Python,false,0,Hardware,,62.000,4,8
+python-pillow/Pillow,13195,71,33,20,2,5.381,0,3,4863,418,Python,false,0,Image Processing,,90.000,4,21
+WhyNotHugo/python-barcode,630,5,1,1,1,7.937,0,79,2957,36,Python,false,0,Image Processing,,22.000,0,0
+lincolnloop/python-qrcode,4781,27,10,8,2,5.647,0,114,5121,61,Python,false,0,Image Processing,,35.000,0,0
+dylanaraps/pywal,8935,42,17,10,2,4.701,0,1530,3076,53,Python,true,0,Image Processing,,5.000,0,0
+libvips/pyvips,742,7,3,1,0,9.434,2,17,3034,19,Python,false,0,Image Processing,,22.000,1,1
+fogleman/Quads,1209,3,1,0,0,2.481,13,4199,4203,1,Python,false,0,Image Processing,,7.000,0,0
+thumbor/thumbor,10394,21,7,2,0,2.020,5,14,5360,171,Python,false,0,Image Processing,,37.000,2,5
+emcconville/wand,1466,4,3,2,0,2.729,4,42,5161,95,Python,false,0,Image Processing,,18.000,0,0
+python/cpython,69901,590,296,145,22,8.441,0,0,3201,3278,Python,false,0,Implementations,,100.000,126,388
+cython/cython,10447,91,29,19,1,8.711,0,0,5475,495,Python,false,3,Implementations,,100.000,12,169
+metawilm/cl-python,384,1,0,0,0,2.604,27,1348,6031,6,Common Lisp,false,0,Implementations,,2.000,0,0
+IronLanguages/ironpython3,2707,13,7,4,1,4.802,0,123,4280,39,C#,false,0,Implementations,,31.000,0,0
+micropython/micropython,21105,161,84,39,6,7.629,0,0,4350,620,C,false,0,Implementations,,100.000,22,76
+numba/numba,10730,72,29,17,3,6.710,0,3,5002,339,Python,false,6,Implementations,,80.000,9,84
+Maratyszcza/PeachPy,2031,5,4,0,0,2.462,8,1100,3948,23,Python,false,1,Implementations,,7.000,0,0
+bpython/bpython,2748,11,5,2,0,4.003,3,19,4153,104,Python,false,2,Interactive Interpreter,,32.000,1,12
+jonathanslenders/ptpython,5376,16,8,3,0,2.976,1,0,4067,57,Python,false,0,Interactive Interpreter,,73.000,2,3
+ovalhub/pyicu,132,0,0,0,0,0.000,616,1683,3868,17,C++,true,0,Internationalization,,0.000,0,0
+thauber/django-schedule,844,1,0,0,0,1.185,19,3501,6073,10,Python,false,1,Job Scheduler,,2.000,0,0
+gunnery/gunnery,765,0,0,0,0,0.000,36,3672,4347,7,Python,false,0,Job Scheduler,,0.000,0,0
+fengsp/plan,1178,1,0,0,0,0.849,19,2013,4192,7,Python,false,0,Job Scheduler,,2.000,0,0
+PrefectHQ/prefect,20843,281,133,62,10,13.482,0,0,2697,369,Python,false,0,Job Scheduler,,100.000,20,110
+dbader/schedule,12180,26,11,7,1,2.135,0,541,4565,58,Python,false,0,Job Scheduler,,35.000,0,0
+knipknap/SpiffWorkflow,1831,11,5,1,1,6.008,0,26,5806,47,Python,false,0,Job Scheduler,,38.000,2,6
+Delgan/loguru,23102,200,107,59,9,8.657,0,9,3016,68,Python,false,0,Logging,,84.000,2,5
+getsentry/sentry-python,2102,21,10,6,1,9.990,0,0,2708,512,Python,false,0,Logging,,95.000,12,59
+openai/gym,36782,125,62,32,8,3.398,0,1022,3491,2881,Python,false,15,Machine Learning,,62.000,0,0
+h2oai/h2o-3,7369,55,23,9,1,7.464,0,4,4277,345,Jupyter Notebook,false,0,Machine Learning,,72.000,4,8
+benhamner/Metrics,1645,2,2,1,0,1.216,4,3722,4906,5,Python,false,0,Machine Learning,,12.000,0,0
+numenta/nupic,6353,10,4,3,1,1.574,0,349,4608,105,Python,false,18,Machine Learning,,22.000,0,0
+josephreisinger/vowpal_porpoise,168,0,0,0,0,0.000,247,2141,4963,7,Python,false,2,Machine Learning,,0.000,0,0
+dmlc/xgboost,27623,154,73,35,5,5.575,0,1,4302,640,C++,false,0,Machine Learning,,100.000,5,26
+mindsdb/mindsdb,37336,910,510,133,15,24.373,0,6,2664,800,Python,false,0,Machine Learning,,98.000,4,14
+pythonnet/pythonnet,5302,35,19,8,3,6.601,0,20,4373,92,C#,false,0,Microsoft Windows,,51.000,2,19
+mhammond/pywin32,5476,24,11,3,0,4.383,3,26,2945,103,C++,false,0,Microsoft Windows,,37.000,1,3
+jek/blinker,1989,14,5,3,1,7.039,0,155,4520,28,Python,false,0,Miscellaneous,,26.000,0,0
+mahmoud/boltons,6773,15,6,1,0,2.215,6,44,4653,84,Python,false,0,Miscellaneous,,27.000,0,0
+pallets/itsdangerous,3075,12,7,5,0,3.902,3,155,5260,43,Python,false,0,Miscellaneous,,21.000,0,0
+magenta/magenta,19724,49,20,10,0,2.484,2,131,3482,147,Python,false,0,Miscellaneous,,25.000,0,0
+mitsuhiko/pluginbase,1136,0,0,0,0,0.000,38,1646,4157,7,Python,false,1,Miscellaneous,,0.000,0,0
+RaRe-Technologies/gensim,16271,54,19,10,0,3.319,1,32,5394,431,Python,false,12,Natural Language Processing,,31.000,0,0
+saffsd/langid.py,2441,9,6,3,1,3.687,0,3047,5316,6,Python,false,1,Natural Language Processing,,27.000,0,0
+clips/pattern,8843,6,4,2,1,0.679,0,2032,5312,43,Python,false,0,Natural Language Processing,,22.000,0,0
+aboSamoor/polyglot,2353,7,5,1,0,2.975,5,1881,4158,24,Python,false,7,Natural Language Processing,,12.000,0,0
+facebookresearch/pytext,6314,0,0,0,0,0.000,71,1126,2665,185,Python,true,4,Natural Language Processing,,0.000,0,0
+PetrochukM/PyTorch-NLP,2220,0,0,0,0,0.000,59,866,2822,16,Python,true,0,Natural Language Processing,,0.000,0,0
+stanfordnlp/stanza,7652,29,14,8,1,3.790,0,43,2974,72,Python,false,18,Natural Language Processing,,41.000,0,0
+fighting41love/funNLP,77278,712,348,191,32,9.213,0,816,2645,12,Python,false,0,Natural Language Processing,,70.000,0,0
+fxsjy/jieba,34554,118,50,24,1,3.415,0,2102,4797,40,Python,false,0,Natural Language Processing,,50.000,0,0
+lancopku/pkuseg-python,6668,16,7,6,1,2.400,0,1258,2661,6,Python,false,1,Natural Language Processing,,31.000,0,0
+isnowfy/snownlp,6588,9,7,3,0,1.366,1,2129,4374,8,Python,false,0,Natural Language Processing,,17.000,0,0
+mininet/mininet,5689,28,12,4,1,4.922,0,792,5324,70,Python,false,1,Network Virtualization,,35.000,0,0
+napalm-automation/napalm,2399,20,9,6,1,8.337,0,2,3892,184,Python,false,10,Network Virtualization,,73.000,1,5
+noxrepo/pox,643,2,2,1,0,3.110,3,2007,5031,21,Python,false,0,Network Virtualization,,12.000,0,0
+justquick/django-activity-stream,2432,7,2,0,0,2.878,9,35,5744,94,Python,false,0,News Feed,,13.000,0,0
+tschellenbach/Stream-Framework,4736,2,1,1,0,0.422,5,1951,4849,25,Python,false,5,News Feed,,12.000,0,0
+pudo/dataset,4828,6,1,1,0,1.243,3,285,4613,69,Python,false,0,ORM,Relational Databases,12.000,0,0
+sdispater/orator,1418,3,2,0,0,2.116,11,1345,3830,27,Python,true,17,ORM,Relational Databases,0.000,0,0
+encode/orm,1789,1,1,1,0,0.559,3,1175,2470,20,Python,true,2,ORM,Relational Databases,0.000,0,0
+coleifer/peewee,11772,44,21,11,2,3.738,0,8,5515,140,Python,false,0,ORM,Relational Databases,62.000,1,3
+stephenmcd/hot-redis,292,0,0,0,0,0.000,73,2589,4409,5,Python,false,0,ORM,NoSQL Databases,0.000,0,0
+MongoEngine/mongoengine,4348,7,3,2,2,1.610,0,75,5005,330,Python,false,0,ORM,NoSQL Databases,22.000,0,0
+pynamodb/PynamoDB,2547,7,3,1,0,2.748,2,168,4319,104,Python,false,0,ORM,NoSQL Databases,12.000,0,0
+kiddouk/redisco,436,1,0,0,0,2.294,29,3451,5064,1,Python,false,4,ORM,NoSQL Databases,2.000,0,0
+jazzband/pip-tools,7955,18,10,6,1,2.263,0,2,4816,837,Python,false,0,Package Management,,81.000,5,55
+sdispater/poetry,34055,133,71,40,9,3.905,0,2,2819,603,Python,false,0,Package Management,,100.000,6,11
+astral-sh/uv,72996,2867,1254,625,86,39.276,0,0,776,486,Rust,false,200,Package Management,,100.000,42,162
+devpi/devpi,1083,13,6,1,0,12.004,1,35,3153,92,Python,false,0,Package Repositories,,27.000,0,0
+jazzband/localshop,400,0,0,0,0,0.000,35,1218,5034,34,Less,false,0,Package Repositories,,0.000,0,0
+pypa/warehouse,3880,35,15,5,4,9.021,0,0,4615,762,Python,false,7,Package Repositories,,95.000,11,45
+Manisso/fsociety,11657,98,39,17,0,8.407,1,1168,3364,18,Python,false,0,Penetration Testing,,40.000,0,0
+trustedsec/social-engineer-toolkit,12602,123,50,18,4,9.760,0,392,4703,77,Python,false,1,Penetration Testing,,50.000,0,0
+sqlmapproject/sqlmap,35854,334,192,121,12,9.316,0,7,4892,135,Python,false,0,Penetration Testing,,84.000,2,8
+django-guardian/django-guardian,3832,15,7,5,0,3.914,3,7,5644,145,Python,false,0,Permissions,,43.000,4,7
+dfunckt/django-rules,1947,5,4,4,0,2.568,2,37,4273,32,Python,false,0,Permissions,,18.000,0,0
+amitt001/delegator.py,1738,9,8,3,0,5.178,3,2387,3228,22,Python,false,1,Processes,,17.000,0,0
+amoffat/sh,7202,32,12,5,2,4.443,0,16,5055,86,Python,false,1,Processes,,47.000,2,3
+spotify/annoy,14022,38,19,8,0,2.710,1,19,4612,117,C++,false,0,Recommender Systems,,37.000,3,4
+ibayer/fastFM,1087,2,1,0,0,1.840,7,1699,4039,15,Python,false,4,Recommender Systems,,7.000,0,0
+benfred/implicit,3729,12,3,2,0,3.218,4,726,3501,28,Python,false,4,Recommender Systems,,16.000,0,0
+guestwalk/libffm,1603,0,0,0,0,0.000,127,458,3816,5,C++,true,0,Recommender Systems,,0.000,0,0
+lyst/lightfm,5030,19,7,4,0,3.777,2,932,3763,32,Python,false,0,Recommender Systems,,21.000,0,0
+maciejkula/spotlight,3034,4,3,3,0,1.318,5,2107,3067,10,Python,false,0,Recommender Systems,,12.000,0,0
+NicolasHug/Surprise,6715,25,10,7,0,3.723,2,520,3312,40,Python,false,0,Recommender Systems,,25.000,0,0
+jfkirk/tensorrec,1294,0,0,0,0,0.000,33,2112,3184,7,Python,false,0,Recommender Systems,,0.000,0,0
+python-rope/rope,2137,10,8,4,0,4.679,1,128,4370,74,Python,false,0,Refactoring,,17.000,0,0
+encode/django-rest-framework,29667,116,50,23,5,3.910,0,11,5374,1214,Python,false,4,RESTful API,Django,76.000,12,18
+django-tastypie/django-tastypie,3950,3,1,0,0,0.759,13,228,5712,186,Python,false,3,RESTful API,Django,7.000,0,0
+pyeve/eve,6736,4,2,1,0,0.594,6,83,4774,179,Python,false,0,RESTful API,Flask,12.000,0,0
+flask-api/flask-api,1464,4,2,1,0,2.732,4,636,4293,32,Python,false,0,RESTful API,Flask,12.000,0,0
+flask-restful/flask-restful,6928,5,3,1,0,0.722,3,911,4784,147,Python,false,2,RESTful API,Flask,12.000,0,0
+Cornices/cornice,386,1,0,0,0,2.591,25,238,5150,92,Python,false,11,RESTful API,Pyramid,2.000,0,0
+falconry/falcon,9758,25,11,6,0,2.562,2,1,4729,219,Python,false,0,RESTful API,Framework agnostic,71.000,6,15
+tiangolo/fastapi,92010,1261,589,288,43,13.705,0,4,2536,866,Python,false,3,RESTful API,Framework agnostic,100.000,10,81
+hugapi/hug,6905,4,1,0,0,0.579,9,871,3776,105,Python,false,0,RESTful API,Framework agnostic,7.000,0,0
+jeffknupp/sandman2,2039,0,0,0,0,0.000,31,1792,4042,19,Python,false,17,RESTful API,Framework agnostic,0.000,0,0
+sanic-org/sanic,18562,44,18,11,3,2.370,0,230,3462,313,Python,false,0,RESTful API,Framework agnostic,35.000,0,0
+AtsushiSakai/PythonRobotics,26709,682,549,437,24,25.534,0,5,3528,133,Python,false,0,Robotics,,100.000,5,13
+0rpc/zerorpc-python,3228,2,1,1,0,0.620,4,282,5014,29,Python,false,1,RPC Servers,,12.000,0,0
+chapmanb/bcbio-nextgen,1019,3,1,1,0,2.944,6,450,4667,80,Python,false,1,Science,,12.000,0,0
+chapmanb/bcbb,635,4,1,0,0,6.299,12,285,6186,26,Python,false,0,Science,,7.000,0,0
+benedekrozemberczki/karateclub,2255,2,1,0,0,0.887,10,488,2174,16,Python,false,0,Science,,7.000,0,0
+pymc-devs/pymc3,9366,62,30,20,3,6.620,0,0,6040,463,Python,false,9,Science,,100.000,15,26
+statsmodels/statsmodels,11091,89,40,14,0,8.025,1,0,5272,400,Python,false,6,Science,,92.000,4,10
+sympy/sympy,14108,118,58,30,6,8.364,0,3,5679,1306,Python,false,0,Science,,100.000,12,74
+quantopian/zipline,19165,126,58,25,4,6.574,0,1860,4777,128,Python,false,0,Science,,60.000,0,0
+django-haystack/django-haystack,3730,45,27,14,2,12.064,0,13,6135,199,Python,false,0,Search,,62.000,2,2
+elastic/elasticsearch-dsl-py,3878,4,3,3,1,1.031,0,213,4275,2352,Python,false,0,Search,,22.000,0,0
+django-haystack/pysolr,686,1,0,0,0,1.458,18,3,5983,53,Python,false,3,Search,,38.000,4,13
+marshmallow-code/marshmallow,7208,18,6,3,0,2.497,2,13,4389,185,Python,false,0,Serialization,,43.000,5,10
+TkTech/pysimdjson,741,7,3,1,0,9.447,5,141,2460,15,Python,false,0,Serialization,,12.000,0,0
+python-rapidjson/python-rapidjson,522,2,2,2,1,3.831,0,27,3722,23,C++,false,0,Serialization,,34.000,1,5
+ScrapeGraphAI/toonify,184,184,184,184,8,1000.000,0,3,6,6,Python,false,0,Serialization,,100.000,4,38
+esnme/ultrajson,4460,13,6,3,0,2.915,1,5,5376,74,C++,false,0,Serialization,,53.000,3,3
+nficano/python-lambda,1515,1,1,0,0,0.660,12,1263,3552,42,Python,false,17,Serverless Frameworks,,5.000,0,0
+zappa/Zappa,3618,15,8,4,3,4.146,0,4,1951,251,Python,false,32,Serverless Frameworks,,63.000,2,3
+jazzband/tablib,4729,9,6,2,0,1.903,2,32,5348,771,Python,false,0,Specific Formats Processing,General,23.000,0,0
+elapouya/python-docx-template,2393,32,13,6,0,13.372,3,4,3903,55,Python,false,2,Specific Formats Processing,Office,57.000,3,3
+pyexcel/pyexcel,1271,8,2,2,0,6.294,3,15,4105,22,Python,false,10,Specific Formats Processing,Office,28.000,1,20
+python-openxml/python-docx,5294,46,24,13,3,8.689,0,153,4416,11,Python,false,1,Specific Formats Processing,Office,40.000,0,0
+scanny/python-pptx,3058,51,27,13,3,16.678,0,467,4744,8,Python,false,8,Specific Formats Processing,Office,40.000,0,0
+unoconv/unoconv,2734,7,2,0,0,2.560,13,1466,5334,48,Python,true,0,Specific Formats Processing,Office,0.000,0,0
+jmcnamara/XlsxWriter,3861,13,9,3,0,3.367,1,1,4700,52,Python,false,0,Specific Formats Processing,Office,63.000,2,9
+ZoomerAnalytics/xlwings,0,0,0,0,0,0.000,106751,82,82,1,Python,false,0,Specific Formats Processing,Office,0.000,0,0
+pdfminer/pdfminer.six,6783,30,11,5,1,4.423,0,9,4098,108,Python,false,0,Specific Formats Processing,PDF,57.000,5,5
+mstamy2/PyPDF2,9600,105,49,20,0,10.938,1,0,5064,271,Python,false,0,Specific Formats Processing,PDF,96.000,10,20
+lepture/mistune,2899,19,10,6,0,6.554,2,68,4290,45,Python,false,0,Specific Formats Processing,Markdown,21.000,0,0
+waylan/Python-Markdown,4115,18,6,4,1,4.374,0,13,5651,160,Python,false,0,Specific Formats Processing,Markdown,43.000,1,4
+wireservice/csvkit,6279,18,9,5,0,2.867,3,11,5344,99,Python,false,20,Specific Formats Processing,CSV,43.000,1,2
+mitsuhiko/unp,449,3,2,2,0,6.682,3,4100,4103,2,Python,false,0,Specific Formats Processing,Archive,12.000,0,0
+lektor/lektor,3905,7,2,1,0,1.793,6,193,3621,84,Python,false,0,Static Site Generator,,12.000,0,0
+sunainapai/makesite,1862,6,4,1,0,3.222,4,1131,2802,9,Python,false,0,Static Site Generator,,12.000,0,0
+getnikola/nikola,2695,5,1,0,0,1.855,8,107,4965,213,Python,false,0,Static Site Generator,,7.000,0,0
+getpelican/pelican,13106,50,15,10,2,3.815,0,16,5511,420,Python,false,0,Static Site Generator,,47.000,2,2
+jazzband/django-taggit,3411,5,3,1,0,1.466,5,115,5822,787,Python,false,0,Tagging,,12.000,0,0
+Bogdanp/dramatiq,4974,61,31,15,2,12.264,0,13,3093,117,Python,false,0,Task Queues,,76.000,1,20
+coleifer/huey,5737,75,39,20,6,13.073,0,25,5128,57,Python,false,0,Task Queues,,64.000,1,3
+pricingassistant/mrq,893,0,0,0,0,0.000,46,1800,4295,32,Python,false,3,Task Queues,,0.000,0,0
+rq/rq,10452,64,33,20,3,6.123,0,0,5117,316,Python,false,0,Task Queues,,100.000,3,5
+pallets/jinja,11276,72,44,21,2,6.385,0,155,5510,299,Python,false,0,Template Engine,,50.000,0,0
+HypothesisWorks/hypothesis,8234,115,65,18,3,13.966,0,0,4635,321,Python,false,0,Testing,Testing Frameworks,100.000,5,142
+nose-devs/nose2,812,1,0,0,0,1.232,26,186,5087,69,Python,false,0,Testing,Testing Frameworks,2.000,0,0
+robotframework/robotframework,11217,73,46,25,2,6.508,0,1,4161,205,Python,false,0,Testing,Testing Frameworks,100.000,7,64
+CleanCut/green,798,1,0,0,0,1.253,24,369,4247,39,Python,false,0,Testing,Test Runners,2.000,0,0
+locustio/locust,27080,148,66,37,6,5.465,0,0,5387,308,Python,false,0,Testing,GUI / Web Testing,100.000,7,66
+asweigart/pyautogui,12074,114,55,24,5,9.442,0,894,4140,49,Python,false,2,Testing,GUI / Web Testing,60.000,0,0
+kiwicom/schemathesis,2851,75,36,16,1,26.307,0,1,2282,64,Python,false,0,Testing,GUI / Web Testing,100.000,6,165
+seatgeek/sixpack,1758,0,0,0,0,0.000,138,1909,4750,51,Python,false,22,Testing,GUI / Web Testing,0.000,0,0
+cobrateam/splinter,2759,5,2,1,0,1.812,3,93,5538,164,Python,false,0,Testing,GUI / Web Testing,12.000,0,0
+spulec/freezegun,4451,14,7,5,0,3.145,1,89,4724,114,Python,false,2,Testing,Mock,21.000,0,0
+patrys/httmock,465,1,1,1,0,2.151,2,1846,4625,25,Python,false,0,Testing,Mock,10.000,0,0
+gabrielfalcao/HTTPretty,2175,31,15,4,0,14.253,1,1127,5407,81,Python,false,0,Testing,Mock,25.000,0,0
+mindflayer/python-mocket,300,0,0,0,0,0.000,63,19,4584,24,Python,false,0,Testing,Mock,12.000,1,2
+getsentry/responses,4303,11,3,1,0,2.556,4,101,4384,355,Python,false,0,Testing,Mock,16.000,0,0
+kevin1024/vcrpy,2879,13,9,5,0,4.515,2,66,4920,129,Python,false,0,Testing,Mock,21.000,0,0
+FactoryBoy/factory_boy,3721,17,6,2,0,4.569,1,78,5304,116,Python,false,0,Testing,Object Factories,21.000,0,0
+klen/mixer,947,0,0,0,0,0.000,86,1335,4565,39,Python,false,1,Testing,Object Factories,0.000,0,0
+vandersonmota/model_mommy,899,0,0,0,0,0.000,587,2218,5426,85,Python,true,3,Testing,Object Factories,0.000,0,0
+emirozer/fake2db,2343,3,0,0,0,1.280,16,2184,4289,17,Python,false,1,Testing,Fake Data,4.000,0,0
+joke2k/faker,18894,139,39,22,5,7.357,0,5,4752,578,Python,false,0,Testing,Fake Data,82.000,3,10
+lk-geimfari/mimesis,4636,15,8,3,0,3.236,2,25,3355,111,Python,false,0,Testing,Fake Data,31.000,1,1
+chardet/chardet,2296,8,5,2,0,3.484,1,4,4861,46,Python,false,0,Text Processing,General,44.000,3,3
+LuminosoInsight/python-ftfy,3985,11,2,2,2,2.760,0,382,4833,14,Python,false,0,Text Processing,General,26.000,0,0
+seatgeek/fuzzywuzzy,9266,10,4,3,0,1.079,5,1529,5245,136,Python,true,0,Text Processing,General,0.000,0,0
+vinta/pangu.py,270,2,2,2,0,7.407,5,963,4297,7,Python,false,0,Text Processing,General,12.000,0,0
+pwaller/pyfiglet,1513,22,12,5,0,14.541,2,94,5457,31,Python,false,0,Text Processing,General,25.000,0,0
+mozillazg/python-pinyin,5200,21,9,7,2,4.038,0,2,4447,24,Python,false,1,Text Processing,General,77.000,1,2
+orsinium/textdistance,3504,10,3,3,1,2.854,0,213,3118,15,Python,false,37,Text Processing,General,22.000,0,0
+dimka665/awesome-slugify,491,1,1,0,0,2.037,8,3222,4412,11,Python,false,2,Text Processing,Slugify,5.000,0,0
+un33k/python-slugify,1560,7,3,2,0,4.487,1,5,4781,40,Python,false,0,Text Processing,Slugify,42.000,1,1
+mozilla/unicode-slugify,321,0,0,0,0,0.000,123,1486,5351,12,Python,false,0,Text Processing,Slugify,0.000,0,0
+davidaurelio/hashids-python,1415,1,1,1,0,0.707,2,1897,4559,7,Python,false,0,Text Processing,Unique identifiers,10.000,0,0
+skorokithakis/shortuuid,2159,3,1,1,0,1.390,2,342,5427,33,Python,false,1,Text Processing,Unique identifiers,12.000,0,0
+dabeaz/ply,2912,9,4,2,0,3.091,2,943,5433,35,Python,false,0,Text Processing,Parser,12.000,0,0
+pyparsing/pyparsing,2414,15,6,2,0,6.214,4,16,3109,73,Python,false,0,Text Processing,Parser,33.000,1,2
+derek73/python-nameparser,690,2,0,0,0,2.899,24,788,4247,23,Python,false,0,Text Processing,Parser,4.000,0,0
+daviddrysdale/python-phonenumbers,3674,10,4,2,1,2.722,0,10,5324,26,Python,false,0,Text Processing,Parser,44.000,1,7
+selwin/python-user-agents,1500,6,3,2,0,4.000,5,1005,4699,24,Python,false,3,Text Processing,Parser,12.000,0,0
+andialbrecht/sqlparse,3956,17,9,4,0,4.297,1,55,4960,92,Python,false,0,Text Processing,Parser,27.000,0,0
+boto/boto3,9594,47,16,9,2,4.899,0,2,4062,155,Python,false,0,Third-party APIs,,75.000,5,62
+istrategylabs/django-wordpress,359,0,0,0,0,0.000,215,2853,6079,9,Python,false,0,Third-party APIs,,0.000,0,0
+mobolic/facebook-sdk,2774,3,1,0,0,1.081,10,1786,5304,82,Python,false,0,Third-party APIs,,7.000,0,0
+burnash/gspread,7424,18,6,5,1,2.425,0,24,5099,169,Python,false,0,Third-party APIs,,43.000,2,3
+ryanmcgrath/twython,1864,0,0,0,0,0.000,69,1584,6073,85,Python,false,7,Third-party APIs,,0.000,0,0
+gruns/furl,2781,10,7,4,3,3.596,0,14,5114,13,Python,false,1,URL Manipulation,,37.000,1,1
+codeinthehole/purl,295,0,0,0,0,0.000,47,1646,4982,14,Python,false,4,URL Manipulation,,0.000,0,0
+ellisonleao/pyshorteners,404,2,0,0,0,4.950,19,1259,4431,20,Python,true,0,URL Manipulation,,0.000,0,0
+marshmallow-code/webargs,1403,0,0,0,0,0.000,33,13,4291,55,Python,false,0,URL Manipulation,,30.000,6,21
+aizvorski/scikit-video,145,0,0,0,0,0.000,47,3459,4190,2,Python,false,0,Video,,0.000,0,0
+abhiTronix/vidgear,3636,26,8,2,1,7.151,0,5,2437,13,Python,false,0,Video,,75.000,3,62
+django-compressor/django-compressor,2863,6,2,1,0,2.096,5,7,5764,205,Python,false,0,Web Asset Management,,34.000,3,7
+jazzband/django-pipeline,1540,2,1,0,0,1.299,10,65,5281,796,Python,false,0,Web Asset Management,,7.000,0,0
+jschneier/django-storages,2907,13,8,8,1,4.472,0,152,3996,264,Python,false,0,Web Asset Management,,31.000,0,0
+miracle2k/flask-assets,456,1,1,1,0,2.193,3,703,5582,39,Python,false,18,Web Asset Management,,10.000,0,0
+miracle2k/webassets,932,0,0,0,0,0.000,30,92,5823,147,Python,false,0,Web Asset Management,,0.000,0,0
+Alir3z4/html2text,2084,17,10,6,0,8.157,2,20,4288,72,Python,false,0,Web Content Extracting,,31.000,1,1
+michaelhelmick/lassie,625,2,2,0,0,3.200,7,1550,4492,12,HTML,false,0,Web Content Extracting,,7.000,0,0
+coleifer/micawber,661,6,1,1,0,9.077,6,346,4982,23,Python,false,0,Web Content Extracting,,12.000,0,0
+codelucas/newspaper,14857,47,20,7,1,3.163,0,14,4375,93,HTML,false,0,Web Content Extracting,,47.000,1,2
+buriy/python-readability,2855,7,3,2,0,2.452,2,197,5313,2,Python,false,5,Web Content Extracting,,12.000,0,0
+psf/requests-html,13868,16,9,3,0,1.154,1,959,2822,64,Python,false,14,Web Content Extracting,,21.000,0,0
+miso-belica/sumy,3638,8,5,4,0,2.199,2,550,4653,29,Python,false,0,Web Content Extracting,,12.000,0,0
+deanmalmgren/textract,4358,26,9,2,0,5.966,5,617,4154,34,HTML,false,0,Web Content Extracting,,25.000,0,0
+gaojiuli/toapi,3539,7,3,1,0,1.978,4,1603,2912,8,Python,false,9,Web Content Extracting,,12.000,0,0
+kurtmckee/feedparser,2233,18,8,3,1,8.061,0,13,5470,46,Python,false,0,Web Crawling,,53.000,3,6
+lorien/grab,2429,6,2,1,1,2.470,0,59,4583,50,Python,false,0,Web Crawling,,28.000,0,0
+MechanicalSoup/MechanicalSoup,4809,10,4,1,0,2.079,4,40,4193,48,Python,false,5,Web Crawling,,18.000,0,0
+scrapy/scrapy,58963,343,145,66,14,5.817,0,0,5747,585,Python,false,0,Web Crawling,,100.000,9,22
+django/django,85813,461,224,98,17,5.372,0,0,4951,2704,Python,false,0,Web Frameworks,Synchronous,100.000,28,72
+pallets/flask,70788,269,121,60,4,3.800,0,0,5704,731,Python,false,0,Web Frameworks,Synchronous,100.000,1,7
+MasoniteFramework/masonite,2321,8,6,2,0,3.447,2,241,2903,74,Python,false,20,Web Frameworks,Synchronous,17.000,0,0
+tornadoweb/tornado,22347,48,23,12,1,2.148,0,61,5913,392,Python,false,49,Web Frameworks,Asynchronous,40.000,0,0
+crossbario/autobahn-python,2529,6,3,0,0,2.372,9,6,5227,125,Python,false,0,WebSocket,,47.000,1,56
+django/channels,6301,11,3,0,0,1.746,10,61,3820,264,Python,false,0,WebSocket,,11.000,0,0
+aaugustin/websockets,5567,18,8,5,1,3.233,0,0,4615,76,Python,false,0,WebSocket,,91.000,2,27
+benoitc/gunicorn,10334,45,17,7,1,4.355,0,42,5831,369,Python,false,0,WSGI Servers,,41.000,0,0
+Pylons/waitress,1547,7,3,0,0,4.525,7,133,5084,65,Python,false,0,WSGI Servers,,7.000,0,0
+pallets/werkzeug,6812,14,9,5,2,2.055,0,157,5509,446,Python,false,0,WSGI Servers,,31.000,0,0
