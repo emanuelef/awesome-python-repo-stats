@@ -15,15 +15,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/emanuelef/awesome-python-repo-stats/otel_instrumentation"
 	"github.com/emanuelef/github-repo-activity-stats/repostats"
 	"github.com/emanuelef/github-repo-activity-stats/stats"
 	"github.com/go-resty/resty/v2"
 	_ "github.com/joho/godotenv/autoload"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/trace"
+
+	// OpenTelemetry imports removed
 	"golang.org/x/oauth2"
 )
 
@@ -74,35 +73,11 @@ func writeGoDepsMapFile(deps map[string]int) {
 	}
 }
 
-var tracer trace.Tracer
-
-func init() {
-	tracer = otel.Tracer("github.com/emanuelef/awesome-python-repo-stats")
-}
-
 func main() {
 	ctx := context.Background()
 
 	starsHistory := map[string][]stats.StarsPerDay{}
 	commitsHistory := map[string][]stats.CommitsPerDay{}
-
-	tp, exp, err := otel_instrumentation.InitializeGlobalTracerProvider(ctx)
-	// Handle shutdown to ensure all sub processes are closed correctly and telemetry is exported
-	if err != nil {
-		log.Fatalf("failed to initialize OpenTelemetry: %e", err)
-	}
-
-	ctx, span := tracer.Start(ctx, "fetch-all-stats")
-
-	defer func() {
-		fmt.Println("before End")
-		span.End()
-		time.Sleep(10 * time.Second)
-		fmt.Println("before exp Shutdown")
-		_ = exp.Shutdown(ctx)
-		fmt.Println("before tp Shutdown")
-		_ = tp.Shutdown(ctx)
-	}()
 
 	currentTime := time.Now()
 	outputFile, err := os.Create(fmt.Sprintf("analysis-%s.csv", getEnv("FILE_SUFFIX", currentTime.Format("02-01-2006"))))
@@ -160,8 +135,9 @@ func main() {
 		reader := bytes.NewReader([]byte(resp.Body()))
 		scanner := bufio.NewScanner(reader)
 
-		// * [ajenti](https://github.com/ajenti/ajenti) - The admin panel your servers deserve.
-		exp := regexp.MustCompile(`\* \[([^\]]+)]\(https:\/\/github\.com\/([^\/\s]+\/[^\/\s]+)\) - .*`)
+		// Match both - and * bullets for repository entries
+		// Example: - [ajenti](https://github.com/ajenti/ajenti) - The admin panel your servers deserve.
+		exp := regexp.MustCompile(`^[-*]\s*\[([^\]]+)]\(https:\/\/github\.com\/([^\/\s]+\/[^\/\s]+)\) - .*`)
 
 		mainCategory := "General"
 		subCategory := ""
@@ -181,9 +157,14 @@ func main() {
 				}
 			}
 
-			if strings.HasPrefix(line, "* ") && !strings.Contains(line, "](") {
+			// Handle subcategories (bullet points without links)
+			if (strings.HasPrefix(line, "* ") || strings.HasPrefix(line, "- ")) && !strings.Contains(line, "](") {
 				fmt.Println(line)
-				subCategory = strings.TrimPrefix(line, "* ")
+				if strings.HasPrefix(line, "* ") {
+					subCategory = strings.TrimPrefix(line, "* ")
+				} else {
+					subCategory = strings.TrimPrefix(line, "- ")
+				}
 			}
 
 			subMatch := exp.FindStringSubmatch(line)

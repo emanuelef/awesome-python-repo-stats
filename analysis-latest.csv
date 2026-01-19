@@ -1,1 +1,78 @@
 repo,stars,new-stars-last-30d,new-stars-last-14d,new-stars-last-7d,new-stars-last-24H,stars-per-mille-30d,days-last-star,days-last-commit,days-since-creation,mentionable-users,language,archived,dependencies,main-category,sub-category,liveness,unique-contributors,new-commits-last-30d
+ajenti/ajenti,7861,16,6,3,1,2.035,0,4,5801,22,Python,false,0,Admin Panels,,63.000,1,4
+sehmaschine/django-grappelli,3924,5,3,3,0,1.274,2,53,5778,74,HTML,false,0,Admin Panels,,18.000,0,0
+unfoldadmin/django-unfold,3141,77,41,20,4,24.514,0,0,1249,54,Python,false,0,Admin Panels,,100.000,5,40
+flask-admin/flask-admin,6048,5,3,2,1,0.827,0,0,5054,340,Python,false,0,Admin Panels,,82.000,4,46
+mher/flower,7094,33,15,10,1,4.652,0,132,4943,198,Python,false,0,Admin Panels,,35.000,0,0
+offerrall/FuncToWeb,352,17,8,4,2,48.295,0,6,106,1,Python,false,0,Admin Panels,,67.000,1,11
+jet-admin/jet-bridge,1788,4,1,1,0,2.237,2,28,2581,4,Python,false,1,Admin Panels,,24.000,1,4
+streamlit/streamlit,43123,444,200,105,12,10.296,0,0,2340,311,Python,false,0,Admin Panels,,100.000,17,139
+wooey/wooey,2211,6,5,2,0,2.714,2,767,3977,23,Python,false,0,Admin Panels,,12.000,0,0
+keon/algorithms,24951,62,33,21,4,2.485,0,13,3349,198,Python,false,0,Algorithms and Design Patterns,Algorithms,72.000,5,6
+prabhupant/python-ds,3051,13,6,3,0,4.261,2,653,2366,94,Python,false,0,Algorithms and Design Patterns,Algorithms,21.000,0,0
+grantjenks/python-sortedcontainers,3899,21,12,5,3,5.386,0,688,4347,22,Python,false,1,Algorithms and Design Patterns,Algorithms,35.000,0,0
+TheAlgorithms/Python,216977,2292,577,251,38,10.563,0,14,3474,1325,Python,false,0,Algorithms and Design Patterns,Algorithms,82.000,2,2
+faif/python-patterns,42673,148,87,40,5,3.468,0,5,4975,122,Python,false,0,Algorithms and Design Patterns,Design Patterns,90.000,1,1
+pytransitions/transitions,6387,44,27,15,0,6.889,1,132,4117,65,Python,false,0,Algorithms and Design Patterns,Design Patterns,30.000,0,0
+django/daphne,2627,7,4,3,0,2.665,2,124,3680,76,Python,false,0,ASGI Servers,,12.000,0,0
+emmett-framework/granian,4927,153,64,33,4,31.053,0,12,1375,40,Rust,false,27,ASGI Servers,,86.000,5,11
+pgjones/hypercorn,1503,24,9,5,1,15.968,0,72,2788,65,Python,false,0,ASGI Servers,,35.000,0,0
+encode/uvicorn,10310,131,60,34,8,12.706,0,18,3155,200,Python,false,0,ASGI Servers,,74.000,4,9
+gevent/gevent,6429,6,5,3,0,0.933,2,46,4876,100,Python,false,6,Asynchronous Programming,,18.000,0,0
+python-trio/trio,7106,41,20,10,1,5.770,0,7,3290,159,Python,false,0,Asynchronous Programming,,57.000,4,7
+twisted/twisted,5938,14,7,6,1,2.358,0,39,5316,200,Python,false,0,Asynchronous Programming,,37.000,0,0
+MagicStack/uvloop,11599,79,39,21,3,6.811,0,0,3725,76,Cython,false,0,Asynchronous Programming,,100.000,5,7
+libAudioFlux/audioFlux,3241,13,5,4,1,4.011,0,605,1099,5,C,false,0,Audio,Audio,26.000,0,0
+beetbox/audioread,537,4,2,1,0,7.449,6,85,5186,42,Python,false,0,Audio,Audio,12.000,0,0
+worldveil/dejavu,6712,24,9,6,0,3.576,3,2056,4444,22,Python,false,7,Audio,Audio,25.000,0,0
+keunwoochoi/kapre,939,2,1,1,0,2.130,1,85,3323,14,Python,false,0,Audio,Audio,12.000,0,0
+librosa/librosa,8141,65,32,10,0,7.984,1,245,4839,119,Python,false,0,Audio,Audio,40.000,0,0
+sergree/matchering,2377,44,21,13,1,18.511,0,54,2670,3,Python,false,5,Audio,Audio,46.000,0,0
+tyiannak/pyAudioAnalysis,6208,17,8,5,0,2.738,1,168,4163,22,Python,false,11,Audio,Audio,21.000,0,0
+jiaaro/pydub,9713,33,18,11,2,3.398,0,1138,5376,80,Python,false,0,Audio,Audio,35.000,0,0
+Parisson/TimeSide,397,1,0,0,0,2.519,16,462,5173,20,Python,false,215,Audio,Audio,2.000,0,0
+beetbox/beets,14591,165,81,35,3,11.308,0,0,5641,532,Python,false,42,Audio,Metadata,100.000,18,115
+nicfit/eyeD3,628,6,2,0,0,9.554,8,14,3285,29,Python,false,0,Audio,Metadata,19.000,2,2
+quodlibet/mutagen,1835,16,9,4,0,8.719,1,26,3574,46,Python,false,0,Audio,Metadata,31.000,1,1
+devsnd/tinytag,797,6,3,1,0,7.528,1,35,4375,23,Python,false,0,Audio,Metadata,18.000,0,0
+lepture/authlib,5178,40,24,10,2,7.725,0,3,3006,128,Python,false,0,Authentication,OAuth,76.000,2,13
+pennersr/django-allauth,10272,36,21,14,4,3.505,0,2,5580,684,Python,false,0,Authentication,OAuth,86.000,2,13
+jazzband/django-oauth-toolkit,3300,5,1,0,0,1.515,11,9,4627,263,Python,false,0,Authentication,OAuth,29.000,4,7
+oauthlib/oauthlib,2949,2,1,1,0,0.678,4,15,5174,181,Python,false,3,Authentication,OAuth,22.000,1,1
+jpadilla/pyjwt,5570,20,8,4,0,3.591,3,1,5443,161,Python,false,0,Authentication,JWT,61.000,1,1
+openembedded/bitbake,503,9,4,2,0,17.893,2,5,5374,271,Python,false,0,Build Tools,,48.000,2,13
+buildout/buildout,611,2,0,0,0,3.273,14,55,5048,85,Python,false,2,Build Tools,,10.000,0,0
+platformio/platformio-core,8822,84,41,21,2,9.522,0,4,4273,93,Python,false,0,Build Tools,,82.000,4,9
+pybuilder/pybuilder,1932,19,6,2,0,9.834,3,65,4928,34,Python,false,0,Build Tools,,21.000,0,0
+SCons/scons,2344,9,5,2,0,3.840,2,10,3039,120,Python,false,0,Build Tools,,42.000,3,47
+python-attrs/attrs,5707,19,12,5,1,3.329,0,14,4010,187,Python,false,0,Built-in Classes Enhancement,,43.000,2,2
+jab/bidict,1571,2,1,0,0,1.273,13,16,4136,16,Python,false,0,Built-in Classes Enhancement,,19.000,2,5
+cdgriffith/Box,2814,13,4,1,0,4.620,6,368,3236,17,Python,false,3,Built-in Classes Enhancement,,16.000,0,0
+carlosescri/DottedDict,223,0,0,0,0,0.000,39,406,4336,5,Python,false,0,Built-in Classes Enhancement,,0.000,0,0
+feincms/feincms,1059,7,3,2,0,6.610,4,125,6201,100,Python,false,0,CMS,,12.000,0,0
+indico/indico,2000,10,7,4,0,5.000,4,0,5290,122,Python,false,132,CMS,,77.000,6,27
+wagtail/wagtail,20063,144,61,49,7,7.177,0,0,4368,841,Python,false,0,CMS,,100.000,10,25
+bbangert/beaker,543,0,0,0,0,0.000,54,47,5209,76,Python,false,0,Caching,,6.000,0,0
+django-cache-machine/django-cache-machine,885,0,0,0,0,0.000,54,1064,5822,18,Python,false,0,Caching,,0.000,0,0
+Suor/django-cacheops,2259,2,1,1,0,0.885,3,96,5343,65,Python,false,1,Caching,,12.000,0,0
+sqlalchemy/dogpile.cache,290,3,0,0,0,10.345,17,7,2613,56,Python,false,0,Caching,,26.000,2,2
+lericson/pylibmc,493,1,0,0,0,2.028,22,282,6016,44,C,false,0,Caching,,2.000,0,0
+grantjenks/python-diskcache,2794,46,28,17,1,16.464,0,687,3637,25,Python,false,0,Caching,,40.000,0,0
+scottrogowski/code2flow,4511,19,14,6,1,4.212,0,1106,4623,10,Python,false,0,Code Analysis,Code Analysis,31.000,0,0
+PyCQA/prospector,2059,6,2,2,0,2.914,2,69,4550,85,Python,false,21,Code Analysis,Code Analysis,12.000,0,0
+jendrikseipp/vulture,4281,64,38,24,3,14.950,0,55,3241,42,Python,false,1,Code Analysis,Code Analysis,56.000,0,0
+PyCQA/flake8,3754,14,9,5,1,3.729,0,28,4146,178,Python,false,0,Code Analysis,Code Linters,43.000,2,2
+pylint-dev/pylint,5636,19,11,8,0,3.371,2,0,3694,550,Python,false,0,Code Analysis,Code Linters,77.000,10,17
+astral-sh/ruff,45230,683,307,164,28,15.101,0,0,1259,779,Rust,false,162,Code Analysis,Code Linters,100.000,54,408
+psf/black,41314,126,77,28,4,3.050,0,1,2868,489,Python,false,0,Code Analysis,Code Formatters,100.000,4,11
+timothycrosley/isort,6890,20,13,7,1,2.903,0,40,4522,314,Python,false,0,Code Analysis,Code Formatters,37.000,0,0
+google/yapf,13976,12,5,1,1,0.859,0,343,3960,152,Python,false,0,Code Analysis,Code Formatters,26.000,0,0
+python/mypy,20135,66,36,20,4,3.278,0,0,4791,785,Python,false,0,Code Analysis,Code Formatters,100.000,26,78
+facebook/pyre-check,7140,15,9,6,0,2.101,1,3,2992,251,OCaml,false,0,Code Analysis,Code Formatters,61.000,5,26
+astral-sh/ty,16610,1421,487,251,26,85.551,0,0,262,45,Python,false,0,Code Analysis,Code Formatters,100.000,13,38
+python/typeshed,4987,25,13,8,1,5.013,0,0,3973,1530,Python,false,0,Code Analysis,Code Formatters,95.000,32,104
+Instagram/MonkeyType,4988,10,3,0,0,2.005,7,219,3114,56,Python,false,13,Code Analysis,Static Type Annotations Generators,7.000,0,0
+google/pytype,5032,12,5,3,0,2.385,2,33,3960,118,Python,false,25,Code Analysis,Static Type Annotations Generators,22.000,0,0
+datafolklabs/cement,1339,1,1,1,0,0.747,2,77,5889,38,Python,false,0,Command-line Interface Development,Command-line Application Development,10.000,0,0
+openstack/cliff,258,1,1,1,0,3.876,2,0,4364,90,Python,false,5,Command-line Interface Development,Command-line Application Development,62.000,1,2
+google/python-fire,28065,49,22,15,4,1.746,0,156,3254,81,Python,false,0,Command-line Interface Development,Command-line Application Development,40.000,0,0
