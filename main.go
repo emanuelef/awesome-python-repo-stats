@@ -55,7 +55,6 @@ func writeGoDepsMapFile(deps map[string]int) {
 	}
 
 	err = csvWriter.Write(headerRow)
-
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -104,7 +103,6 @@ func main() {
 	}
 
 	err = csvWriter.Write(headerRow)
-
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -208,7 +206,6 @@ func main() {
 						fmt.Sprintf("%d", result.DifferentAuthors),
 						fmt.Sprintf("%d", result.CommitsHistory.AddedLast30d),
 					})
-
 					if err != nil {
 						log.Fatal(err)
 					}
