@@ -1,8 +1,6 @@
 name: Update Awesome python stats
 
 on:
-  schedule:
-    - cron: "0 19 * * 1" # every Monday at 19:00 UTC
   workflow_dispatch:
 
 jobs:
